@@ -1,0 +1,45 @@
+{\huge \textbf{Nenoteiktais integrālis}~\mathbf{\int}}\\
+\href{https://estudijas.rtu.lv/pluginfile.php/7485589/mod_resource/content/1/nenoteiktais_iintegralis-formulas.pdf}
+{\includegraphics[height=0.8em, totalheight=0.9em, width=0.9em, alt=File]{https://estudijas.rtu.lv/theme/image.php/lambda/resource/1728397420/monologo}~\textbf{Formulu lapa (e-studijas)}}\\
+\text{Nenoteiktais integrālis ir nekas cits kā atvasināšanai pretējā darbība:}\\
+\text{ja ātruma atvasinājums ir paātrinājums, tad}\\
+\text{paātrinājuma nenoteiktais integrālis ir ātrums.}\\[0.5em]
+\def\arraystretch{1.5}
+\begin{array}{|c|}
+
+  \hline
+
+  (\int\kern{-0.25em}f(x)dx)^\prime=f(x)\\
+  d(\int\kern{-0.25em}f(x)dx)=f(x)dx\\
+  \int(d(F(x))=F(x)+C\\
+  \int\kern{-0.25em}F^\prime(x)dx=F(x)+C\\
+  \int(f(x)\pm g(x))dx=\int f(x)dx\pm\int g(x)dx\\
+  \int(A*f(x))dx=A\int f(x)dx\\
+  \int\kern{-0.25em}f(u)du=F(u)+C\\
+
+  \hline
+
+\end{array}\\[1em]
+
+{\displaystyle1)~ \int\bigg(4x^3-\frac2{x^3}+5\sqrt[3]{x^2}\bigg)dx=4\int x^3dx-2\int x^{-3}dx+5\int x^{2/3}dx=}\\
+=x^4-x^{-2}+3\sqrt[3]{x^2}+C\\
+{\displaystyle2)~\int\bigg(3\sin x-\frac7{\cos^2}+6^x\bigg)dx=}\\
+{\displaystyle=-3\cos x-7\tg x+\frac{6^x}{\ln6}+C}\\
+3)~{\displaystyle\int{\cfrac{x^2-6}{x^2+6}}\kern{0.2em}dx=\int\bigg(1+\cfrac{-12}{x^2+6}\bigg)\kern{0.2em}dx=x-\cfrac{12}{\sqrt6}\arctg\bigg(\cfrac x{\sqrt6}\bigg)+C}\\[0.5em]
+\boxed{d(x+C)=dx}\\
+4)~ \int(x-3)^5dx=\int(x-3)^5d(x-3)=\cfrac{(x-3)^5}6+C\\[0.2em]
+\boxed{\textstyle dx=\frac1kd(kx)}\\[0.2em]
+5)~ \int\sin(8x)dx=\frac18\int\sin(8x)d(8x)=-\frac18\cos(8x)+C\\[0.2em]
+\boxed{\textstyle\int f(ax+b)dx=\frac1a\int f(ax+b)d(ax+b)}\\[0.2em]
+6)~ {\displaystyle\int(2-3x)^5dx=-\frac13\int(2-3x)^5d(2-3x)=-\cfrac{(2-3x)^6}{18}+C}\\[0.2em]
+\boxed{\textstyle d\frac1x=-\frac1{x^2}dx}\\[0.2em]
+7)~{\displaystyle\int\cfrac{x^2}{1-x^3}\kern{0.2em}dx=-\frac13\int\cfrac{-3x^2}{1-x^3}\kern{0.2em}dx=-\frac13\int\cfrac{d(1-x^3)}{...}=\ln...}\\[2em]
+
+...\\[2em]
+{\huge \textbf{Parciālā integrēšana}}\\
+\boxed{\textstyle \int udv=uv - \int vdu}\\[0.2em]
+\text{Par }u\text{ izvēlas logaritmisko, ciklometrisko (arc- funkciju) izteiksmi vai polinomu.}\\
+\text{Tad }dv\text{ ir pārējā zemintegrāļa izteiksme.}\\
+\int x\sin(3x)dx=\Big[\int udv=uv-\int vdu\Big]=\underbrace{\textstyle x(-\frac13\cos3x)}_{uv}-\underbrace{\textstyle \int-\frac13\cos(3x)dx}_{\int vdu}=\\[-1em]
+=-\frac x3\cos3x+\frac19\sin3x\\[0.2em]
+\int\sqrt[3]x\ln x~dx=\Big[\int udv=uv-\int vdu\Big]=...\\

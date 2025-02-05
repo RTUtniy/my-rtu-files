@@ -124,10 +124,15 @@ A\Delta(A\setminus B)=[A\setminus B=A\cap\papild B;A\Delta B=(A\cap\papild B)\cu
 =\underbrace{(A\cap\papild A)}_{\emptyset}\cup(A\cap B)=\emptyset\cup (A\cap B)=A\cap B\\
 4)\\
 \begin{array}{|c|c|c|c|c|c|c|}
-\hline
-  A & B & A\setminus B & A\setminus(A\setminus B) & (A\setminus B)\setminus A & A\Delta(A\setminus B) & A\cap B\\ \hline
-  0 & 0 & 0            & 0 & 0 & 0 & 0\\ \hline
-  0 & 1 & 0            & 0 & 0 & 0 & 0\\ \hline
-  1 & 0 & 1            & 0 & 0 & 0 & 0\\ \hline
-  1 & 1 & 0            & 1 & 0 & 1 & 1\\ \hline
+  \hline
+    A & B & A\setminus B & A\setminus(A\setminus B) & (A\setminus B)\setminus A & A\Delta(A\setminus B) & A\cap B \\
+  \hline
+    0 & 0 & 0            & 0                        & 0                         & 0                     & 0       \\
+  \hline
+    0 & 1 & 0            & 0                        & 0                         & 0                     & 0       \\
+  \hline
+    1 & 0 & 1            & 0                        & 0                         & 0                     & 0       \\
+  \hline
+    1 & 1 & 0            & 1                        & 0                         & 1                     & 1       \\
+  \hline
 \end{array}

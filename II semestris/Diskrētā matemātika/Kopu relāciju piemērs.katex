@@ -1,0 +1,10 @@
+B=\set{A; C; \spades; \Sigma}\\
+A=\set{\Sigma}\\
+C=\set{\Sigma;\aleph}\\
+a=\Sigma\\
+a\in B\\
+A\in B\\
+A\subset B\\
+C\notin B\\
+C\subset B\\
+B\supset C

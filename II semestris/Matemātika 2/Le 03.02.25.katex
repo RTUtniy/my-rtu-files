@@ -1,0 +1,29 @@
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+\def\pirmaformula{\boxed{\int x^adx=\cfrac{x^{a+1}}{a+1}+\const}}
+\def\tresaintegresanasipasiba{du=\cfrac1\const~d(\const u)}
+{\LARGE\textbf{Matemātika 2}}\\
+\footnotesize{\text{Lekciju vadīja: Irina Eglīte}}\\
+\h3{Gatavošanās pārbaudes darbam, atkārtojums}
+0)~\int(x^4+2x-5)dx=\int x^4dx+\int2x~dx-\int5dx=\\[0.3em]
+=\int x^4dx+2\int x~dx-5\int x^0dx=\pirmaformula=\\[0.3em]
+=\cfrac{x^5}5+2\cfrac{x^2}2-5x+\const=\cfrac{x^5}5+x^2-5x+\const\\[2em]
+
+1)~\int\cfrac{5x-2}{x^2-4}~dx=\int\cfrac{5x}{x^2-4}~dx-\int\cfrac{2}{x^2-4}~dx=\\
+=5\int\cfrac{x~dx}{x^2-4}-2\int\cfrac{dx}{x^2-4}=\\
+=\big[d(x^2-4)=(x^2-4)^\prime dx=2xdx\big]=\\
+=5\int\cfrac{\frac122x~dx}{x^2-4}-2\int\cfrac{dx}{x^2-4}=\\
+=\cfrac52\int\cfrac{2x~dx}{x^2-4}-2\int\cfrac{dx}{x^2-4}=\\
+=\cfrac52\int\cfrac{d(x^2-4)}{x^2-4}-2\int\cfrac{dx}{x^2-4}=\boxed{\int\cfrac{du}u=\ln|u|+\const}=\\
+=\cfrac52\ln|x^2-4|+\const-2\int\cfrac{dx}{(x^2-2^2)}=\boxed{\int\cfrac{dx}{x^2-a^2}=\cfrac1{2a}\ln|\cfrac{a-x}{a+x}|+\const}=\\
+=\cfrac52\ln|x^2-4|-2\cfrac1{2\*2}\ln|\cfrac{2+x}{2-x}|+\const=\\
+=\cfrac52\ln|x^2-4|-\cfrac12\ln|\cfrac{2+x}{2-x}|+\const\\[1em]
+
+\text{12. formulas paplašinājums: }\boxed{\int\cfrac{dx}{\pm(a^2-x^2)}=\cfrac1{2a}\ln|\cfrac{a\pm x}{a\mp x}|+\const}\\[1em]
+
+\int\cfrac{x^4dx}{\sqrt{x^{10}-6}}=\big[d(x^5)=(x^5)^\prime dx=5x^4dx\big]=\cfrac15\int\cfrac{5x^4dx}{\sqrt{x^{10}-6}}=\\
+=\cfrac15\int\cfrac{d(x^5)}{\sqrt{x^{10}-6}}=\cfrac15\int\cfrac{d(x^5)}{\sqrt{(x^5)^2-6}}=\boxed{\int\cfrac{du}{\sqrt{u^2-a^2}}=\ln|u+\sqrt{u^2-a^2}|+\const}=\\
+\cfrac15\ln|x^5+\sqrt{x^{10}-6}|+\const

@@ -1,0 +1,24 @@
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\tresaintegresanasipasiba{du=\cfrac1\const~d(\const u)}
+
+\int(4x+3)dx=\int4xdx+\int3dx=\\
+=4\int xdx+3\int dx=4\int x^1dx+3x+\const=4\cfrac{x^2}2+3x+\const=2x^2+3x+\const\\[0.5em]
+\boxed{\const-\const=\const}\\[0.5em]
+\int(x^2-3x)dx=\int x^2dx-3\int xdx=\cfrac{x^3}3-3\cfrac{x^2}2+\const=\cfrac{x^3}3-1,5x^2+\const\\[0.5em]
+\int(x^2-2x+8)dx=\int x^2dx-2\int xdx+8\int dx=\cfrac{x^3}3-2\cfrac{x^2}2+8x+\const=\\
+=\cfrac{x^3}3-x^2+8x+\const\\
+\boxed{V(t)=V_0+at}\\[0.5em]
+\int (V_0+at)dt=V_0\int dt+a\int tdt=V_0t+\const+a\cfrac{t^2}{2}+\const=\const+V_0t+\cfrac{at^2}{2}\\[0.5em]
+\boxed{\const+V_0t+\cfrac{at^2}{2}}\\
+\boxed{x(t)=x_0+V_0+\cfrac{at^2}2}\\[0.5em]
+\int16\sin x~dx=16\int\sin x~dx=-16\cos x+\const\\[1em]
+\int20e^{5x}dx=20\int e^{5x}dx=20\int e^{5x}\frac15d(5x)=4\int e^{5x}d(5x)=4e^{5x}+\const\\[1em]
+\int\cfrac{22x-2}x~dx=\int\bigg(\cfrac{22x}x-\cfrac2x\bigg)dx=\int\cfrac{22x}x~dx-\int\cfrac{2}x~dx=22\int dx-2\int\cfrac{dx}x=\\
+=22x-2\ln|x|+\const\\[1em]
+\int\cfrac{\sqrt[4]{x^3}}7~dx=\int\cfrac17\sqrt[4]{x^3}dx=\cfrac17\int x^{3/4}dx=\cfrac17\*\cfrac{x^{7/4}}{7/4}+\const=\cfrac17\*\cfrac{4x^{7/4}}7+\const=\cfrac{4x^{7/4}}{49}+\const\\[1em]
+\int\cfrac{x^3-2x}{x^4}~dx=\int\cfrac{x^3}{x^4}~dx-2\int\cfrac{x}{x^4}~dx=\int\cfrac {dx}x-2\int\cfrac{dx}{x^3}=\ln|x|-2\int x^{-3}dx+\const=\\
+=\ln|x|-2\cfrac{x^{-2}}{-2}+\const=\ln|x|+x^{-2}+\const
+%\boxed{\cfrac{c}{a:b}=c\bigg(\cfrac ab\bigg)^{-1}=c\bigg(\cfrac ba\bigg)=\cfrac{cb}a}

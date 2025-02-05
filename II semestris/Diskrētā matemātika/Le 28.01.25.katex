@@ -1,0 +1,90 @@
+\displaystyle
+\def\Q{\mathbb Q}
+\def\I{\mathbb I}
+\def\emptyset{\varnothing}
+\def\arraystretch{1.5}
+\def\h3#1{{\large\textbf{#1}}}
+
+{\LARGE\textbf{Diskrētā matemātika}}\\
+{\small 28.01.25}\\
+{\footnotesize{\text{Lekciju vadīja Irina Eglīte (aizvieto prof. Volodko)}}}\\
+
+\boxed{\text{Galā atzīme: }50\%\cdot E + 30\%\cdot \overline K+10\%\cdot\overline M+10\%\cdot\overline T}\\[0.1em]
+\boxed{\text{Automātiskais eksāmens: }30\%\cdot K_1+20\%\cdot K_2+30\%\cdot K_3+10\%\cdot\overline M+10\%\cdot\overline T}\\[1em]
+
+{\Large\textbf{Kopu teorija.}}\\
+\h3{Pamatjēdzieni par kopām. Operācijas ar kopām.}\\
+\textbf{Kopas jēdziens}\text{ - viens no matemātikas pamatjēdzieniem}\\
+\textbf{Abstrakta kopa}\text{ - jebkuras dabas objektu savienojums vienā veselā}\\
+\text{Kopu teorija pēta abstraktu kopu vispārīgās īpašības}\\
+\text{Pamatā ir attieksme starp kopu un elementu, ko sauc par piederību }(a\in A, b\notin A)\\[0.5em]
+
+
+\h3{Kopu uzdošanas veidi}\\
+1)\text{ nosaucot visus kopas elementus:}\\
+A=\set{a,b,c,d}\text{ – nesakārtota kopa}\\
+B=(3,5,7)\text{ – sakārtota kopa (arī \href{https://lv.wikipedia.org/wiki/Kortežs}{kortežs})}\\
+2)\text{ Ar elementu raksturīgo īpašību (predikātu)}\\
+A=\set{u|P(u)}\\
+A=\set{u|u=2n+1, n\in\N}\\
+3)\text{ No citām kopām ar kopu operācijām.}\\[0.5em]
+
+
+\h3{Pamatjēdzieni par kopām}\\
+\textbf{Tukša kopa }\emptyset\text{ – kopā, kura nesatur nevienu elementu}\\
+\textbf{Universs }U\text{ – kopa, kura sastāv no visiem dotā veida elementiem}\\
+\textbf{Vienādas kopas}\text{ – kopas, kas sastāv no vieniem un tiem pašiem elementiem.}\\
+\text{Sakārtotām kopām jāsakrīt arī elementu secībai}\\[0.5em]
+
+
+\h3{Kopu ietilpšana}\\
+% image
+\htmlStyle{display: inline-block;font-size: 12em;height: 0;margin-top: -1em;transform: translate(2.4em, 0.8em);}{\includegraphics{data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDgwMCA4MDAiIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIj48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MTA7dHJhbnNmb3JtOiBzY2FsZSgwLjk5KTt0cmFuc2Zvcm0tb3JpZ2luOiBjZW50ZXI7fTwvc3R5bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJtNTI0IDMxNi41cTAtMC40LTAuNC0wLjgtMC4zLTAuNy0xLjEtMC43LTAuNy0wLjQtMS41LTAuOC0wLjctMC4zLTIuMy0wLjMtMS41LTAuNC0yLjYtMC40LTEuMSAwLTMgMC0xLjkgMC0zLjQgMC0xLjEtMC40LTMuMy0wLjQtMi4zIDAtMy44IDAtOSAwLTEwLjgtMC4zLTEuOS0wLjQtMi43LTIuMy0wLjctMS4xIDAuNC02LjggMS45LTYuNyAzLjQtNy41IDAuNC0wLjMgNDguNy0wLjMgOTcuMSAwIDEwMi40IDAuNyAyNS45IDMuOCA0MC41IDE4IDE1IDE0LjMgMTUgMzMuNCAwIDEzLjEtNy4xIDI1LjUtOC4zIDE1LTI2LjcgMjcuNC0xOCAxMi0zNy44IDE2LjFsLTMuOCAxLjFxMjQuOCAzLjQgMzkuOCAxNy4zIDE1LjMgMTMuOCAxNS4zIDM0LjUgMCAyNy0yNC43IDUwLjYtMjguOSAyNy44LTY4LjYgMzEuMS0yLjcgMC40LTc5LjIgMC40LTc1IDAtNzYuMS0wLjgtMS41LTEuMS0xLjUtMyAwLTIuNiAwLjgtNS4yIDEuOC03LjEgMy43LTcuOSAxLjUtMC40IDUuNi0wLjRoMi4zcTEwLjEgMCAyMi41LTEuMSA1LjItMS4xIDcuMS00LjUgMS4xLTEuNSAyNy0xMDQuMiAyNS45LTEwMi44IDI1LjktMTA4LjR6bTEzNS40IDMxLjVxMC0xMi43LTYuOC0yMS43LTYuNC05LTE3LjItMTItMi43LTAuOC0zNC41LTEuMi03LjUgMC0xNS44IDAuNC04LjIgMC0xMy4xIDBoLTQuOXEtNS4yIDAuNC02LjcgMi42LTEuMiAxLjUtMTIuOCA0Ny4zLTExLjIgNDUuNy0xMS42IDQ4LjRoMzAuNHEzMC4zIDAgMzQuOC0wLjggMTUuNC0yLjYgMjguOS0xMiAxMy45LTkuNyAyMS40LTIzLjIgNy45LTE0LjMgNy45LTI3Ljh6bS0yMC4zIDExOC4xcTAtMTYuNS05LTI3LjMtOC42LTEwLjktMjIuMS0xMi44LTIuMy0wLjQtMzEuMS0wLjQtNDQuMyAwLTQ0LjcgMC40IDAgMC44LTYuNyAyNy40LTYuNCAyNi42LTEyLjggNTIuOWwtNi43IDI2LjJxMCAxLjUgNC41IDEuOSA0LjUgMCAzMC40IDAuNCAzMy4zIDAgMzYtMC40IDI0LjMtMi42IDQzLjEtMjEuOCAxOS4xLTE5LjEgMTkuMS00Ni41eiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0ibTIxNiA2NTcuNHEwLTQgMi43LTYuNyAyLjYtMi43IDYuNy0yLjcgNCAwIDYuNyAyLjkgMi44IDIuNiAyLjggNi40IDAgNC0yLjggNi44LTIuOCAyLjctNi42IDIuNy00IDAtNi44LTIuOC0yLjctMi44LTIuNy02LjZ6bTEwNi43LTQ2LjRoMC42cTEuNSAwIDEuOSAwLjIgMC41IDAgMC44IDAuMyAwLjMgMC4zIDAuMyAwLjkgMCAwLjUtMC41IDIuNC0zLjQgMTMuMS04LjQgMTguMS0yIDItNSAzLjMtMS4yIDAuMy0zLjcgMC4zLTkuOSAwLTEzLjgtNy43LTAuOC0yLTAuOC0xLjktMC4xLTAuMS0wLjYgMC4yLTAuMyAwLjMtMC42IDAuNi03LjUgNy4xLTE0LjkgOC42LTAuOSAwLjItMy45IDAuMi0xMC4zIDAtMTctOC42LTQuNy02LjktNC43LTE3LjUgMC0yLjUgMC4yLTMuNSAxLjEtMTAgNi40LTE5IDUuNC05LjIgMTIuOS0xNC45IDkuMS03IDE5LjEtNyA3LjggMCAxNC4xIDcuNyAyLjUtNC43IDcuMi00LjcgMiAwIDMuNSAxLjIgMS42IDEuMyAxLjYgMy4xIDAgMi4xLTUuOSAyNS4yLTUuOCAyMy01LjggMjUuOCAwIDYuNSA0LjQgNi41IDEuNC0wLjEgMy4xLTEuNCAzLjMtMy4xIDYuNC0xNSAwLjktMy4xIDEuNi0zLjIgMC4zLTAuMiAxLjUtMC4yem0tNTcgNy4zcTAgNS43IDIuMyA5LjEgMi41IDMuNCA3LjIgMy40IDQuNiAwIDkuNy0zLjcgMS45LTEuMyA1LTQuNyAzLjMtMy40IDMuOS00LjcgMC4zLTAuNiA0LjItMTYuNyA0LjEtMTYuMSA0LjEtMTcuMyAwLTEuOS0xLjctNS40LTMuNS02LjctOS45LTYuNy02LjIgMC0xMS4xIDUuMy00LjYgNS40LTcuMSAxMi4yLTQuNiAxMi40LTYuNSAyNS43IDAgMC40LTAuMSAxLjcgMCAxLjIgMCAxLjh6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJtMTUwLjkgMzgzLjRoLTEuNXEtMS40LTEuNC0xLjQtMi4xIDAtMC44IDAuNi0zLjMgMC44LTIuNSAxLjEtMi45bDAuOC0wLjZoMi43cTEzLjUtMC42IDE5LjctOS43IDEuMi0xLjEgMzUtNTguOSAzNC01OCAzNC40LTU4LjYgMS0xLjcgMS44LTEuOSAwLjktMC40IDQuNC0wLjRoMy4zcTEuMiAxLjcgMS4yIDEuOWw1LjQgNjIuNXE1LjQgNjIuNCA1LjggNjMgMC45IDIuMSAxMi41IDIuMSAyLjIgMCAyLjkgMC4yIDEgMCAxLjQgMC40IDAuNiAwLjQgMC42IDEuMyAwIDAuNC0wLjYgMi43LTAuNiAyLjktMS4yIDMuNy0wLjQgMC42LTIuNSAwLjYtMy41IDAtMTEuNi0wLjItNy45LTAuMi0xMi43LTAuMi0xOC4yIDAtMjMuOCAwLjRoLTIuM3EtMS4yLTEuMi0xLjQtMS41IDAtMC42IDAuNi0zLjcgMC44LTIuNSAxLjItMy4xbDAuNy0wLjZoMy45cTEwLjQtMC40IDEyLjQtMy4zbC0yLjQtMjloLTQ2bC02LjUgMTEuMnEtNyAxMS42LTcuMiAxMi42LTAuOCAxLjUtMC44IDIuOSAwIDQuOCA4LjkgNS42IDMuNyAwIDMuNyAxLjkgMCAxLTAuNiAyLjctMC42IDIuOC0xLjEgMy41LTAuNiAwLjgtMi41IDAuOC0zLjMgMC0xMC41LTAuMi03LjEtMC4yLTEwLjgtMC4yLTEzLjcgMC0xNy42IDAuNHptOTAuMS01MC4zcTAtMi4xLTIuNS0zMC4xLTIuNC0yOC0yLjYtMjguMmwtNS4yIDguM3EtMy4xIDUuMi0xMi4xIDIwLjdsLTE3LjQgMjkuMyAxOS45IDAuMnExOS45IDAgMTkuOS0wLjJ6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0iYSIgZD0ibTIyNC41IDQ2OWMtODAuNSAwLTE0NS41LTY1LTE0NS41LTE0NS41IDAtODAuNSA2NS0xNDUuNSAxNDUuNS0xNDUuNSA4MC41IDAgMTQ1LjUgNjUgMTQ1LjUgMTQ1LjUgMCA4MC41LTY1IDE0NS41LTE0NS41IDE0NS41eiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xhc3M9ImEiIGQ9Im00MDAgODAwYy0yMjEuMiAwLTQwMC0xNzguOC00MDAtNDAwIDAtMjIxLjIgMTc4LjgtNDAwIDQwMC00MDAgMjIxLjIgMCA0MDAgMTc4LjggNDAwIDQwMCAwIDIyMS4yLTE3OC44IDQwMC00MDAgNDAweiIvPjwvc3ZnPg==}}\\[-1em]
+% image end
+\normalsize
+\begin{array}{c|c}
+  A\subset   B & A\text{ kopa ir zem kopas }B\\\hline
+  B\supset   A & B\text{ kopa ir virs kopas }A\\\hline
+  A\subseteq B & A\text{ kopa ir zem kopas }B\text{ vai vienāda ar to}\\\hline
+  B\supseteq A & B\text{ kopa ir virs kopas }A\text{ vai vienāda ar to}\\\hline
+  a\in B       & \text{Elements }a\text{ pieder kopai B}\\\hline
+  A\in B       & \text{Kopa }A\text{ pieder kopai B}
+\end{array}\\[0.5em]
+
+
+\h3{Daļu kopa}\\
+\text{Visu kopas }A\text{ iespējamo apakškopu kopa.}\\
+\mathcal P(\set{1;2})=\set{\emptyset; \set1; \set2; \set{1;2}}\\
+|\mathcal P(A)|=2^n\text{, kur }n\text{ ir kopas }A\text{ elementu skaits.}\\[0.5em]
+
+
+\h3{Skaitļu kopas}\\
+\N\text{ – naturālo skaitļu kopa. }\N=\set{1;2;3;4;...}\\
+\N_0\text{ – nenegatīvo veselo skaitļu kopa. }\N_0=\set0\cup\N=\set{0;1;2;3;4;...}\\
+\Z\text{ – veselo skaitļu kopa. }\Z=\set{u|(u\in\N)\cup(-u\in\N)\cup\set0}\\
+\Q\text{ – racionālo skaitļu kopa (visi tie, kurus var pierakstīt daļveidā }{\textstyle\frac mn}\text{, kur }m\in\Z\text{ un }n\in\N\\
+\I\textbf{ – i}\text{racionālo skaitļu kopa, kurus nevar pierakstīt }{\textstyle\frac mn}\text{ daļveidā. }\I=\R\setminus\Q\\
+\R\text{ – reālo skaitļu kopa (visi tie, kurus var sastapt lineārajā algebrā, arī }π\text{ vai }\sqrt2\text{ utml.)}\\
+\Complex\text{ – komplekso skaitļu kopa }(a+bi\text{, kur }i\text{ ir }\sqrt{-1}\text)\\
+\N\subset\N_0\subset\Z\subset\Q\subset\R\subset\Complex\\[0.5em]
+
+
+\h3{Darbības ar kopām}\\
+\begin{array}{c|c|c}
+  \href{https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Venn0111.svg/1280px-Venn0111.svg.png}{\text{"Apvienojums"}}             & A\cup B=\set{u|u\in A\text{ vai }u\in B}        & \text{(Visi abu kopu elementi)}\\
+    \hline
+  \href{https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Venn0001.svg/1280px-Venn0001.svg.png}{\text{"Šķēlums"}}                 & A\cap B=\set{u|u\in A\text{ un }u\in B}         & \text{(Abu kopu kopīgie elementi)}\\
+    \hline
+  \href{https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Venn0100.svg/1280px-Venn0100.svg.png}{\text{"Kopu mīnuss", "starpība"}} & A\setminus B=\set{u|u\in A\text{ un }u\notin B} & \text{(Visi }A\text{ elementi, kas nepieder }B\text)\\
+    \hline
+  \href{https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Venn0010.svg/1280px-Venn0010.svg.png}{\text{"Kopu mīnuss", "starpība"}} & B\setminus A=\set{u|u\in B\text{ un }u\notin A} & \text{(Visi }B\text{ elementi, kas nepieder }A\text)\\
+    \hline
+  \href{https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Venn1110.svg/1280px-Venn1110.svg.png}{\text{"Papildinājums"}}           & \overline A=A^\complement=U\setminus A          & \text{(Viss, izņemot kopu }A\text)\\
+    \hline
+  \href{https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Venn0110.svg/1280px-Venn0110.svg.png}{\text{"Simetriskā starpība"}}     & A\Delta B=(A\cup B)\setminus(A\cap B)           & \text{(Kopu apvienojuma unikālie elementi)}\\
+\end{array}\\[0.5em]
+
+\text{Kā var redzēt, darbībai "kopu mīnuss" nav komutatīvās īpašības}\\[1em]
+
+\bigcup M=\bigcup^n_{i=1}M_i=M_1\cup M_2\cup...\cup M_n\\
+\bigcap M=\bigcap^n_{i=1}M_i=M_1\cap M_2\cap...\cap M_n\\

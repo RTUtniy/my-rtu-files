@@ -1,0 +1,23 @@
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\tresaintegresanasipasiba{du=\cfrac1\const~d(\const u)}
+
+1)~\int(x^2+x)e^{2x}dx=\bigg[\int udv=uv-\int vdu;\\
+\therefore u=x^2+x;dv=e^{2x}dx\therefore\\
+\therefore du=(x^2+x)^\prime dx=(2x+1)dx;v=\int e^{2x}dx=\cfrac12\int e^{2x}d2x=\cfrac{e^{2x}}2+\const\bigg]=\\
+=(x^2+x)\cfrac{e^{2x}}2-\int\cfrac{e^{2x}}2(2x+1)dx=\\
+=\cfrac{(x^2+x)e^{2x}}2-\int\cfrac{(2x+1)e^{2x}dx}2=\\
+=\cfrac{(x^2+x)e^{2x}}2-\int\cfrac{(2xe^{2x}+e^{2x})dx}2=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\int(2xe^{2x}+e^{2x})dx=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int2xe^{2x}dx+\int e^{2x}dx\bigg)=\\
+=\big[d(xe^{2x})=(xe^{2x})^\prime dx=(e^{2x}+2xe^{2x})dx=e^{2x}dx+2xe^{2x}dx\therefore\\
+\therefore 2xe^{2x}dx=d(xe^{2x})-e^{2x}dx\big]=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int\Big(d(xe^{2x})-e^{2x}dx\Big)+\int e^{2x}dx\bigg)=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int d(xe^{2x})-\int e^{2x}dx+\int e^{2x}dx\bigg)=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int d(xe^{2x})\bigg)=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(xe^{2x}\bigg)+\const=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac{xe^{2x}}2+\const=\\
+=\cfrac{x^2e^{2x}}2+\cfrac{xe^{2x}}2-\cfrac{xe^{2x}}2+\const=\\
+=\cfrac{x^2e^{2x}}2+\const\\

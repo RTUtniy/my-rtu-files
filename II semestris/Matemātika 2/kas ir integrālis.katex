@@ -1,0 +1,8 @@
+\displaystyle
+\def\const{\mathrm{C}}
+\exists F(x)\\
+F^\prime_{\underline x}(x)=f(x)\Rightarrow\int f(x)d{\underline x}=F(x)+\const\\
+\int\bigg(F^\prime(x)~dx\bigg)=F(x)~~~\sim~~~x\cdot a:a=x\\[1em]
+
+(x^2)^\prime_{\underline x}=2x\\
+\int 2x~d\underline x=x^2+\const

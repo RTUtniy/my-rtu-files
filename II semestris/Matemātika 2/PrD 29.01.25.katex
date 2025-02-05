@@ -1,0 +1,96 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\h3#1{{\large\textbf{#1}}\\[0.5em]}
+\def\const{\mathrm C}
+\def\mod#1{|#1|}
+\def\*{\cdot}
+\def\pirmakartula{\bigg[\int x^adx=\cfrac{x^{a+1}}{a+1}+\const\bigg]}
+\def\otrakartula{\bigg[\int\cfrac{dx}x=\ln\mod x+\const\bigg]}
+\def\peiktakartula{\bigg[\int\cfrac{dx}{\cos^2 x}=\tg x+\const\bigg]}
+\def\astotakartula{\bigg[\int a^xdx=\cfrac{a^x}{\ln a}+\const\bigg]}
+\def\devitakartula{\bigg[\int\cfrac{dx}{\sqrt{a^2-x^2}}=\arcsin\cfrac xa+\const\bigg]}
+\def\desmitakartula{\bigg[\int\cfrac{dx}{\sqrt{x^2\pm a^2}}=\ln\mod{x+\sqrt{x^2+a^2}}+\const\bigg]}
+\def\vienpadsmitakartula{\bigg[\int\cfrac{dx}{a^2+x^2}=\cfrac1a\arctg\cfrac xa+\const\bigg]}
+\def\pamtrigvien{\big[\sin^2\alpha+\cos^2\alpha=1\big]}
+\def\divkarsasinusaformula{\big[\sin2\alpha=2\sin\alpha\cos\alpha\big]}
+
+\title{Matemātika}
+{\small 29.01.25}\\
+{\footnotesize{\text{Praktisko darbu vadīja Insa Krēmere}}}\\
+
+\h3{Parasto nenoteikto diferenciāļu skaitīšana}
+
+1)~\int(x^4+2x-5)dx=\int x^4dx+\int2xdx-\int5dx=\\
+=\pirmakartula=\cfrac{x^5}5+x^2-5x+\const\\
+
+2)~\int\cfrac{\sqrt[3]{x^2}-\sqrt[4]x}{\sqrt x}~dx=\int\bigg(\cfrac{\sqrt[3]{x^2}}{\sqrt x}-\cfrac{\sqrt[4]x}{\sqrt x}\bigg)dx=\int\bigg(\cfrac{x^{2/3}}{x^{1/2}}-\cfrac{x^{1/4}}{x^{1/2}}\bigg)dx=\\
+=\int(x^{2/3~-~1/2}-x^{1/4~-~1/2})~dx=\int(x^{1/6}-x^{-1/4})~dx=\int x^{1/6} dx-\int x^{-1/4}dx=\\
+=\pirmakartula=\cfrac{x^{7/6}}{7/6}-\cfrac{x^{3/4}}{3/4}+\const=\cfrac{6\sqrt[6]{x^7}}{7}-\cfrac{4\sqrt[4]{x^3}}{3}+\const\\
+
+3)~\int\cfrac{4x^2-1}x~dx=\int\bigg(\cfrac{4x^2}x-\cfrac1x\bigg)dx=\int\cfrac{4x^2}x~dx-\int\cfrac{dx}x=\int4xdx-\int\cfrac{dx}x=\\
+=\pirmakartula=2x^2+\const-\int\cfrac{dx}x=\otrakartula=\\
+=2x^2-\ln\mod x+\const\\
+
+4)~\int\bigg(\sin\cfrac x2-\cos\cfrac x2\bigg)^2dx=\int(\sin^2\cfrac x2-2\sin\cfrac x2\cos\cfrac x2+\cos^2\cfrac x2)~dx=\\=\pamtrigvien=\int(1-2\sin0,5x\cos0,5x)dx=\\
+=\int1dx-\int2\sin0,5x\cos0,5x~dx=\int x^0dx-\int2\sin0,5x\cos0,5x~dx=\\
+=\pirmakartula=x+\const-\int2\sin0,5x\cos0,5x~dx=\\
+=\divkarsasinusaformula=x+\const+\int\sin x~dx=x+\cos x+\const\\
+
+5)~\int\cfrac{10^x-6^{x-1}}{2^{x+1}}~dx=\int\bigg(\cfrac{10^x}{2^{x+1}}-\cfrac{6^{x-1}}{2^{x+1}}\bigg)dx=\int\cfrac{10^x}{2^{x+1}}~dx-\int\cfrac{6^{x-1}}{2^{x+1}}~dx=\\
+=\int\cfrac{10^x}{2\*2^x}~dx-\int\cfrac{6^x\*6^{-1}}{2\*2^x}~dx=\int\cfrac{10^x}{2\*2^x}~dx-\int\cfrac{6^x}{2\*6\*2^x}~dx=\\
+=\int\cfrac12\cfrac{10^x}{2\*2^x}~dx-\int\cfrac1{2\*6}\cfrac{6^x}{2\*6\*2^x}~dx=\cfrac12\int\cfrac{10^x}{2^x}~dx-\cfrac1{12}\int\cfrac{6^x}{2^x}~dx=\\
+=\cfrac12\int\bigg(\cfrac{10}2\bigg)^xdx-\cfrac1{12}\int\bigg(\cfrac62\bigg)^xdx=\cfrac12\int5^xdx-\cfrac1{12}\int3^xdx=\\
+=\astotakartula=\cfrac12\cfrac{5^x}{\ln5}-\cfrac1{12}\cfrac{3^x}{\ln3}+\const=\cfrac{5^x}{2\ln5}-\cfrac{3^x}{12\ln3}+\const\\
+
+6)~\int\tg^2x~dx=\int\cfrac{\sin^2 x}{\cos^2 x}~dx=\pamtrigvien=\int\cfrac{1-\cos^2 x}{\cos^2 x}~dx=\\
+\int\bigg(\cfrac1{\cos^2 x}-\cfrac{\cos^2 x}{\cos^2 x}\bigg)dx=\int\cfrac{dx}{\cos^2 x}-\int\cfrac{\cancel{\cos^2 x}}{\cancel{\cos^2 x}}~~dx=\peiktakartula=\\
+=\tg x+\const+\int1dx=\tg x+\const+\int x^0dx=\pirmakartula=\tg x+x+\const\\
+
+7)~\int\cfrac{x^2-4}{x^2+4}~dx=\int\cfrac{x^2-4+4-4}{x^2+4}~dx=\int\cfrac{x^2+4-4-4}{x^2+4}~dx=\int\cfrac{x^2+4-8}{x^2+4}~dx=\\
+=\int\bigg(\cfrac{x^2+4}{x^2+4}-\cfrac8{x^2+4}\bigg)dx=\int\cfrac{\cancel{x^2+4}}{\cancel{x^2+4}}~dx-\int\cfrac8{x^2+4}~dx=\int dx-\int\cfrac8{x^2+4}~dx=\\
+=\int x^0dx-8\int\cfrac{dx}{x^2+4}=\pirmakartula=x+\const-8\int\cfrac{dx}{x^2+4}=\\
+=\vienpadsmitakartula=x+\const-8\bigg(\cfrac12\arctg\cfrac x2\bigg)+\const=x-4\arctg\cfrac x2+\const\\
+
+8)~\int\cfrac{\sqrt{1+x^2}+\sqrt{1-x^2}}{\sqrt{1-x^4}}~dx=\int\bigg(\cfrac{\sqrt{1+x^2}}{\sqrt{1-x^4}}+\cfrac{\sqrt{1-x^2}}{\sqrt{1-x^4}}\bigg)dx=\\
+=\int\cfrac{\sqrt{1+x^2}}{\sqrt{1-x^4}}~dx+\int\cfrac{\sqrt{1-x^2}}{\sqrt{1-x^4}}~dx=\int\sqrt{\cfrac{1+x^2}{1-x^4}}~dx+\int\sqrt{\cfrac{1-x^2}{1-x^4}}~dx=\\
+=\int\sqrt{\cfrac{\cancel{1+x^2}}{(1-x^2)\cancel{(1+x^2)}}}~dx+\int\sqrt{\cfrac{\cancel{1-x^2}}{\cancel{(1-x^2)}(1+x^2)}}~dx=\int\cfrac{dx}{\sqrt{1-x^2}}+\int\cfrac{dx}{\sqrt{1+x^2}}=\\
+=\devitakartula=\arcsin\cfrac x1+\const+\int\cfrac{dx}{\sqrt{1+x^2}}=\\
+=\desmitakartula=\arcsin x+\ln\mod{x+\sqrt{x^2+1}}+\const\\[0.5em]
+
+\h3{Nenoteikto diferenciāļu skaitīšana ar citiem diferenciāļiem}
+
+\def\pirmakartula{\bigg[\int u^adu=\cfrac{u^{a+1}}{a+1}+\const\bigg]}
+\def\otrakartula{\bigg[\int\cfrac{du}u=\ln\mod u+\const\bigg]}
+\def\tresakartula{\bigg[\int\cos u~du=\sin u+\const\bigg]}
+\def\ceturtakartula{\bigg[\int\sin u~du=-\cos u+\const\bigg]}
+\def\otraintegresanasipasiba{\bigg[du=\cfrac1\const~d(\const u)\bigg]}
+\def\tresaintegresanasipasiba{\bigg[du=\cfrac1\const~d(\const u+a)\bigg]}
+
+9)~\int(x^2+1)^6d(x^2+1)=\pirmakartula=\cfrac{(x^2+1)^7}7+\const\\
+
+10)~\int\sqrt{1-2z}~d(1-2z)=\int(1-2z)^{0,5}~d(1-2z)=\\
+=\pirmakartula=\cfrac{(1-2z)^{1,5}}{1,5}+\const\\
+
+11)~\int\sin\cfrac y2~d(\sin\cfrac y2)=\pirmakartula=\cfrac{\sin^2(0,5y)}2+\const\\
+
+12)~\int\cfrac{d(x^2-3x+4)}{x^2-3x+4}=\otrakartula=\ln\mod{x^2-3x+4}+\const\\
+
+13)~\int\sqrt[3]{1-x}~dx=\int(1-x)^{1/3}dx=\bigg[d(1-x)=(1-x)^\prime dx=-1\* dx\Rightarrow\\
+\Rightarrow dx=\frac{d(1-x)}{-1}=-d(1-x)\bigg]=\int(1-x)^{1/3}(-d(1-x))=\\
+=-\int(1-x)^{1/3}d(1-x)=\pirmakartula=\\
+=-\cfrac{(1-x)^{4/3}}{4/3}+\const=\cfrac{-3(1-x)^{4/3}}{4}+\const\\
+
+14)~\int\sin4x~dx=\otraintegresanasipasiba=\int\sin4x\cfrac14~d(4x)=\cfrac14\int\sin4x~d(4x)=\\
+=\ceturtakartula=-0,25\cos4x+\const\\
+
+15)~\int\cfrac{dx}{(6+5x)^2}=\tresaintegresanasipasiba=\int\cfrac{1/5\*d(6+5x)}{(6+5x)^2}=\int\cfrac15\cfrac{d(6+5x)}{(6+5x)^2}=\\
+=\cfrac15\int\cfrac{d(6+5x)}{(6+5x)^2}=\cfrac15\int(6+5x)^{-2}d(6+5x)=\pirmakartula=\\
+=\cfrac15\cfrac{(6-5x)^{-1}}{-1}+\const=\cfrac{-1}{5(6-5x)}+\const\\
+
+16)~\int x\cos(1-2x^2)~dx=\int\cos(1-2x^2)xdx=\bigg[d(1-2x^2)=(1-2x^2)^\prime dx=\\
+=-4xdx\Rightarrow xdx=\cfrac{d(1-2x^2)}{-4}\bigg]=\int\cos(1-2x^2)\cfrac{d(1-2x^2)}{-4}=\\
+=\int\cos(1-2x^2)\cfrac{-1}4~d(1-2x^2)=-\cfrac14\int\cos(1-2x^2)~d(1-2x^2)=\\
+=\tresakartula=-\cfrac14\sin(1-2x^2)+\const\\
+
+17)~\int\cfrac{dx}{1-4x}=\tresaintegresanasipasiba=\int\cfrac{(-1)/4\*d(1-4x)}{1-4x}=\int\cfrac{-1}4\cfrac{d(1-4x)}{1-4x}=\\
+=-\cfrac14\int\cfrac{d(1-4x)}{1-4x}=\otrakartula=-\cfrac14\ln\mod{1-4x}+\const
