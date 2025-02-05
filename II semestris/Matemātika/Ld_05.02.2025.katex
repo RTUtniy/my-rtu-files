@@ -1,0 +1,29 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}}
+\def\h3#1{{\large\textbf{#1}}}
+\def\code#1{\texttt{#1}}
+
+\title{Matemātika 2}\\
+{\footnotesize\text{Laboratorijas darba vadītājs: Kārlis Krauklis}}\\
+{{\Large\textbf{Ievads MATLABā}}}\\
+\text{MATLAB ir programma, kas ļauj ŗēķināt, lietojot pusmatemātisko sintaksi,}\\
+\text{pat ja cilvēks nezin, kā programmēt.}\\[0.5em]
+\text{Faila nosaukums ir jāsākas ar burtu, pārējie faila nosaukuma simboli}\\
+\text{(bez faila paplašinājuma) ir jābūt burti, skaitļi vai apakšsvītras}\\
+\code{\%}\text{ - rindas komentārs}\\
+\code{a=2+3}\text{ - izdrukā }\texttt a\text{ vērtību}\\
+\text{Eksistē iebūvētās konstantes kā }\code{pi}\text{ u.c.}\\
+\text{Tās ir iespējams arī pārdefinēt: }\code{pi=3}\\
+\text{Ar }\code{clear}\text{ var izdzēst datu bāzē saglabātos mainīgos,}\\
+\text{piem. }\code{clear pi}\text{ (atgriež pie 3.1415...) vai }\code{clear all}\text{, lai izdzēst visu}\\
+\code{clc}\text{ ir "}\textbf{cl}\text{ear }\textbf c\text{onsole"}\\
+\code{;}\text{ neprintē darbības rezultātu konsolē}\\[0.5em]
+\sin^2x\to❌\code{sin\^ 2(x)}~✅\code{sin(x)\^ 2}\\
+\code{\% īsā forma (4 cipari aiz komata)}\\
+\code{format short}\\
+\code{e=exp(1)}\\
+\code{\% garā forma (16 cipari aiz komata)}\\
+\code{format long}\\
+\code{e=exp(1)}\\
+\code{\% n cipari aiz komata}\\
+\code{vpa(e, n)}\\
