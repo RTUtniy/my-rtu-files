@@ -3,7 +3,7 @@
 \def\emptyset{\varnothing}
 \def\sameas{\Leftrightarrow}
 \def\papild#1{\overline{#1}}
- 
+
 {\LARGE\textbf{Diskrētā matemātika}}\\
 \h3{Kopu algebras pamatformulas}\\
 1.~\papild{\emptyset}=U~~~~~\papild{U}=\emptyset\\
@@ -26,12 +26,12 @@
 12.~A\setminus B=A\cap\papild B\\
 13.~A\Delta B=(A\setminus B)\cup(B\setminus A)=(A\cap\papild B)\cup(\papild A\cap B)\\
 ~~~~~~A\Delta B=(A\cup B)\setminus(A\cap B)=(A\cup B)\cap(\papild{A\cup B})=(A\cup B)\cap(\papild A\cap\papild B)\\
- 
+
 \h3{Kopu vienādību pierādīšana}\\
 1)~\text{Ar ekvivalencēm}\\
 \def\arraystretch{1.2}
 \begin{array}{|c|c|c|} \hline
- 
+
 \textbf{Darbība} & \textbf{Elements }\bm u\textbf{ pieder kopai} & \textbf{Elements }\bm u\textbf{ nepider kopai}\\\hline
  
 \text{Papildināšana} & u\in\overline A\sameas u\notin A & u\notin \overline{A}\sameas u\in A\\ \hline
