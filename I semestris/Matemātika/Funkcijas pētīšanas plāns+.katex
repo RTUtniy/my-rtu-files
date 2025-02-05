@@ -1,0 +1,89 @@
+\displaystyle
+\Large\mathbf{Funkcijas~pētīšanas~plāns}\\
+
+\normalsize\mathbf{Definīcjas~apgabals}\\[0.25em]
+
+
+\text{1. Atrodam tās funkcijas } y=f(x) \text{ saknes, pie kurām }y\text{ neeksistē}\\
+
+~~~~\text{ Tie var būt, piemēram, daļas saucējā vai zem pāra saknes}\\
+
+\text{2. Pierakstam: }\boxed{x\in\R\setminus A}\text{, kur }A\text{ ir tie "neiespējamie" }x\\
+
+\boxed{x\in\R\setminus\{-1; 1\}}\Leftrightarrow\boxed{x\in(-\infin; -1)\cup(-1; 1)\cup(1; +\infin)}
+
+
+\\[0.25em]\mathbf{Paritāte}\\[0.25em]
+
+
+\bullet~\text{Pāra, ja }f(-x)=f(x)\text{ (ja abos gadījumos skaitļi ir vienādi)}\\
+
+\bullet~\text{Nepāra, ja }f(-x)=-f(x)\text{ (ja vienādi tikai pēc moduļa)}\\
+
+\bullet~\text{Ja nav neviens no šiem gadījumiem, tad funkcija ir } \underline{\mathrm{ne~pāra,~ne~nepāra}}\text.
+
+
+\\[0.25em]\mathbf{Krustpunkti~ar~}\boldsymbol{Ox}\mathbf{~un~}\boldsymbol{Oy}\mathbf{~asīm.}\\[0.25em]
+
+
+\text{Lai iegūt krustpunktu ar }Oy\text{ asi, pielīdzinam }x\text{ nullei: }x=0\text;\\
+\text{izsakam vienādojumā un iegūstam atbildi.}\\
+
+\text{Lai iegūt krustpunktu ar }Ox\text{ asi, pielīdzinam }y\text{ nullei: }y=0\text;\\
+\text{izsakam }x\text{ un iegūstam saknes.}\\
+
+
+\\[0.25em]\mathbf{Monotonitātes~punkti~un~ekstrēmi}\\[0.25em]
+
+
+\text{1. Iegūstam }y^\prime\text{ un pielīdzinam }y^\prime=0\\
+
+\text{2. "Neiespiējamos" }x\text{ un }y^\prime=0\text{ saknes un atliekam uz skaitļa ass.}\\
+
+\text{3. No katra intervāla ņemam jebkādu punktu, ievietojam funkcijā }f^\prime(x)\\
+
+\text{4. Atkarībā no rezultāta zīmes (+ vai −) atliekam to uz ass.}\\
+
+\text{~~~~Funkcija dilst pie intervāliem ar − zīmēm; funkcija aug pie intervāliem ar + zīmēm}\\
+
+\text{5. Pierakstam: }\boxed{y\searrow: x\in...;y\nearrow: x\in...}\\
+
+\text{6. Ekstrēmi ir tikai tie }x\text{, kas ietilpst D.a.}\\
+
+\text{7. Ekstrēms ir minimuma p., ja tā iepriekšējais intervāls ir ar − zīmi.}\\
+
+\text{~~~~Ekstrēms ir maksimuma p., ja tā iepriekšējais intervāls ir ar + zīmi.}\\
+
+
+\\[0.25em]\mathbf{Pārliekuma~punkti,~ieliekuma~un~izliekuma~intervāls}\\[0.25em]
+
+
+\text{1. Iegūstam }y^{\prime\prime}\text{ un pielīdzinam }y^{\prime\prime}=0\\
+
+\text{2. "Neiespiējamos" }x\text{ un }y^{\prime\prime}=0\text{ saknes un atliekam uz skaitļa ass.}\\
+
+\text{3. No katra intervāla ņemam jebkādu punktu, ievietojam funkcijā }f^{\prime\prime}(x)\\
+
+\text{4. Atkarībā no rezultāta zīmes (+ vai −) atliekam to uz ass.}\\
+
+\text{~~~~Funkcija ir izliekta (}\frown\text{) intervālos ar − ; funkcija ir ieliekta (}\smile\text{) intervālos ar +}\\
+
+\text{5. Pierakstam: }\boxed{y\frown: x\in...;y\smile: x\in...}\\
+
+\text{6. Pārliekuma punkti ir tikai tie }x\text{, kas ietilpst D.a.}\\
+
+
+\\[0.25em]\mathbf{Asimptotas}\\[0.25em]
+
+
+\text{1. }x=a\text{ ir vertikālā asimptota, ja tas ir 2. veida pārtraukuma punkts}\\
+
+\text{~~~~Atrodam visus punktus }a\text{ un pierakstam formātā: }\boxed{x=a}\\
+
+\text{2. Slīpās asimptotas funkcija ir }y=kx+b\text{ (}k\text{ un }b\text{ ir skaitļi, t.s. 0 vai 1!)}\\
+
+\text{3. }k=\lim_{x\rightarrow\pm\infin}\bigg(\frac{f(x)}{x}\bigg)\\
+
+\text{4. }b=\lim_{x\rightarrow\pm\infin}\big(f(x)-kx\big)\\
+
+\text{5. Iegūtos }k\text{ un }b\text{ ievietojam vienādojumā: }\boxed{y=kx+b}\\
