@@ -1,0 +1,133 @@
+\displaystyle
+\def\h3#1{{\large\textbf{#1}}}
+\def\emptyset{\varnothing}
+\def\sameas{\Leftrightarrow}
+\def\papild#1{\overline{#1}}
+ 
+{\LARGE\textbf{Diskrētā matemātika}}\\
+\h3{Kopu algebras pamatformulas}\\
+1.~\papild{\emptyset}=U~~~~~\papild{U}=\emptyset\\
+2.~\papild{\papild A}=A\\
+3.~A\cup B=B\cup A, A\cap B=B\cap A\\
+4.~(A\cup B)\cup C=A\cup(B\cup C)=A\cup B\cup C\\
+~~~~(A\cap B)\cup C=A\cap(B\cap C)=A\cap B\cap C\\
+5.~\text{Idempotences likumi: }A\cup A=A, A\cap A=A\\
+6.~A\cap\papild A=A, A\cap\papild A=\emptyset\\
+7.~\text{Distributvie likumi: }\\
+~~~~(A\cup B)\cap C=(A\cap C)\cup(B\cap C)\\
+~~~~(A\cap B)\cup C=(A\cup C)\cap(B\cup C)\\
+8.~\text{Dualitātes likumi: }\\
+~~~~\papild{A\cup B}=\papild A\cap\papild B,\papild{A\cap B}=\papild A\cup\papild B\\
+9.~A\setminus A=\emptyset, A\emptyset U=\emptyset\\
+~~~~A\setminus\papild A=A, A\setminus\emptyset=A\\
+10.~A\Delta B=B\Delta A\\
+11.~A\Delta\emptyset=A, A\Delta U=\papild A\\
+~~~~~~A\Delta A=\emptyset, A\Delta\papild A=U\\
+12.~A\setminus B=A\cap\papild B\\
+13.~A\Delta B=(A\setminus B)\cup(B\setminus A)=(A\cap\papild B)\cup(\papild A\cap B)\\
+~~~~~~A\Delta B=(A\cup B)\setminus(A\cap B)=(A\cup B)\cap(\papild{A\cup B})=(A\cup B)\cap(\papild A\cap\papild B)\\
+ 
+\h3{Kopu vienādību pierādīšana}\\
+1)~\text{Ar ekvivalencēm}\\
+\def\arraystretch{1.2}
+\begin{array}{|c|c|c|} \hline
+ 
+\textbf{Darbība} & \textbf{Elements }\bm u\textbf{ pieder kopai} & \textbf{Elements }\bm u\textbf{ nepider kopai}\\\hline
+ 
+\text{Papildināšana} & u\in\overline A\sameas u\notin A & u\notin \overline{A}\sameas u\in A\\ \hline
+ 
+\text{Apvienošana} & u\in A\cup B\Leftrightarrow u\in A\lor u\in B & u\notin A\cup B\Leftrightarrow u\notin A\land u\notin B\\ \hline
+ 
+ 
+\text{Šķelšana} & u\in A\cap B\Leftrightarrow u\in A\land u\in B & u...\\ \hline
+ 
+\text{Atņemšana} & u\in A\setminus B\Leftrightarrow u\in A\land u\notin B & u\notin A\setminus B\Leftrightarrow u\notin A\lor u\in B\\ \hline
+ 
+\text{Simetriskā atņemšana} & u\in A\Delta B\Leftrightarrow (u\in A\land u\notin B)\lor(u\in B\land u\notin B) & (u\in A\land u\in B)\lor(u\notin A\land u\notin B)\\\hline
+ 
+\end{array}\\
+2)~\text{Ar vienādībām – pēc kopu algebras formulām}\\
+3)~\text{Ar Venna diagrammām}\\
+%рис 1
+4)~\text{Ar piederbas tabulām}\\
+\h3{Ieslēgšanas un izslēgšanas likums}\\
+|A|\text{ – kopas }A\text{ elementu skaits}\\
+1)~\text{kopām }A_1, A_2, …, A_n\text{ nav }\\
+2)~\text{Patvaļīgām kopām }A_1, A_2, …, A_n\\
+|\bigcup^{n}_{i=1}A_i|=|A_1\cup A_2\cup…\cup A_n|=\\
+=
+\sum^{n}_{i=1}|A_i|-\sum^{n}_{i,j=1\land i\not=j}|A_i\cap A_j|+\sum^{n}_{i,j,k=1\land i\not=j\land i\not=k\land j\not=k}|A_i\cap A_j\cap A_k|+…+(-1)^n|A_1\cap A_2\cap…\cap A_n|\\
+ 
+3)~|U|=m\\
+|\bigcup^{n}_{i=1}\papild{A_i}|=|\papild{A_1}\cup\papild{A_2}\cup…\cup \papild{A_n}|=m-\sum^{n}_{i=1}|A_i|-\sum^{n}_{i,j=1\land i\not=j}|A_i\cap A_j|+\sum^{n}_{i,j,k=1\land i\not=j\land i\not=k\land j\not=k}|A_i\cap A_j\cap A_k|+…+
+\\
++(-1)^n|A_1\cap A_2\cap…\cap A_n|\\
+ 
+\h3{Ieslēgšanas un izslēgšanas likuma ilustrācija ar Eilera-Venna diagrammu}\\
+\text{coming soon...}\\
+%бля лень, позже добавлю из презентации\\
+ 
+\h3{Momenti no Eglītes rakstīšanas}\\
+A\cap B=A\Delta(A\setminus B)\\
+%рисунок A\cap B
+%рисунок A\setminus B
+%A\setminus(A\setminus B)=A\cap B
+%(A\setminus B)\setminus A=\emptyset
+%A\Delta (A\setminus B)=A\cap B
+u\in A\cap B\sameas
+\begin{cases}
+u \in A\\
+u \in B
+\end{cases}\\
+u \in A\Delta(A\setminus B)\sameas\bigg[
+\begin{matrix}
+u \in A\setminus(A\setminus B)\\
+u \in (A\setminus B)\setminus A
+\end{matrix}\sameas\Bigg[\begin{matrix}
+  \begin{cases}
+    u \in A\\
+    u \notin A\setminus B
+  \end{cases}\\
+\begin{cases}
+    u \in A\setminus B\\
+    u \notin A
+\end{cases}
+\end{matrix}\sameas\Bigg[
+\begin{cases}
+  u\in A\\
+  \bigg[\begin{matrix}
+    u\notin A\\
+    u\in B
+  \end{matrix}\\
+  \begin{cases}
+    u\in A\\
+    u\notin B\\
+    u\notin A\\
+  \end{cases}
+\end{cases}\sameas\bigg[\begin{matrix}\\
+  \begin{cases}
+    u\in A\\
+    u\in B\\
+  \end{cases}\\
+  \begin{cases}
+    u\in A\\
+    u\notin A
+  \end{cases}\\
+  u\in\emptyset
+\end{matrix}\sameas\begin{cases}
+  u\in A\\
+  u\in B
+\end{cases}\\
+\text{Labā pusē}\\
+A\Delta(A\setminus B)=[A\setminus B=A\cap\papild B;A\Delta B=(A\cap\papild B)\cup(B\cap\papild A)]=A\Delta(A\cap\overline B)=\\
+=(A\cap\papild{(A\cap B)})\cup((A\cap\papild B)\cap\papild A)=[\papild{A\cap B}=\cap A\cup\papild B]=(A\cap(\papild A\cup B))\cup(A\cap\papild B\cap\papild A)=A\cap(\papild A\cup B)=\\
+=\underbrace{(A\cap\papild A)}_{\emptyset}\cup(A\cap B)=\emptyset\cup (A\cap B)=A\cap B\\
+4)\\
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline
+  A & B & A\setminus B & A\setminus(A\setminus B) & (A\setminus B)\setminus A & A\Delta(A\setminus B) & A\cap B\\ \hline
+  0 & 0 & 0            & 0 & 0 & 0 & 0\\ \hline
+  0 & 1 & 0            & 0 & 0 & 0 & 0\\ \hline
+  1 & 0 & 1            & 0 & 0 & 0 & 0\\ \hline
+  1 & 1 & 0            & 1 & 0 & 1 & 1\\ \hline
+\end{array}
