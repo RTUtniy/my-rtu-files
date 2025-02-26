@@ -21,7 +21,10 @@
 =\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int d(xe^{2x})\bigg)=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(xe^{2x}\bigg)+\const=\\
 =\cfrac12(x^2+x)e^{2x}-\frac{xe^{2x}}2+\const=\frac{x^2e^{2x}}2+\frac{xe^{2x}}2-\frac{xe^{2x}}2+\const=\frac{x^2e^{2x}}2+\const\\[1em]
 
-2)~\int\cos^2\frac{2x}5~dx=...\\[1em]
+2)~\int\cos^2\frac{2x}5~dx=\bigg[\cos^2\alpha=\frac12(1+\cos2\alpha)\bigg]=\int\frac12(1+\cos2\frac{2x}5)dx=\\
+=\frac12\int dx+\frac12\int\cos\frac{4x}5dx=\frac x2+\frac12\sin\frac{4x}5+\const
+
+\\[1em]
 
 3)~\int\frac{(5x-2)dx}{x^2+4x-4}=5\int\frac{x~dx}{x^2+4x-4}-2\int\frac{dx}{x^2+4x-4}=\\
 =5\int\frac{x~dx}{(x+2)^2-8}-2\int\frac{dx}{(x+2)^2-8}=\Big[{\textstyle xdx=d(x)\*x=dx\int x~dx=}\\
@@ -39,3 +42,13 @@
 =\frac{5x^2}{2(x+4x-4)}-\cfrac52\bigg(\int2x^3dx+\int4x^2dx\bigg)+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const=\\
 =\frac{5x^2}{2(x+4x-4)}-\cfrac52\bigg(\frac24x^4+\frac43x^3+\const\bigg)+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const=\\
 =\frac{5x^2}{2(x+4x-4)}-\cfrac{5x^4}4-\frac{10x^3}3+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const\\[1em]
+
+4)~\int\frac{xdx}{\sqrt[4]{2x+4}}=\bigg[t=\sqrt[4]{2x+4}\therefore t^4=2x+4\therefore 2x=t^4-4\therefore x=\frac{t^4}2-2\therefore\\
+\therefore dx=(\frac{t^4}2-2)^\prime dt=2t^3dt\bigg]=\int\frac{(\frac{t^4}2-2)2t^3dt}t=\int(t^6-4t^2)dt=\\
+=\int t^6dt-4\int t^2dt=\cfrac17t^7-4\cfrac13t^3+\const=\cfrac17(2x+4)^{1,75}-\frac43(2x+4)^{0,75}\\
+
+5)~\int\frac{6^{\arctg x}dx}{1+x^2}=\bigg[d(\arctg x)=(\arctg x)^\prime dx=\frac{dx}{1+x^2}\bigg]=\\
+=\int6^{\arctg x}d(\arctg x)=\frac{6^{\arctg x}}{\ln6}+\const\\
+6)~\int\frac{(9+8x-3x^2)dx}{x^3-6x^2+9x}=-\int\frac{(3x^2-8x-9)dx}{x(x^2-6x+9)}=-\int\frac{(3x^2-8x-9)dx}{x(x-3)^2}\\
+\frac{3x^2-8x-9}{x(x-3)^2}=\frac Ax+\frac B{x-3}+\frac C{(x-3)^2}\\
+\frac{3x^2-8x-9}{x(x-3)^2}=\frac{Ax(x-3)^2+Bx(x-3)+C}{x(x-3)^2}\\
