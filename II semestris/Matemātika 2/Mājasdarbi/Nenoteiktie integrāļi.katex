@@ -10,16 +10,18 @@
 
 1)~\int(x^2+x)e^{2x}dx=\bigg[\udvvdu;\\
 \therefore u=x^2+x;dv=e^{2x}dx\therefore\\
-\therefore du=(x^2+x)^\prime dx=(2x+1)dx;v=\int e^{2x}dx=\cfrac12\int e^{2x}d2x=\frac{e^{2x}}2+\const\bigg]=\\
+\therefore du=(x^2+x)^\prime dx=(2x+1)dx;v=\int e^{2x}dx=\cfrac12\int e^{2x}d(2x)=\frac{e^{2x}}2+\const\bigg]=\\
 =(x^2+x)\frac{e^{2x}}2-\int\frac{e^{2x}}2(2x+1)dx=\frac{(x^2+x)e^{2x}}2-\int\frac{(2x+1)e^{2x}dx}2=\\
 =\frac{(x^2+x)e^{2x}}2-\int\frac{(2xe^{2x}+e^{2x})dx}2=\cfrac12(x^2+x)e^{2x}-\cfrac12\int(2xe^{2x}+e^{2x})dx=\\
 =\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int2xe^{2x}dx+\int e^{2x}dx\bigg)=\\
 =\big[d(xe^{2x})=(xe^{2x})^\prime dx=(e^{2x}+2xe^{2x})dx=e^{2x}dx+2xe^{2x}dx\therefore\\
 \therefore 2xe^{2x}dx=d(xe^{2x})-e^{2x}dx\big]=\\
 =\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int\Big(d(xe^{2x})-e^{2x}dx\Big)+\int e^{2x}dx\bigg)=\\
-=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int d(xe^{2x})-\int e^{2x}dx+\int e^{2x}dx\bigg)=\\
-=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int d(xe^{2x})\bigg)=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(xe^{2x}\bigg)+\const=\\
-=\cfrac12(x^2+x)e^{2x}-\frac{xe^{2x}}2+\const=\frac{x^2e^{2x}}2+\frac{xe^{2x}}2-\frac{xe^{2x}}2+\const=\frac{x^2e^{2x}}2+\const\\[1em]
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int d(xe^{2x})~\cancel{-\int e^{2x}dx+\int e^{2x}dx}\bigg)=\\
+=\cfrac12(x^2+x)e^{2x}-\cfrac12\bigg(\int d(xe^{2x})\bigg)=\cfrac12(x^2+x)e^{2x}-\cfrac12(xe^{2x})+\const=\\
+=\frac{x^2e^{2x}}2+\cancel{\frac{xe^{2x}}2-\frac{xe^{2x}}2}+\const=\frac{x^2e^{2x}}2+\const
+
+\\[1em]
 
 2)~\int\cos^2\frac{2x}5~dx=\bigg[\cos^2\alpha=\frac12(1+\cos2\alpha)\bigg]=\int\frac12(1+\cos2\frac{2x}5)dx=\\
 =\frac12\int dx+\frac12\int\cos\frac{4x}5dx=\frac x2+\frac12\sin\frac{4x}5+\const
@@ -41,14 +43,179 @@
 =\frac{5x^2}{2(x+4x-4)}-\cfrac52\int(2x^3+4x^2)dx+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const=\\
 =\frac{5x^2}{2(x+4x-4)}-\cfrac52\bigg(\int2x^3dx+\int4x^2dx\bigg)+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const=\\
 =\frac{5x^2}{2(x+4x-4)}-\cfrac52\bigg(\frac24x^4+\frac43x^3+\const\bigg)+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const=\\
-=\frac{5x^2}{2(x+4x-4)}-\cfrac{5x^4}4-\frac{10x^3}3+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const\\[1em]
+=\frac{5x^2}{2(x+4x-4)}-\cfrac{5x^4}4-\frac{10x^3}3+\cfrac{\sqrt8}8\ln\bigg|\frac{\sqrt8+x+2}{\sqrt8-x-2}\bigg|+\const
+
+\\[1em]
 
 4)~\int\frac{xdx}{\sqrt[4]{2x+4}}=\bigg[t=\sqrt[4]{2x+4}\therefore t^4=2x+4\therefore 2x=t^4-4\therefore x=\frac{t^4}2-2\therefore\\
 \therefore dx=(\frac{t^4}2-2)^\prime dt=2t^3dt\bigg]=\int\frac{(\frac{t^4}2-2)2t^3dt}t=\int(t^6-4t^2)dt=\\
-=\int t^6dt-4\int t^2dt=\cfrac17t^7-4\cfrac13t^3+\const=\cfrac17(2x+4)^{1,75}-\frac43(2x+4)^{0,75}\\
+=\int t^6dt-4\int t^2dt=\cfrac17t^7-4\cfrac13t^3+\const=\cfrac17(2x+4)^{1,75}-\frac43(2x+4)^{0,75}
+
+\\[1em]
 
 5)~\int\frac{6^{\arctg x}dx}{1+x^2}=\bigg[d(\arctg x)=(\arctg x)^\prime dx=\frac{dx}{1+x^2}\bigg]=\\
-=\int6^{\arctg x}d(\arctg x)=\frac{6^{\arctg x}}{\ln6}+\const\\
-6)~\int\frac{(9+8x-3x^2)dx}{x^3-6x^2+9x}=-\int\frac{(3x^2-8x-9)dx}{x(x^2-6x+9)}=-\int\frac{(3x^2-8x-9)dx}{x(x-3)^2}\\
-\frac{3x^2-8x-9}{x(x-3)^2}=\frac Ax+\frac B{x-3}+\frac C{(x-3)^2}\\
-\frac{3x^2-8x-9}{x(x-3)^2}=\frac{Ax(x-3)^2+Bx(x-3)+C}{x(x-3)^2}\\
+=\int6^{\arctg x}d(\arctg x)=\frac{6^{\arctg x}}{\ln6}+\const
+
+\\[1em]
+
+6)~\int\frac{(9+8x-3x^2)dx}{x^3-6x^2+9x}=\int\frac{9+8x-3x^2}{x(x-3)^2}dx\\
+\frac{9+8x-3x^2}{x(x-3)^2}=\frac Ax+\frac B{x-3}+\frac C{(x-3)^2}=\frac{A(x-3)^2+Bx(x-3)+Cx}{x(x-3)^2}=\\
+=\frac{Ax^2-6Ax+9A+Bx^2-3Bx+Cx}{x(x-3)^2}=\frac{Ax^2+Bx^2-6Ax-3Bx+Cx+9A}{x(x-3)^2}\\
+
+\begin{cases}
+  Ax^2+Bx^2=-3x^2\\
+  -6Ax-3Bx+Cx=8x\\
+  9A=9
+\end{cases}
+\therefore
+\begin{cases}
+  1+B=-3\\
+  -6-3B+C=8\\
+  A=1
+\end{cases}
+\therefore
+\begin{cases}
+  B=-4\\
+  -6+12+C=8\\
+  A=1
+\end{cases}
+\therefore\\
+\therefore
+\begin{cases}
+  B=-4\\
+  C=2\\
+  A=1
+\end{cases}\\
+
+\therefore\frac{9+8x-3x^2}{x(x-3)^2}=\frac1x-\frac4{x-3}+\frac2{(x-3)^2}\\
+\therefore\int\frac{9+8x-3x^2}{x(x-3)^2}dx=\int\bigg(\frac1x-\frac4{x-3}+\frac2{(x-3)^2}\bigg)dx=\\
+=\int\frac{dx}x-4\int\frac{dx}{x-3}-2\int\frac{dx}{(x-3)^2}=\\
+=\ln|x|-4\ln|x-3|-2\int(x-3)^{-2}d(x-3)+\const=\\
+=\ln|x|-4\ln|x-3|-2\frac{(x-3)^{-1}}{-1}+\const=\ln|x|-4\ln|x-3|+\frac{2}{x-3}+\const
+
+
+\\[1em]
+
+7)~\int\frac{e^xdx}{\sqrt{3-16e^{2x}}}=\bigg[d(4e^x)=(4e^x)^\prime dx=4e^xdx\bigg]=\cfrac14\int\frac{d(4e^x)}{\sqrt{3-(4e^x)^2}}=\\
+=\cfrac14\arcsin\frac{4e^x}{\sqrt3}+\const
+
+\\[1em]
+
+8)~\int\frac{\ln x}{x^2}dx=\bigg[\udvvdu;\\
+\begin{matrix}
+u=\ln x     & du=(\ln x)^\prime dx=\frac{dx}x\\
+dv=x^{-2}dx & v=\int x^{-2}dx=-\frac1x+\const
+\end{matrix}\bigg]=-\frac{\ln x}x-\int\frac{-dx}{x^2}=\\
+=\int x^{-2}dx-\frac{\ln x}x=\frac{x^{-1}}{-1}-\frac{\ln x}x+\const=-\frac1x-\frac{\ln x}x+\const=-\frac{1+\ln x}x+\const
+
+\\[1em]
+
+9)~\int\cos\frac x2\sin3x~dx=\bigg[\cos\frac x2\*\sin3x=\frac{\sin(3x-0,5x)+\sin(3x+0,5x)}2\bigg]=\\
+=\cfrac12\int\sin2,5x~dx+\frac12\int\sin3,5x~dx=\frac1{2\*2,5}\int\sin2,5x~d(2,5x)+\\
++\frac1{2\*3,5}\int\sin3,5x~d(3,5x)=-\cfrac15\cos2,5x-\cfrac17\cos3,5x+\const
+
+\\[1em]
+
+10)~\int\frac{x~dx}{6+x^4}=\cfrac12\int\frac{d(x^2)}{6+(x^2)^2}=\cfrac12\*\cfrac16\arctg\frac{x^2}{\sqrt6}+\const=\cfrac1{12}\arctg\frac{x^2}{\sqrt6}+\const
+
+\\[1em]
+
+11)~\int\frac{dx}{\sqrt x+1}=\bigg[t=\sqrt x\therefore x=t^2\therefore dx=(t^2)^\prime dt=2tdt\bigg]=2\int\frac{tdt}{t+1}=\\
+=2\int\frac{(t+1-1)dt}{t+1}=2\int\frac{t+1}{t+1}dt-2\int\frac{1dt}{t+1}=2\int dt-2\int\frac{d(t+1)}{t+1}=\\
+=2t-2\ln|t+1|+\const=2\sqrt x-2\ln|\sqrt  x+1|+\const
+
+\\[1em]
+
+12)~\int\frac{x^4+x^5-3x^2-x+4}{x^2+1}dx\\
+
+% polinoma dalīšana stabiņā
+
+(x^5+x^4-3x^2-x+4):(x^2+1)=x^3+x^2-x-4+\frac8{x^2+1}\\
+~\,\underline{x^5+x^3}\\
+~~x^4-x^3-3x^2\\
+~~\underline{x^4~~~~~~~~~+~\,x^2}\\
+~~~~~~~-x^3-4x^2-x\\
+~~~~~~~\underline{-x^3~~~~~~~~~~~-x}\\
+~~~~~~~~~~~~~~~~-4x^2~~~~~~~~+4\\
+~~~~~~~~~~~~~~~~\underline{-4x^2~~~~~~~~-4}\\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~8\leftarrow\text{atlikums}\\[1em]
+
+\int\bigg(x^3+x^2-x-4+\frac8{x^2+1}\bigg)dx=\\
+=\int x^3dx+\int x^2dx-\int xdx-4\int dx+8\int\frac{dx}{x^2+1}=\\
+=\frac{x^4}4+\frac{x^3}{3}-\frac{x^2}2-4x+8\arctg x+\const\\[1em]
+
+13)~\int\frac{6x-4}{x^3-4x}dx=\int\frac{6x-4}{x(x^2-4)}dx=\int\frac{6x-4}{(x-2)x(x+2)}dx\\
+\frac{6x-4}{(x-2)x(x+2)}=\frac A{x-2}+\frac Bx+\frac C{x+2}=\\
+=\frac{Ax(x+2)+B(x-2)(x+2)+C(x-2)x}{(x-2)x(x+2)}=\\
+=\frac{Ax^2+2Ax+(Bx-2B)(x+2)+Cx^2-2Cx}{(x-2)x(x+2)}=\\
+=\frac{Ax^2+2Ax+Bx^2+2Bx-2Bx-4B+Cx^2-2Cx}{(x-2)x(x+2)}=\\
+=\frac{Ax^2+Bx^2+Cx^2+2Ax-2Cx-4B}{(x-2)x(x+2)}\\
+\begin{cases}
+  -4B=-4\\
+  2Ax-2Cx=6x\\
+  Ax^2+Bx^2+Cx^2=0x^2
+\end{cases}
+\therefore
+\begin{cases}
+  \underline{B=1}\\
+  A-C=3\\
+  A+C=-1
+\end{cases}\\
+
+A=C+3\therefore A+C=-1\equiv (C+3)+C=-1\\
+2C=-4\therefore \underline{C=-2}\\
+\therefore A-C=3\equiv A+2=3\therefore \underline{A=1}\\
+\therefore\begin{cases}
+  A=1\\
+  B=1\\
+  C=-2
+\end{cases}\\
+\frac A{x-2}+\frac Bx+\frac C{x+2}=\frac1{x-2}+\frac1x-\frac2{x+2}\\
+\int\frac{6x-4}{x^3-4x}dx=\int\bigg(\frac1{x-2}+\frac1x-\frac2{x+2}\bigg)dx=\\
+=\int\frac{d(x-2)}{x-2}+\int\frac{dx}x-2\int\frac{d(x+2)}{x+2}=\ln|x-2|+\ln|x|-2\ln|x+2|+\const
+
+\\[1em]
+
+14)~\int\frac{dx}{x\sqrt[5]{\ln x}}=\bigg[t=\ln x\therefore dt=(\ln x)^\prime dx=\frac{dx}x\bigg]=\int\frac{dt}{t^{^1\kern{-.2em}/_5}}=\int t^{-0,2}dt=\\
+=\cfrac54t^{0,8}+\const=\cfrac54\ln^{0,8}x+\const
+
+\\[1em]
+
+15)~\int\arcsin5x~dx=\bigg[\udvvdu;\\
+\begin{matrix}
+  u=\arcsin5x & du=(\arcsin5x)^\prime dx=\frac5{\sqrt{1-25x^2}}dx\\
+  dv=dx       & v = \int dx=x+\const
+\end{matrix}\bigg]=x\arcsin5x-\int\frac{5xdx}{\sqrt{1-25x^2}}=\\
+=x\arcsin5x+\cfrac1{2\*5}\int(1-25x^2)^{-0,5}d(1-25x^2)=x\arcsin5x+\frac{(1-25x^2)^{0,5}}{10\*0,5}+\const=\\
+=x\arcsin5x+\frac{(1-25x^2)^{0,5}}5+\const
+
+\\[1em]
+
+16)~\int\frac{dx}{\sqrt{3-4x-x^2}}=\int\frac{dx}{\sqrt{-(x^2+4x-3)}}=\int\frac{dx}{\sqrt{-(x^2+4x+4-4-3)}}=\\
+=\int\frac{dx}{\sqrt{-((x+2)^2-7))}}=\int\frac{d(x+2)}{\sqrt{7-(x+2)^2}}=\arcsin\frac{x+2}{\sqrt7}+\const
+
+\\[1em]
+
+17)~\int\frac{\sin x~dx}{\cos^2x-6\cos x+13}=-\int\frac{d(\cos x)}{\cos^2x-6\cos x+13}=\bigg[t=\cos x\bigg]=\\
+=-\int\frac{dt}{t^2+6t+13}=-\int\frac{dt}{t^2+6t+3+10}=-\int\frac{d(t+3)}{(t+3)^2+10}=\\
+=\cfrac1{\sqrt{10}}\arctg\frac{t+3}{\sqrt{10}}+\const=\cfrac1{\sqrt{10}}\arctg\frac{\cos x+3}{\sqrt{10}}+\const
+
+\\[1em]
+
+18)~\int\frac{9x^5+\sqrt[9]{x^5}-5x^9}{x^7}dx=9\int\frac{x^5}{x^7}dx+\int\frac{x^{5/9}}{x^7}dx-5\int\frac{x^9}{x^7}dx=\\
+=9\int x^{-2}dx+\int x^{-58/7}dx-5\int x^2dx=9\frac{x^{-1}}{-1}+\frac{7x^{-51/7}}{-51}-5\frac{x^3}3+\const=\\
+=-\frac9x-\frac{7x^{-51/7}}{51}-\cfrac53~x^3+\const
+
+\\[1em]
+
+19)~\int\frac{x^2dx}{(1-4x^3)^2}=\cfrac13\int(1-4x^3)^{-2}d(x^3)=-\cfrac1{3\*4}\int(1-4x^3)^{-2}d(1-4x^3)=\\
+=-\frac{(1-4x^3)^{-1}}{-12}+\const=\frac{1}{12(1-4x^3)}+\const
+
+\\[1em]
+
+20)~\int x\sin\frac{2x}3dx=\bigg[\udvvdu;\\
+\begin{matrix}
+  u=x                 & du=dx\\
+  dv=\sin\frac{2x}3dx & v=\int\sin\frac{2x}3dx=-1,5\cos\frac23x+\const
+\end{matrix}\bigg]=\\
+=-1,5x\cos\frac{2x}3+1,5\int\cos\frac{2x}3dx=2,25\sin\frac{2x}3-1,5\cos\frac{2x}3+\const\\
