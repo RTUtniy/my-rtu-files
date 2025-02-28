@@ -198,13 +198,13 @@ A=C+3\therefore A+C=-1\equiv (C+3)+C=-1\\
 
 17)~\int\frac{\sin x~dx}{\cos^2x-6\cos x+13}=-\int\frac{d(\cos x)}{\cos^2x-6\cos x+13}=\bigg[t=\cos x\bigg]=\\
 =-\int\frac{dt}{t^2+6t+13}=-\int\frac{dt}{t^2+6t+3+10}=-\int\frac{d(t+3)}{(t+3)^2+10}=\\
-=\cfrac1{\sqrt{10}}\arctg\frac{t+3}{\sqrt{10}}+\const=\cfrac1{\sqrt{10}}\arctg\frac{\cos x+3}{\sqrt{10}}+\const
+=-\cfrac1{\sqrt{10}}\arctg\frac{t+3}{\sqrt{10}}+\const=-\cfrac1{\sqrt{10}}\arctg\frac{\cos x+3}{\sqrt{10}}+\const
 
 \\[1em]
 
 18)~\int\frac{9x^5+\sqrt[9]{x^5}-5x^9}{x^7}dx=9\int\frac{x^5}{x^7}dx+\int\frac{x^{5/9}}{x^7}dx-5\int\frac{x^9}{x^7}dx=\\
-=9\int x^{-2}dx+\int x^{-58/7}dx-5\int x^2dx=9\frac{x^{-1}}{-1}+\frac{7x^{-51/7}}{-51}-5\frac{x^3}3+\const=\\
-=-\frac9x-\frac{7x^{-51/7}}{51}-\cfrac53~x^3+\const
+=9\int x^{-2}dx+\int x^{-58/9}dx-5\int x^2dx=9\frac{x^{-1}}{-1}+\frac{7x^{-51/9}}{-51}-5\frac{x^3}3+\const=\\
+=-\frac9x-\frac{7x^{-51/9}}{51}-\cfrac53~x^3+\const
 
 \\[1em]
 
@@ -218,4 +218,4 @@ A=C+3\therefore A+C=-1\equiv (C+3)+C=-1\\
   u=x                 & du=dx\\
   dv=\sin\frac{2x}3dx & v=\int\sin\frac{2x}3dx=-1,5\cos\frac23x+\const
 \end{matrix}\bigg]=\\
-=-1,5x\cos\frac{2x}3+1,5\int\cos\frac{2x}3dx=2,25\sin\frac{2x}3-1,5\cos\frac{2x}3+\const\\
+=-1,5x\cos\frac{2x}3+1,5\int\cos\frac{2x}3dx=2,25\sin\frac{2x}3-1,5\cos\frac{2x}3+\const
