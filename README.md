@@ -1,6 +1,6 @@
 # Ātrā navigācija starp kursiem
 
-[Kursu saraksts](#saraksts-alfab%C4%93ta-sec%C4%ABb%C4%81) | [Hierarhiskais veids](#sadal%C4%ABjums-pa-semestriem)
+[Sadalījums pa semestriem](#saraksts-alfab%C4%93ta-sec%C4%ABb%C4%81) | [Saraksts alfabēta secībā](#sadal%C4%ABjums-pa-semestriem)
 
 ## Sadalījums pa semestriem
 
