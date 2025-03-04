@@ -1,0 +1,48 @@
+\displaystyle
+\def\therefore{\Rightarrow}
+\def\code#1{\texttt{#1}}
+\def\bcode#1{\boxed{\code{#1}}}
+\def\header#1{\\[1em]{\large\textbf{#1}}\\}
+\def\ir{\text{ ir }}
+
+
+{\LARGE\textbf{Matemātika 2.}}\\
+{\Large\textbf{Pirmais MatLab konspekts.}}
+
+
+\header{Sintakse}
+
+
+\text{MatLab sintase ir līdzīga parastai matemātiskajai "plaintext" sintaksei: }\\
+
+\bcode{1+1}\ir1+1\text,~\bcode{2*x}\ir2x\text,~\bcode{u.\^~(1/3)}\ir u^{1/3}\text{ jeb }\sqrt[3]u\text{ utt. Tomēr ir arī dažas}\\
+
+\text{atšķirības, saistītas ar matemātisko pierakstu starpību dažādās lokalizācijās.}\\
+
+\text{Piemēram, }\tg x\text{ tiek pierakstīts kā }\bcode{tan(x)}\text,~\ln x\ir\bcode{log(x)}\text{ (tādēļ ir jālieto īpašība}\\
+
+\log_ab=\frac{\log_cb}{\log_ca}\text{, ja }a\not=e\text{), }\operatorname{arc}\text{... funkcijas pieraksta ar prefiksi }\bcode{a...}\therefore\arctg x\equiv\bcode{atan(x)}\\
+
+\bcode{;}\text{ postfikss nozīmē, lai rindas rezultāts netiek izvadīts konsolē. Ieteicams lietošanai mainīgo}\\
+
+\text{vai funkciju deklarācijas rindu beigās.}
+
+
+\header{Darbības}
+
+
+\text{Pirmais, kas jāmāk darīt MatLabā ir deklarēt }\textbf{funkcijas}\text{. Viens no vienkāršākajiem viediem ir:}\\
+
+
+\code{syms x;}\leftarrow\text{ uzdota iedomājama vērtība }x\\
+\underbrace{\code{f(x)=(atan(sqrt(x))\^~3)/(x\^~2) + (log(cot(5*x)))/(3*x*sqrt(x));}}_{f(x)=\arctg^3\sqrt x+\ln(\ctg(5x)):(3x\sqrt x)}\\
+
+\text{Tomēr eksistē arī minimālistiskāks veids: }
+\bcode{y=@(x)x.\^~2;}\leftarrow y=x^2\\
+
+\text{Otrais ir }\textbf{skaitļu intervāli}\text{. Tas sastāv no trīm daļām: sākumu, soli un beigām.}\\
+\bcode{x\_vert=1:2:21;}\leftarrow\text{1 ir sākums, 2 ir solis, 21 ir beigas.}\\
+\Downarrow\\
+\set{1;3;5;7;9;11;13;15;17;19;21}\\
+
+\text{Ievietojot deklarētajā funkcijā intervāli (}\bcode{y(x\_vert)}\text{), tiek atgriezts vērtību intervāls.}\\
