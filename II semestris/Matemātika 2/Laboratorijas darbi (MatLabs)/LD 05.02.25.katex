@@ -4,7 +4,7 @@
 \def\code#1{\texttt{#1}}
 
 \title{Matemātika 2}\\
-{\footnotesize\text{Laboratorijas darba vadītājs: Kārlis Krauklis}}\\
+{\footnotesize\text{Laboratorijas darba vadītājs: Kaspars Krauklis}}\\
 {{\Large\textbf{Ievads MATLABā}}}\\
 \text{MATLAB ir programma, kas ļauj ŗēķināt, lietojot pusmatemātisko sintaksi,}\\
 \text{pat ja cilvēks nezin, kā programmēt.}\\[0.5em]

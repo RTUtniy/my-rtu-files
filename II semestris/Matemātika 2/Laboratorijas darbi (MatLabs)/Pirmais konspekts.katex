@@ -21,7 +21,7 @@
 
 \text{Piemēram, }\tg x\text{ tiek pierakstīts kā }\bcode{tan(x)}\text,~\ln x\ir\bcode{log(x)}\text{ (tādēļ ir jālieto īpašība}\\
 
-\log_ab=\frac{\log_cb}{\log_ca}\text{, ja }a\not=e\text{), }\operatorname{arc}\text{... funkcijas pieraksta ar prefiksi }\bcode{a...}\therefore\arctg x\equiv\bcode{atan(x)}\\
+\log_ab=\frac{\log_cb}{\log_ca}\text{, ja }a\not=e\text{), }\operatorname{arc}\text{... funkcijas pieraksta ar prefiksi }\bcode{a...}\therefore\arcctg x\equiv\bcode{acot(x)}\\
 
 \bcode{;}\text{ postfikss nozīmē, lai rindas rezultāts netiek izvadīts konsolē. Ieteicams lietošanai mainīgo}\\
 
