@@ -1,0 +1,11 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}}
+\def\h3#1{{\large\textbf{#1}}}
+\def\code#1{\texttt{#1}}
+
+\title{Matemātika 2}\\
+{\footnotesize\text{Laboratorijas darba vadītājs: Kaspars Krauklis}}\\
+{{\Large\textbf{Grafiku konstruēšana}}}\\
+\boxed{\code{fplot(func, [x\_0 x\_1])}}\\
+\code{func}\text{ ir izteiksme, pēc kuras tiek veidots grafiks}\\
+\code{x\_0}\text{ un }\code{x\_1}\text{ ir intervāļi pēc }x\text{ ass grafika mēroga ierobežošanai.}
