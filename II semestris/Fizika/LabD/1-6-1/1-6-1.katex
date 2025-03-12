@@ -1,0 +1,74 @@
+\displaystyle
+\def\*{\cdot}
+\def\svid{\overline{s}}
+\def\measure#1{\text{ (#1)}}
+\def\arraystretch{1.75}
+{\LARGE\textbf{Kļūdu aprēķini}}\\
+
+{\large\textbf{Eksperimentālo ātrumu kļūdas}}\\[1em]
+
+\Delta v_{l, n}=\sqrt{
+  \bigg(\frac{\partial v_{l, n}}{\partial m_r}\*\Delta m_r\bigg)^2
+  +
+  \bigg(\frac{\partial v_{l, n}}{\partial m_l}\*\Delta m_l\bigg)^2
+  +
+  \bigg(\frac{\partial v_{l, n}}{\partial\svid_n}\*\Delta\svid_n\bigg)^2
+  +
+  \bigg(\frac{\partial v_{l, n}}{\partial l}\*\Delta l\bigg)^2
+}\\
+
+\frac{\partial v_{l, n}}{\partial m_r}=\frac1{m_l}\svid_n\sqrt{\frac{g}{l}}\\
+
+\frac{\partial v_{l, n}}{\partial m_l}=-\frac{m_r}{m_l^2}\*\svid_n\sqrt{\frac gl}\\
+
+\frac{\partial v_{l, n}}{\partial \svid_n}=\bigg(1+\frac{m_r}{m_l}\bigg)\sqrt{\frac gl}\\
+
+\frac{\partial v_{l, n}}{\partial l}=\bigg(1+\frac{m_r}{m_l}\bigg)\*\svid_n\frac{\sqrt g}{-2l^{1,5}}\\[0.5em]
+
+\begin{array}{|c|c|c|c|c|c|c|}
+ \hline
+  & \displaystyle\frac{\partial v_{l, n}}{\partial m_r} & \displaystyle\frac{\partial v_{l, n}}{\partial m_l} & \displaystyle\frac{\partial v_{l, n}}{\partial \svid_n} & \displaystyle\frac{\partial v_{l, n}}{\partial l} & \Delta v_{l, n}, \text{cm} & v_{l, n},\text{cm}\\
+ \hline
+  n=1 & 20,2149 & -168,2090 & 32,9981 & -1,6615 & 0,3713 & 2,6003\pm0,3173\\
+ \hline
+  n=2 & 18,5218 & -154,1205 & 32,9981 & -1,5223 & 0,3650 & 2,3852\pm0,365\\
+ \hline
+  n=3 & 16,2643 & -135,3357 & 32,9981 & -1,3368 & 0,3573 & 2,0921\pm0,3573\\
+ \hline
+  n=4 & 13,4937 & -112,2817 & 32,9981 & -1,1091 & 0,3490 & 1,7357\pm0,349\\
+ \hline
+  n=5 & 10,2614 &  -85,3853 & 32,9981 & -0,8434 & 0,3411 & 1,3199\pm0,3411\\
+ \hline
+\end{array}\\[1em]
+
+{\large\textbf{Teorētisko ātrumu kļūdas}}\\[1em]
+\textbf{a) Teorētiskais lodītes kustības ātrums, ievērojot lodītes rotāciju}\\
+v_{v+r}=\sqrt{\frac{10}7gH}\\
+\Delta v_{v+r}=\dfrac{\partial v_{v+r}}{\partial H}\*\Delta H\\
+\dfrac{\partial v_{v+r}}{\partial H}=\sqrt{\frac{10}7g}\*\frac1{2\sqrt{\overline H}}\\
+\Delta H=\sqrt{\Delta H_\text{gad.}^2+\Delta H_\delta^2}\\
+\Delta H_\text{gad.}=s_H\*t_\beta(5)=0,0757\cdot2,78\approx0,2104\\
+\Delta H_\delta=\frac\delta3\*t_\beta(\infin)=\frac1{3000}\*1,96\approx6,53\*10^{-4}\\
+\Delta H=\sqrt{0,2104^2+(6,53\*10^{-4})^2}\approx0,2104\\
+\Delta v_{v+r}=\sqrt{\frac{10}79,807}\frac1{2\sqrt{0,451}}\*0,2104\approx0,5863\measure{m/s}\\
+
+\boxed{v_{v+r}=2,4762\pm0,5863\measure{m/s}}\\[0.5em]
+
+
+\textbf{b) Teorētiskais lodītes kustības ātrums, neievērojot lodītes rotāciju}\\
+v_v=\sqrt{2gH}\\
+\Delta v_v=\dfrac{\partial v_v}{\partial H}\*\Delta H\\
+\dfrac{\partial v_v}{\partial H}=\sqrt{0,5\frac g{\overline H}}\\
+\Delta v_v=\sqrt{0,5\frac{9,807}{0,451}}\*0,2104\approx0,6938\measure{m/s}\\
+
+\boxed{v_{v}=2,9299\pm0,6938\measure{m/s}}\\[1em]
+
+e_v=\frac v{\overline v}\\[0.5em]
+
+\begin{array}{|c|c|c|c|c|c|c|}
+ \hline
+  \varepsilon(v_{l, 1}) & \varepsilon(v_{l, 2}) & \varepsilon(v_{l, 3}) & \varepsilon(v_{l, 4}) & \varepsilon(v_{l, 5}) & \varepsilon(v_{v+r}) & \varepsilon(v_v) \\
+ \hline
+   0,1428 & 0,1532 & 0,1708 & 0,2011 & 0,2584 & 0,2367729 & 0,2368004 \\
+ \hline
+\end{array}
