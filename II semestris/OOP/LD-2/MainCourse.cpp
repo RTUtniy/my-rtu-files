@@ -2,35 +2,10 @@
 #include <iostream>
 using namespace std;
 
-MainCourse::MainCourse() {
-	MenuItem();
-}
-
-MainCourse::MainCourse(string nosaukums, float cena, unsigned kalorijas) {
-	MenuItem::SetNosaukums(nosaukums);
-	MenuItem::SetCena(cena);
-	MenuItem::SetKalorijas(kalorijas);
-}
-
-void MainCourse::SetCookingTime(float t) {
-	this->cookingTime = t;
-}
-
-MainCourse::MainCourse(string nosaukums, float cena, unsigned kalorijas, float t) {
-	MenuItem::SetNosaukums(nosaukums);
-	MenuItem::SetCena(cena);
-	MenuItem::SetKalorijas(kalorijas);
-	MainCourse::SetCookingTime(t);
+string MainCourse::print() const {
+	return MenuItem::print() + ", " + to_string(GetCookingTime()) + " m";
 }
 
 MainCourse::~MainCourse() {
-	cout << "MainCourse \""<< GetNosaukums() << "\" dezintegrçts" << endl;
-}
-
-string MainCourse::print() const {
-	return MenuItem::print() + "(MainCourse)";
-}
-
-float MainCourse::GetCookingTime() const {
-	return this->cookingTime;
+	cout << "MainCourse \""<< GetNosaukums() << "\" dezintegrÄ“ts" << endl;
 }
