@@ -18,3 +18,4 @@
 - [Fizika](https://github.com/RTUtniy/my-rtu-files/tree/main/II%20semestris/Fizika)
 - [Matemātika 1](https://github.com/RTUtniy/my-rtu-files/tree/main/I%20semestris/Matem%C4%81tika)
 - [Matemātika 2](https://github.com/RTUtniy/my-rtu-files/tree/main/II%20semestris/Matem%C4%81tika%202)
+- [Objektorientētā Programmēšana](https://github.com/RTUtniy/my-rtu-files/tree/main/II%20semestris/OOP%202)
