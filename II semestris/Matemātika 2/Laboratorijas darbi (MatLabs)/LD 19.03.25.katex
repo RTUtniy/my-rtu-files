@@ -1,0 +1,39 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}}
+\def\h3#1{{\large\textbf{#1}}}
+\def\code#1{\texttt{#1}}
+\def\bcode#1{\boxed{\code{#1}}}
+\def\samexas{\Leftrightarrow}
+\def\sameyas{\Updownarrow}
+
+\title{Matemātika 2}\\
+{\footnotesize\text{Laboratorijas darba vadītājs: Kaspars Krauklis}}\\
+{{\Large\textbf{Lineārā un vektoru algebra}}}\\
+\code{A = [1 2 3;3,-7,2}\\
+\code{~~~~~5 8 7]}\\
+~~~~~~~~~~~~~~~~\sameyas\\
+A=
+\begin{pmatrix}
+ 1 & 2 & 3 \\
+ 3 & -7 & 2 \\
+ 5 & 8 & 7
+\end{pmatrix}\\[1em]
+
+\bcode{A(3,2)}\samexas A_{3~2}\text{ (elements 3. rindā um 2. kolonnā)}\\
+
+\bcode{A\^~-1}\samexas A^{-1}\\
+\bcode{eye(n)}\samexas E_{n\times n}\\
+\bcode{A'}\samexas\bcode{transpose(A)}\samexas A^T\\
+\bcode{ones(x, y)}\samexas J_{x\times y}\text{, kur }\forall J_{x^\prime~y^\prime}=1\\
+\bcode{zeros(x, y)}\samexas O_{x\times y}\text{, kur }\forall O_{x^\prime~y^\prime}=0\\
+\bcode{size(A)}\Rightarrow\text{ matricas }A\text{ izmēri }x\text{ un }y\text{ (izmēri tiek atgriezti matricas }\begin{pmatrix}x & y\end{pmatrix} \text{veidā)}\\
+\bcode{det(A)}\samexas\det A\samexas|A|\samexas\Delta(A)\text{ (matricas determinants)}\\
+\bcode{rank(A)}\Rightarrow\text{matricas }A\text{ rangs (noder LVS risināšanai)}\\
+\bcode{A\^~2}\samexas A^2\\
+\bcode{A.\^~2}\Rightarrow\text{matricas }A\text{ elementu kāpināšana kvadrātā}\\
+
+---------------\\
+
+\bcode{a = [1 2 3]}\samexas\vec a=(1, 2, 3)\\
+\bcode{dot(a,b)}\Rightarrow\text{skalārais reizinājums}\\
+\bcode{cross(a,b)}\Rightarrow\text{vektoriālais reizinājums}\\
