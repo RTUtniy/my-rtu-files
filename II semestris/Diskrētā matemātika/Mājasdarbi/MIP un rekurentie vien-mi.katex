@@ -5,7 +5,7 @@
 
 {\LARGE\textbf{Diskrētā matemātika. Mājasdarbs.}}\\
 {\Large\textbf{Matemātiskā indukcija un rekurentie vienādojumi}}\\
-{\large\textbf{Iaroslav Viazmitin, 241RDB360, 27. variants}}\\[0.25em]
+{\large\textbf{Iaroslav Viazmitin, 7. grupa, 27. variants}}\\[0.25em]
 
 \textbf{1. uzdevums:} \sum^n_{k=1}(3k^2+k-2)=n^3+2n^2-n\\
 \text{1. Indukcijas bāze: }\sum^1_{k=1}(3k^2+k-2)\stackrel?=1^2+2\*1^2-1\\
