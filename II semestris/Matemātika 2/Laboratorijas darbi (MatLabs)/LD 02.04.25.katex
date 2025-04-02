@@ -1,0 +1,27 @@
+\displaystyle
+
+\def\title#1{{\LARGE\textbf{#1}}}
+\def\h3#1{{\large\textbf{#1}}}
+\def\code#1{\texttt{#1}}
+\def\bcode#1{\boxed{\code{#1}}}
+\def\samexas{\Leftrightarrow}
+\def\sameyas{\Updownarrow}
+
+\title{Matemātika 2}\\
+{\footnotesize\text{Laboratorijas darbu vadītājs: Kaspars Krauklis}}\\
+{{\Large\textbf{Programmēšana MatLab vidē}}}\\
+
+\bcode{for}\text{ ir līdzīgs parastajam "for" ciklam citās programmēšanas valodās.}\\
+\bcode{for i = a:b:c} \equiv \bcode{for (int i = a; i != b; i+=c)}\\[-.5em]
+\cfrac{\kern{35em}}{}\\
+\bcode{if}\text{ ir ekvivalents citiem salīdzinājumiem programmēšanas valodās}\\
+\text{Piemērs: }\bcode{if (a == b || b == a \&\& pi \~~= 4) a = c\^~2; end}
+\\\textbf{Svarīgi atcerēties: }\code{for}\textbf{ un }\code{if}\textbf{ deklarāciju beigās jāliek atslēgvārdu }\bcode{end}\textbf!\\[-.5em]
+\cfrac{\kern{35em}}{}\\
+\bcode{rem(a,b)} \equiv \bcode{a \% b} \text{ (atlikums, pie }a\div b\text{ jeb }a\bmod b\text)
+\\
+\cfrac{\kern{35em}}{}\\[-1.35em]
+~\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\\[-1.65em]
+\cfrac{\kern{35em}}{}\\[0.5em]
+
+\boxed{S=\sum^{40}_{n=1}f(n)}\equiv\bcode{S=0; for n=1:1:40 S=S+f(n) end}

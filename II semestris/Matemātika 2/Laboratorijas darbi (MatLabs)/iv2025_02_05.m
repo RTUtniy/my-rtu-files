@@ -15,7 +15,7 @@ clc, clearvars, format short
 % atbilde_b = sym(atbilde_b)
 
 %% Skaitliskās funkcijas
-% y=@(x)x^(1/3) % kunsaknes funkcijas definējums
+% y=@(x)x^(1/3) % kubsaknes funkcijas definējums
 % y_vert_skaitl=y(9)
 % y_vert_precizi=y(sym(9))
 
