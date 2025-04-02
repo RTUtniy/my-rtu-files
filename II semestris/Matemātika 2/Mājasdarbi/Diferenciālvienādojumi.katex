@@ -1,0 +1,84 @@
+%1,2,3,6,7
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm{C}}
+\def\upvuvp{u^\prime v+uv^\prime}
+
+{\LARGE\textbf{Matemātika 2. Mājasdarbs.}}\\
+{\Large\textbf{Diferenciālvienādojumi}}\\
+{\large\textbf{Iaroslav Viazmitin, 7. grupa, 27. variants}}\\[0.25em]
+
+1)~(1+e^x)y\*y^\prime=e^x\\
+(1+e^x)y\*\dfrac{dy}{dx}=e^x\\
+ydy=\frac{e^x}{1+e^x}dx\\
+\int ydy=\int\frac{d(e^x+1)}{e^x+1}\\
+0,5y^2=\ln|e^x+1|+\const\\
+\overline y=\sqrt{2\ln|e^x+1|+2\const}\\
+
+\frac{\kern{32em}}{}\\
+
+2)~y^\prime-4xy=-4xe^{x^2},~~~y(0)=2\\
+\boxed{y=uv, y^\prime=\upvuvp}\\
+\upvuvp-4xuv=-4xe^{x^2}\\
+u^\prime v+u(v^\prime-4xv)=-4xe^{x^2}\\
+\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\\
+v^\prime-4xv=0\\
+\dfrac{dv}{dx}=4xv\\
+\dfrac{dv}v=4xdx\\
+\int\dfrac{dv}v=4\int xdx\\
+\ln|v|=2x^2\\
+v=e^{2x^2}\\
+\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\\
+u^\prime v=-4xe^{x^2}\\
+\dfrac{du}{dx}e^{2x^2}=-4xe^{x^2}\\[0.25em]
+\int du=-4\int\dfrac{xe^{x^2}}{e^{2x^2}}dx\\
+u=2\int e^{-x^2}d(-x^2)\\
+u=2e^{-x^2}+\const\\
+\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\\
+\overline y=uv=(2e^{-x^2}+\const)e^{2x^2}\\
+y(0)=2\equiv(2e^{0^2}+\const)e^{2\*0^2}\\
+(2e^{0^2}+\const)e^{2\*0^2}=2e^{0^2}e^{2\*0^2}+\const\*e^{2\*0^2}=2+\const\\
+y(0)=2\equiv2+\const\Rarr\const=0\\
+\Rarr y^\ast=2e^{-x^2}e^{2x^2}=2e^{x^2}\\
+
+\frac{\kern{32em}}{}\\
+
+3)~y^\prime+y=xy^2,~~~y(0)=1\\
+\boxed{y=uv, y^\prime=\upvuvp}\\
+\upvuvp+uv=xu^2v^2\\
+u^\prime v+u(v^\prime+v)=xu^2v^2\\
+
+\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\\
+
+v^\prime+v=0\\
+\dfrac{dv}{dx}=-v\\[0.5em]
+\int\dfrac{dv}v=-\int dx\\
+\ln|v|=-x\\
+\ln(|v|^{-1})=x\\
+\frac1v=e^x\\
+v=e^{-x}\\
+
+\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\\
+
+u^\prime v=xu^2v^2\\
+\dfrac{du}{dx}=xu^2v\\[0.5em]
+\dfrac{du}{dx}=xu^2e^{-x}\\[0.5em]
+u^{-2}du=xe^{-x}dx\\
+\int u^{-2}du=\int xe^{-x}dx\\
+-\frac1u=\int xe^{-x}dx\\
+\int xe^{-x}dx=
+\begin{bmatrix}
+ u = x & du = dx\\
+ dv=e^{-x}dx & v=-e^{-x}
+\end{bmatrix}=-xe^{-x}+\int e^{-x}dx=-xe^{-x}-e^{-x}+\const=\\
+=-e^{-x}(x+1)+\const\\
+-\frac1u=-e^{-x}(x+1)+\const\\
+\frac1u=\frac{x+1}{e^x}+\const\\
+u=\frac{e^x}{x+1}+\frac1\const\\
+
+\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\backsim\\
+
+\overline y=uv=\bigg(\frac{e^x}{x+1}+\frac1\const\bigg)e^{-x}=\frac1{x+1}+\frac1{\const e^x}\\
+y(0)=1\equiv\frac1{0+1}+\frac1{\const e^0}\\
+\frac1{0+1}+\frac1{\const e^0}=1+\frac1\const\\
+y(0)=1\equiv1+\frac1\const\\
