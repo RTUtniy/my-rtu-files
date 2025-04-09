@@ -1,3 +1,4 @@
+%1,2,3,6,7
 \displaystyle
 \def\*{\cdot}
 \def\const{\mathrm{C}}
@@ -14,6 +15,7 @@ ydy=\frac{e^x}{1+e^x}dx\\
 \int ydy=\int\frac{d(e^x+1)}{e^x+1}\\
 0,5y^2=\ln|e^x+1|+\const\\
 y_\text{visp.}=\sqrt{2\ln|e^x+1|+2\const}\\
+\const=0,5y^2-\ln|e^x+1|\\
 
 \sep\\
 
@@ -74,14 +76,14 @@ k_1=-6;k_2=0\\
 \overline y=\const_1e^{-6x}+\const_2e^0=\const_1e^{-6x}+\const_2\\
 y^\ast:f(x)=(x-1)^2\\
 \begin{array}{ccc|c}
-n & \alpha & \beta & s \\\hline
-2 &    0   &   0   & 1
+ n & \alpha & \beta & s \\\hline
+ 2 &    0   &   0   & 1
 \end{array}\\
 
 \begin{array}{c|c}
-0 & \sout{y^\ast=(Ax^2+Bx+C)\*x^1}\\
-6 & y^{\ast\prime}=3Ax^2+2Bx+C\kern{1.2em}\\
-1 & y^{\ast\prime\prime}=6Ax+2B\kern{4em}\\
+ 0 & y^\ast=(Ax^2+Bx+C)\*x^1\\
+ 6 & y^{\ast\prime}=3Ax^2+2Bx+C\kern{1.2em}\\
+ 1 & y^{\ast\prime\prime}=6Ax+2B\kern{4em}\\
 \end{array}\\
 x^2:18A=1\Rarr \underline{A={\textstyle\frac1{18}}}\\
 x^1:12B+6A=-2\Rarr12B+{\textstyle\frac13}=-2\Rarr12B=-{\textstyle\frac73}\Rarr \underline{B=-{\textstyle\frac7{36}}}\\[0.2em]
@@ -91,10 +93,7 @@ y^\ast=(Ax^2+Bx+C)\*x=\frac1{18}x^3-\frac7{36}x^2+\frac{25}{108}x\\
 y_\text{visp.}=\overline y+y^\ast=\const_1e^{-6x}+\const_2+\frac1{18}x^3-\frac7{36}x^2+\frac{25}{108}x\\
 \sep\\
 
-5)~\def\*{\cdot}
-\def\const{\mathrm C}
-\displaystyle 
-y^{\prime\prime}-64y=128\cos8x-64e^{8x}\\
+5)~y^{\prime\prime}-64y=128\cos8x-64e^{8x}\\
 y_\text{visp.}=\overline y+y^\ast\\ 
 \overline y: y^{\prime\prime}-64y=0\\ 
 k^2-64=0\\ 
@@ -114,22 +113,111 @@ f_2(x): \begin{array}{ccc|c}
 \end{array}~\text(k_1=\alpha\text)\\ 
 y^\ast_2=De^{8x}\*x\\
 \begin{array}{c|c}
-64 & y^\ast=A\cos8x+B\sin8x+De^{8x}\*x\kern{11.8em}\\
-0  & y^{\ast\prime}=-8A\sin8x+8B\cos8x+8De^{8x}\*x+De^{8x}\kern{6.1em}\\
-1  & y^{\ast\prime\prime}=-64A\cos8x-64B\cos8x+8De^{8x}+8De^{8x}+64Dx\*e^{8x}
+-64 & y^\ast=A\cos8x+B\sin8x+De^{8x}\*x\kern{12.7em}\\
+ 0  & y^{\ast\prime}=-8A\sin8x+8B\cos8x+8De^{8x}\*x+De^{8x}\kern{6.9em}\\
+ 1  & y^{\ast\prime\prime}=-64A\cos8x-64B\cos8x+8De^{8x}+8De^{8x}\*x\*8+8De^{8x}
 \end{array}\\
-\sin8x: 64B-64B=0
-\\
+\sin8x: -64B-64B=0\Rarr B=0\\
+\cos8x: -64A-64A=128\Rarr A=-1\\
+e^{8x}: 8D+8D=-64\Rarr D=-4\\
+y^\ast=A\cos8x+B\sin8x+De^{8x}\*x=-\cos8x-4xe^{8x}\\
+y_\text{visp.}=\overline y+y^\ast=\const_1e^{-8x}+\const_2e^{8x}-\cos8x-4xe^{8x}\\
 \sep\\
 
-6)~y^{\prime\prime}+25y=3\sin5x-\cos5x+15x
-
-\\
+6)~y^{\prime\prime}+25y=3\sin5x-\cos5x+15x\\
+y_\text{visp.}=\overline y+y^\ast\\
+\overline y:y^{\prime\prime}+25y=0\\
+k^2+25=0\\
+k_\text{1,2}=\pm5\\
+\overline y=\const_1e^{-5x}+\const_2e^{5x}\\
+y^\ast:f(x)=\underbrace{3\sin5x-\cos5x}_{f_1(x)}+\underbrace{15x}_{f_2(x)}\\
+f_1(x)=3\sin5x-\cos5x\\
+f_1(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 0 &    0   &    5  & 0
+\end{array}~\text(\forall k ~~ k\not=\pm\beta i\text)\\
+y_1^\ast=A\cos5x + B\sin5x\\
+f_2(x)=15x\\
+f_2(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 1 &    0   &    0  & 0
+\end{array}~\text(\forall k ~~ k\not=0\text)\\
+y_2^\ast=Q_n(x)=Dx\\
+y^\ast=y_1^\ast+y_2^\ast=A\cos5x + B\sin5x+Dx\\
 \sep\\
 
-7)~y^{\prime\prime\prime}-2y^{\prime\prime}-3y^\prime=(1-x)e^{3x}-4+2e^x
-
-\\
+7)~y^{\prime\prime\prime}-2y^{\prime\prime}-3y^\prime=(1-x)e^{3x}-4+2e^x\\
+y_\text{visp.}=\overline y+y^\ast\\
+\overline y:y^{\prime\prime\prime}-2y^{\prime\prime}-3y^\prime=0\\
+k^3-2k^2-3k=0\\
+k(k^2-2k-3)=0\\
+(k+1)k(k-3)=0\\
+k_1=-1,k_2=0,k_3=3\\
+\overline y=\const_1e^{-x}+\const_2+\const_3e^{3x}\\
+y^\ast:f(x)=\underbrace{(1-x)e^{3x}}_{f_1(x)}\underbrace{-4}_{f_2(x)}+\underbrace{2e^x}_{f_3(x)}\\
+f_1(x)=(1-x)e^{3x}\\
+f_1(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 1 &    3   &    0  & 2
+\end{array}~\text(k_3=3\text)\\
+y_1^\ast=(Ax + B)e^{3x}\*x\\
+f_2(x)=-4\\
+f_2(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 0 &    0   &    0  & 1
+\end{array}~\text(k_2=0\text)\\
+y_2^\ast=Dx\\
+f_3(x)=2e^x\\
+f_3(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 0 &    1   &    0  & 0
+\end{array}~\text(\forall k ~~ k\not=\alpha\text)\\
+y_3^\ast=Ge^x\\
+y^\ast=(Ax + B)e^{3x}\*x+Dx+Ge^x\\
+y_\text{visp.}=\overline y+y^\ast=\const_1e^{-x}+\const_2+\const_3e^{3x}+(Ax + B)e^{3x}\*x+Dx+Ge^x\\
 \sep\\
 
-8)~y^{\prime\prime}+y=2\ctg x,~~~y\Big(\frac\pi2\Big)=1,~~~y^\prime\Big(\frac\pi2\Big)=2
+8)~y^{\prime\prime}+y=2\ctg x,~~~y\Big(\frac\pi2\Big)=1,~~~y^\prime\Big(\frac\pi2\Big)=2\\
+y_\text{visp.}:y^{\prime\prime}+y=0\\
+k^2+1=0\\
+k_\text{1,2}=\pm i\\
+y_\text{visp.}=\const_1(x)\cos x+\const_2(x)\sin x\\
+\begin{cases}
+  \const_1^\prime(x)\cos x+\const_2^\prime(x)\sin x=0\\
+ -\const_1^\prime(x)\sin x+\const_2^\prime(x)\cos x=2\ctg x\\
+\end{cases}\\
+
+\Delta=\begin{vmatrix}
+ \cos x  & \sin x\\
+ -\sin x & \cos x\\
+\end{vmatrix}=\cos^2x+\sin^2x=1\\
+
+\Delta\const_1^\prime(x)=\begin{vmatrix}
+ 0  & \sin x\\
+ 2\ctg x & \cos x\\
+\end{vmatrix}=-2\cos x\\
+
+\Delta\const_2^\prime(x)=\begin{vmatrix}
+ \cos x  & 0\\
+ -\sin x & 2\ctg x\\
+\end{vmatrix}=2\frac{\cos^2x}{\sin x}\\
+
+\const_1^\prime(x)=\frac{\Delta\const_1^\prime(x)}{\Delta}=-2\cos x\\
+\const_2^\prime(x)=\frac{\Delta\const_2^\prime(x)}{\Delta}=2\frac{\cos^2x}{\sin x}\\
+\const_1(x)=-2\int\cos x~dx=-2\sin x+\const_1\\
+\const_2(x)=2\int\frac{\cos^2x}{\sin x}dx=2\int\frac{1-\sin^2x}{\sin x}=\\
+=2\int\frac{dx}{\sin x}-2\int\sin x~dx=\\
+=2\int\frac{\sin x~dx}{\sin^2x}+2\cos x+\const_2^*=\\
+=-2\int\frac{d(\cos x)}{1-\cos^2x}+2\cos x+\const_2^*=\\
+=-2\ln\bigg|\frac{1+\cos x}{1-\cos x}\bigg|+2\cos x+\const_2\\
+
+y_\text{visp.}=(-2\sin x+\const_1)\cos x+(2\ln\bigg|\cfrac{1+\cos x}{1-\cos x}\bigg|+2\cos x+\const_2)\sin x\\
+\textstyle
+1=(-2\sin\frac\pi2+\const_1)\cos\frac\pi2+(2\ln\bigg|\cfrac{1+\cos\frac\pi2}{1-\cos\frac\pi2}\bigg|+2\cos\frac\pi2+\const_2)\sin\frac\pi2\\
+1=2\ln1+\const_2\\
+\const_2=1\\[1em]
+y_\text{visp.}^\prime=(2\sin x-\const_1)\sin x+2(2\ln\bigg|\cfrac{1+\cos x}{1-\cos x}\bigg|+2\cos x+\const_2)\cos x\\
+0=(2\*1-\const_1)\*1\\
+0=2-\const_1\\
+\const_1=2\\
+y_\text{part.}=(-2\sin x+2)\cos x+(2\ln\bigg|\cfrac{1+\cos x}{1-\cos x}\bigg|+2\cos x+1)\sin x
