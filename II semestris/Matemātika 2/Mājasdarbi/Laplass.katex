@@ -1,0 +1,45 @@
+\displaystyle
+\def\*{\cdot}
+\def\setas{\fallingdotseq}
+
+{\LARGE\textbf{Matemātika 2. Mājasdarbs.}}\\
+{\Large\textbf{Diferenciālvienādojumi}}\\
+{\large\textbf{Iaroslav Viazmitin, 7. grupa, 27. variants, 9. uzdevums}}\\[0.25em]
+
+x^{\prime\prime} + x^\prime = 2\cos t,~~~x(0) = 1,~~~x^\prime(0)= 1\\
+x(t)\setas X(s)\\
+x^\prime(t)\setas s\*X(s)-x(0)=s\*X(s)-1\\
+x^{\prime\prime}(t)\setas s^2\*X(s)-s\*x(0)-x^\prime(0)=s^2\*X(s)-s-1\\[1em]
+\cos\beta t\setas\frac{s}{s^2+\beta^2}\\[0.2em]
+\Rarr2\cos t\setas \frac{2s}{s^2+1}\\[1em]
+(s^2\*X(s)-s-1) + (s\*X(s)-1) = \frac{2s}{s^2+1}\\
+s^2\*X(s)+s\*X(s)-s-2 = \frac{2s}{s^2+1}\\
+s^2\*X(s)+s\*X(s)=\frac{2s}{s^2+1}+s+2\\
+X(s)\*(s^2+s)=\frac{2s+(s+2)\*(s^2+1)}{s^2+1}\\
+X(s)=\frac{2s+s^3+2s^2+s+2}{(s^2+1)\*(s^2+s)}\\
+X(s)=\frac{s^3+2s^2+3s+2}{(s^2+1)\*s\*(s+1)}\\
+X(s)=\frac{s^3+2s^2+3s+2}{s\*(s+1)\*(s^2+1)}\\
+\frac{s^3+2s^2+3s+2}{s\*(s+1)\*(s^2+1)}=\frac As+\frac B{s+1}+\frac{Cs + D}{s^2+1}\\
+s^3+2s^2+3s+2=A\*(s+1)\*(s^2+1)+Bs\*(s^2 + 1) + (Cs + D)\*s\*(s + 1)\\[1em]
+s=0:~~~~~~\underline{2=A}\\
+s=-1:~~~1-2+3+2=-2B\\
+\kern{3.3em}\Rarr 4=-2B\\
+\kern{3.3em}\Rarr \underline{B=-2}\\
+s=i:~~~~~~~-i-2+3i+2=(Ci+D)\*i\*(-1+i)\\
+\kern{3.3em}\Rarr2i=(Ci+D)(-i-1)\\
+\kern{3.3em}\Rarr2i=C-Ci-Di-D\\
+\kern{3.3em}\Rarr2i+0=(-C-D)i+(C-D)\\
+\kern{3.3em}\boxed{C-D=0\Rarr C=D}\\
+\kern{3.3em}-C-D=2\\
+\kern{3.3em}\Rarr-2C = 2 \\
+\kern{3.3em}\Rarr \underline{C=-1},~~~\underline{D=-1}\\
+
+X(s)=\frac 2s-\frac2{s+1}-\frac{s+1}{s^2+1}\\[0.5em]
+X(s)=\frac 2s-\frac2{s+1}-\frac{s}{s^2+1}-\frac1{s^2+1}\\
+
+\begin{darray}{c:c:c:c}
+  1\setas\frac1s      & e^{\alpha t}\setas\frac1{s-\alpha} & \cos\beta t\setas\frac{s}{s^2+\beta^2} & \sin\beta t\setas\frac{\beta}{s^2+\beta^2}\\[1em]
+  \Rarr\frac2s\setas2 & \Rarr\frac{2}{s + 1}\setas 2e^{-t} & \Rarr\frac{s}{s^2+1}\setas\cos t       & \Rarr\frac1{s^2+1}=\sin t\\[0.7em]
+\end{darray}\\[0.25em]
+
+x(t)=2-2e^{-t}-\cos t-\sin t
