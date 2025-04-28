@@ -1,0 +1,72 @@
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm{C}}
+\def\upvuvp{u^\prime v+uv^\prime}
+\def\sep{\frac{\kern{32em}}{}}
+% .katex { line-height: 1.5 !important; }
+
+{\LARGE\textbf{Matemātika 2. Mājasdarba kļūdu labojums.}}\\[-0.5em]
+{\Large\textbf{Diferenciālvienādojumi}}\\[-0.5em]
+{\large\textbf{Iaroslav Viazmitin, 7. grupa, 27. variants}}\\
+
+1)~(1+e^x)y\*y^\prime=e^x\\
+(1+e^x)y\*\dfrac{dy}{dx}=e^x\\
+ydy=\frac{e^x}{1+e^x}dx\\
+\int ydy=\int\frac{d(e^x+1)}{e^x+1}\\
+0,5y^2=\ln|e^x+1|+\const\\
+\const=0,5y^2-\ln|e^x+1|\\
+
+\sep\\
+
+6)~y^{\prime\prime}+25y=3\sin5x-\cos5x+15x\\
+y_\text{visp.}=\overline y+y^\ast\\
+\overline y:y^{\prime\prime}+25y=0\\
+k^2+25=0\\
+k_\text{1,2}=\pm5i\\
+\overline y=\const_1\cos5x+\const_2\sin5x\\
+y^\ast:f(x)=\underbrace{3\sin5x-\cos5x}_{f_1(x)}+\underbrace{15x}_{f_2(x)}\\
+f_1(x)=3\sin5x-\cos5x\\
+f_1(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 0 &    0   &    5  & 0
+\end{array}~\text(\forall k ~~ k\not=\pm\beta i\text)\\
+y_1^\ast=A\cos5x + B\sin5x\\
+f_2(x)=15x\\
+f_2(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 1 &    0   &    0  & 0
+\end{array}~\text(\forall k ~~ k\not=0\text)\\
+y_2^\ast=Q_n(x)=Dx\\
+y^\ast=y_1^\ast+y_2^\ast=A\cos5x + B\sin5x+Dx\\
+
+\sep\\
+
+7)~y^{\prime\prime\prime}-2y^{\prime\prime}-3y^\prime=(1-x)e^{3x}-4+2e^x\\
+y_\text{visp.}=\overline y+y^\ast\\
+\overline y:y^{\prime\prime\prime}-2y^{\prime\prime}-3y^\prime=0\\
+k^3-2k^2-3k=0\\
+k(k^2-2k-3)=0\\
+(k+1)k(k-3)=0\\
+k_1=-1,k_2=0,k_3=3\\
+\overline y=\const_1e^{-x}+\const_2+\const_3e^{3x}\\
+y^\ast:f(x)=\underbrace{(1-x)e^{3x}}_{f_1(x)}\underbrace{-4}_{f_2(x)}+\underbrace{2e^x}_{f_3(x)}\\
+f_1(x)=(1-x)e^{3x}\\
+f_1(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 1 &    3   &    0  & 1
+\end{array}~\text(k_3=3\text)\\
+y_1^\ast=(Ax + B)e^{3x}\*x\\
+f_2(x)=-4\\
+f_2(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 0 &    0   &    0  & 1
+\end{array}~\text(k_2=0\text)\\
+y_2^\ast=Dx\\
+f_3(x)=2e^x\\
+f_3(x):\begin{array}{ccc|c}
+ n & \alpha & \beta & s\\\hline 
+ 0 &    1   &    0  & 0
+\end{array}~\text(\forall k ~~ k\not=\alpha\text)\\
+y_3^\ast=Ge^x\\
+y^\ast=(Ax + B)e^{3x}\*x+Dx+Ge^x\\
+y_\text{visp.}=\overline y+y^\ast=\const_1e^{-x}+\const_2+\const_3e^{3x}+(Ax + B)e^{3x}\*x+Dx+Ge^x
