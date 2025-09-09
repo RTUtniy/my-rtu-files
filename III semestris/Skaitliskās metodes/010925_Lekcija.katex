@@ -1,0 +1,18 @@
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+{\LARGE\textbf{Skaitliskās metodes}}\\
+{\Large\textbf{Ievadlekcija}}\\
+\h3{Atzīmes formula}\\
+\text{Eksāmens}\*35\%+\text{Pārbaudes darbi}\*35\%+\text{Mājasdarbi}\*15\%+\text{DigiComp}\*10\%+\text{HighPerfComp}\*5\%\\[0.5em]
+
+\h3{Semestrī ir ieplānoti:}\\
+~\*~\text{3 pārbaudes darbi (testi) Ortus vidē;}\\
+~\*~\text{7 mājasdarbi;}\\
+~\*~\text{uzdevums ar  piekļuvi RTU HPC (High Performance Computing) datoriem;}\\
+~\*~\text{DigComp 7./8. līmeņa uzdevums;}\\
+~\*~\text{eksamens}\\[0.5em]
+
+\textbf{Visus pārbaudes un mājasdarbus var uzrakstīt tikai vienu reizi!}\\\text{Iesaka sākumā izpildīt laboratorijas darbu un tad mājasdarbu}\\[0.5em]

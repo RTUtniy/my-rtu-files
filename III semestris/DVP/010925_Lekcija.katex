@@ -1,0 +1,16 @@
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+{\LARGE\textbf{Datorvadības pamati}}\\
+{\Large\textbf{Ievadlekcija}}\\
+\h3{Atzīmes formula}\\
+\text{Eksāmens}\*30\%+\text{Praktiskie darbi}\*50\%+\text{Testi lekcijās}\*20\%\\[0.5em]
+
+\h3{Semestrī ir ieplānoti:}\\
+~\*~\text{Testi lekcijas laikā ORTUS vidē par iepriekšējām lekcijām ar soda punktiem.}\\
+~\*~\text{Praktiskos darbus var pildīt ne tikai atvēlētās nodarbībās (reizi x2 nedēļās), bet arī mājās, tie būs ORTUSā}\\
+~\*~\text{Rakstisks eksāmens uz 10 minūtēm.}\\[0.5em]
+
+\textbf{Visi darbi ir brīvprātīgi! Tos nedrīkst kāvēt!}\text{ (Izņēmums – slimības lapa, tad +1 mēnesis)}\\\text{Atzīmēm nav minimālā sliekšņa. Eksāmens ir visiem. }3,9\neq4\\[0.5em]

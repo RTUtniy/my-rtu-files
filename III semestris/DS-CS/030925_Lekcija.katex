@@ -1,0 +1,52 @@
+\displaystyle
+\def\*{\cdot}
+\def\ssubset{⊆}
+\def\proj#1#2{\mathrm{proj}_{#1}{#2}}
+\def\cortage#1{~⟨#1⟩~}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+{\LARGE\textbf{Diskrētās struktūras datorzinātnēs}}\\
+{\Large\textbf{Ievadlekcija}}\\
+\h3{Gala atzīmes formula}\\
+\text{Praktiskie darbi}\*50\%+...\\[0.5em]
+
+\h3{Kas jāzin?}\\
+~\*~\text{Kas ir kopa un apakškopa?}\\
+~\*~\text{Kādi ir kopu veidi?}\\
+~\*~\text{Ko apzīmē}\subset,~\ssubset,~\in~?\\
+~\*~\text{Kā var pierakstīt kopas?}\\
+~\*~\text{Pamatdarbības ar kopām.}\\[0.5em]
+
+\h3{Dekarta reizinājums}
+
+\textbf{Definīcija: }\text{Dekarta reizinājums ir kopu }A\text{ un }B\text{ reizinājums }A\times B\\
+\text{, kas ir katru šo kopu elementu sakārtotu pāru kopa, t.i. }C=A\times B\text{, kur } \forall c\in C,\\\forall a\in A,~\forall b\in B,~c=(a, b)\\
+\boxed{A\times B\not=B\times A}\\
+\text{Pieņemsim, }A=\set{\#, @, →}\text,~B=\set{3,10}\\
+\text{Tad }A\times B=\set{(\#, 3), (\#, 10), (@, 3), (@, 10), (→, 3), (→, 10)}\text{, bet }B\times A=\set{(3, \#), (3, @), (3, →), (10, \#), (10, @), (10, →)}\text{. }\\\text{Attiecīgi }B\times A=\set{u=(), \forall u^\prime\in A\times B | \forall u=(u^\prime_2, u^\prime_1)}\\[0.5em]
+|A\times B|=|A|\*|B|\\[0.5em]
+((x, y), z)≡(x, y, z)\text{ – 3-vietīgais kortežs}\\
+A_1\times A_2\times A_3\times...\times A_n=\set{(...), (...), ..., (...)}\text{, kur ir }n\text{-vietīgi korteži}\\[0.5em]
+
+\textbf{Dekarta reizinājuma uzdošanas veidi}\\
+~\*~\text{Uzdodot visu kortežu kopu}\\
+~\*~\text{Matrica (līdzīgi reizrēķina tabulai)}\\
+~\*~\href{https://neerc.ifmo.ru/wiki/images/6/61/%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5.png}{\text{Orientēts grafs}}\\
+~\*~\text{Grafiks (der tikai skaitļu kopām)}\\[0.5em]
+
+\h3{Kortežu projekcija}\\
+\alpha=(a_1, a_2, ..., a_n)\\
+\textbf{Definīcija: }\text{par korteža }\alpha\text{ projekciju uz asīm }i_1, i_2, ..., i_s\text{ sauc kortežu }\beta=(a_{i_1}, a_{i_2}, ..., a_{i_s})\\
+\proj{i_1, i_2, ..., i_s}{\alpha}=\beta\\[0.5em]
+
+\alpha=(a, b, c, d, e, f, g, h)\\
+\proj{2}{\alpha}=(b)\\
+\proj{2, 5, 6}{\alpha}=(b, e, f)\\
+\proj{7, 3, 1, 5}{\alpha}=(g, c, a, e)\\[2.5em]
+
+\h3{Binārās attieksmes (attiecības)}\\
+\textbf{Definīcija: }\text{Attieksmi starp 2 objektiem sauc par bināro attieksmi un apzīmē }R⊆A\times B\\
+A=\set{a, b, c}, B=\set{2, 4}\\
+R_1=\set{(a, 2)}\\
+R_2=\set{(a, 2), (b, 2), (c, 2)}

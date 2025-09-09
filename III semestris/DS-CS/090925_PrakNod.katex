@@ -1,0 +1,32 @@
+\displaystyle
+\def\*{\cdot}
+\def\ssubset{⊆}
+\def\emptyset{\varnothing}
+\def\proj#1#2{\mathrm{proj}_{#1}{#2}}
+\def\cortage#1{~⟨#1⟩~}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+{\LARGE\textbf{Diskrētās struktūras datorzinātnēs}}\\
+{\Large\textbf{Praktiskā nodarbība}}\\
+
+\h3{1. uzdevums}\\[0.5em]
+
+A=\set{a, b}\\
+B=\set{0,1,2}\\
+C=\set{\alpha, \beta}\\
+A\times B\times C=\set{\cortage{a, 0, \alpha}, \cortage{a, 0, \beta}, \cortage{a, 1, \alpha}, \cortage{a, 1, \beta}, \cortage{a, 2, \alpha}, \cortage{a, 2, \beta}, \\~~~
+\cortage{b, 0, \alpha}, \cortage{b, 0, \beta}, \cortage{b, 1, \alpha}, \cortage{b, 1, \beta}, \cortage{b, 2, \alpha}, \cortage{b, 2, \beta}}\\[0.5em]
+
+\h3{2. uzdevums}\\[0.5em]
+
+C=\cortage{c_1, c_2, c_3, c_4, c_5, c_6}\\
+B_1=\proj{2,4,5,6}C=\cortage{c_2, c_4, c_5, c_6}\\
+B_2=\proj{5,4,3}C=\cortage{c_5, c_4, c_3}\\
+B_3=\proj{2,4,7}C=\emptyset\\[0.5em]
+
+\h3{3. uzdevums}\\
+
+X\text{ — 7-vietīgs kortežs}\\
+f(X)\text{ — izslēdz 2, 4, 5 komponentu}\\
+f(X)=\proj{\overline{2,4,5}}X
