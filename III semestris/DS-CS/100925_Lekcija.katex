@@ -1,0 +1,54 @@
+\displaystyle
+\def\*{\cdot}
+\def\ssubset{⊆}
+\def\proj#1#2{\mathrm{proj}_{#1}{#2}}
+\def\cortage#1{⟨#1⟩}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+{\LARGE\textbf{Diskrētās struktūras datorzinātnēs}}\\
+{\Large\textbf{Lekcija. Attieksmes}}\\
+
+\h3{Bināras attieksmes}\\
+\text{Pierakstu veidi:}\\
+~\*~\cortage{x, y}\in R\\
+~\*~xRy\\[0.5em]
+R=\set{\cortage{a,2},\cortage{a,4}\cortage{c,3},\cortage{c,2}},\\
+A=\set{a, b, c, d},\\
+B=\set{1,2,3,4},\\
+D_R=\set{x|\cortage{x,y}\in R, \text{noteiktiem }y}=\set{a, c}\\
+V_R=\set{y|\cortage{x,y}\in R, \text{noteiktiem }x}=\set{2,4,3}\\
+R^\prime=\set{\cortage{a, 2}, \cortage{c, 3}}\\
+R^\prime\subset R\\
+\therefore D_{R^\prime}\ssubset D_R,~V_{R^\prime}\ssubset V_R\\[0.5em]
+
+\h3{Bināru attieksmju uzdošnas veidi}
+~\*~\text{Uzdodot visu kortežu kopu}\\
+~~~\begin{array}{|c}R=\set{\cortage{a, 2}, \cortage{b, 1}, \cortage{b, 2}}\end{array}\\
+~\*~\text{Matrica}\\
+~~~\begin{array}{|c}
+\begin{array}{c|c|c|c|}
+~ & 1 & 2 & 3\\\hline
+a & 0 & 1 & 0\\\hline
+b & 1 & 1 & 0\\\hline
+\end{array}\\
+\end{array}\\
+~\*~\text{Orientēts grafs}\\
+~~~\begin{array}{|c}
+\includegraphics[height=7em, width=5.9em]{data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.2' viewBox='0 0 272 322' width='272' height='322'%3E%3Cstyle%3Etspan%7Bwhite-space:pre%7D.a%7Bfill:%23fff%7D.b%7Bfill:none;stroke:%23000;stroke-miterlimit:10;stroke-width:3%7D.c%7Bfill:%23fff;stroke:%23000;stroke-width:2%7D.d%7Bfont-size: 24px;fill: %23000000;font-weight: 400;font-style: italic;font-family: 'KaTeX_Math-Italic', 'KaTeX_Math'%7D.e%7Bfont-size: 24px;fill: %23000000;font-weight: 400;font-family: 'KaTeX_Main-Regular', 'KaTeX_Main'%7D%3C/style%3E%3Cpath fill-rule='evenodd' class='a' d='m272 0v322h-272v-322z'/%3E%3Cpath fill-rule='evenodd' class='b' d='m99 123.5l74.1 24.8'/%3E%3Cpath fill-rule='evenodd' class='c' d='m61 151c-22.1 0-40-17.9-40-40 0-22.1 17.9-40 40-40 22.1 0 40 17.9 40 40 0 22.1-17.9 40-40 40z'/%3E%3Ctext style='transform:matrix(1.5,0,0,1.5,51.5,118.5)'%3E%3Ctspan x='0' y='0' class='d'%3Ea%0A%3C/tspan%3E%3C/text%3E%3Cpath fill-rule='evenodd' class='b' d='m89.3 182.7l93.4-93.4'/%3E%3Cpath fill-rule='evenodd' class='b' d='m99 198.4l74.1-24.8'/%3E%3Cpath fill-rule='evenodd' class='c' d='m61 251c-22.1 0-40-17.9-40-40 0-22.1 17.9-40 40-40 22.1 0 40 17.9 40 40 0 22.1-17.9 40-40 40z'/%3E%3Ctext style='transform:matrix(1.5,0,0,1.5,53,223)'%3E%3Ctspan x='0' y='0' class='d'%3Eb%0A%3C/tspan%3E%3C/text%3E%3Cpath fill-rule='evenodd' class='c' d='m211 101c-22.1 0-40-17.9-40-40 0-22.1 17.9-40 40-40 22.1 0 40 17.9 40 40 0 22.1-17.9 40-40 40z'/%3E%3Ctext style='transform:matrix(1.5,0,0,1.5,202,73)'%3E%3Ctspan x='0' y='0' class='e'%3E1%3C/tspan%3E%3Ctspan y='0' class='e'%3E%3C/tspan%3E%3C/text%3E%3Cpath fill-rule='evenodd' class='c' d='m211 201c-22.1 0-40-17.9-40-40 0-22.1 17.9-40 40-40 22.1 0 40 17.9 40 40 0 22.1-17.9 40-40 40z'/%3E%3Ctext style='transform:matrix(1.5,0,0,1.5,202,173)'%3E%3Ctspan x='0' y='0' class='e'%3E2%0A%3C/tspan%3E%3C/text%3E%3Cpath fill-rule='evenodd' class='c' d='m211 301c-22.1 0-40-17.9-40-40 0-22.1 17.9-40 40-40 22.1 0 40 17.9 40 40 0 22.1-17.9 40-40 40z'/%3E%3Ctext style='transform:matrix(1.5,0,0,1.5,202,272.5)'%3E%3Ctspan x='0' y='0' class='e'%3E3%0A%3C/tspan%3E%3C/text%3E%3C/svg%3E}
+\end{array}
+\\[0.5em]
+
+\h3{Bināru attieksmju īpašības}\\[0.5em]
+
+A\times A\\
+\text{1. }R\text{ sauc par refleksīvu, ja ir spēkā }\forall a, \cortage{a, a}\in A\\
+\text{2. }R\text{ sauc par antirefleksīvu, ja ir spēkā }\forall a, \cortage{a, a}\notin A\\
+% ⟨a, a⟩ grafos attēlo kā cilpu uz pašu sevi
+\text{3. Ja }\forall~xRy\rarr yRx\text{, jeb }\forall x, y,~~\cortage{x, y}\in R\land\cortage{y, x}\in R\text{, tad tā ir simetriska: }R=R^{-1}\\
+% A\times B=R, B\times A=R^{-1}\\
+% R^{-1}=\set{\cortage{v,u}|\forall\cortage{u,v}\in R}\\
+% {⟨a, b⟩, ⟨b, a⟩}⇔neorientērs grafs (bez virzienu bultām)
+\text{4. }R\text{ ir antisimetriska, ja }\exists a\cortage{a,b}\in R\land\cortage{b,a}\notin R\\
+\text{5. }R\text{ ir asimetriska, ja }\forall\cortage{a,b}\in R~\nexists\cortage{b,a}\in R\\
+\text{6. }R\text{ ir transitīvs, ja }\forall a, b, c\in R, aRb\land bRc\therefore aRc\text{. Vislabāk tas ir redzams grafos,}\\\text{jo tad katram elementam ir taisns ceļš līdz tiem elementiem, ar kuriem viņš ir netieši saistīts.}
