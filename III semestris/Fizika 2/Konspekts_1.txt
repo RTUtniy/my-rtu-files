@@ -1,0 +1,98 @@
+\def\*{\cdot}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+\def\eds{\mathcal{E}}
+{\LARGE\textbf{Fizika II. 1. konspekts}}\\
+{\Large\textbf{Autors: Iaroslav Viazmitin}}\\[1em]
+
+\h3{Līdzstrāvas likumi}\\[1em]
+\textbf{Definīcija: }\text{elektriskā strāva ir pašu elektriski lādētu elementārdaļiņu}\\
+\text{virzīta kustība.}\\
+(1)~~~I=\dfrac{dq}{dt}\text{; elektriskā strāva }\mathrm{[A]}\text{ ampēros}\\
+\text{Elektriskā strāva ir daļiņu daudzums, kas iet caur kādu noteiktu punktu}\\
+\text{kāda laika gaitā.}\\[0.25em]
+{\textstyle
+(2)~~~q=\int_0^t idt=i\*t
+}\\[0.25em]
+\textbf{Definīcija: }\text{Elektrodzinējspēks }\eds\text{ ir vienāds ar darbu, ko padara
+strāvas avots,}\\
+\text{pārvietojot pozitīvu vienības lādiņu pa
+noslēgtu kontūru.}\\[0.25em]
+{\textstyle
+(3)~~~\eds=\frac{A}{q_0}
+}\\[0.5em]
+(4)~~~j=\dfrac{dI}{dS}\text{; strāvas blīvums }\mathrm{\big[\frac A{m^2}\big]}\\[0.25em]
+(5)~~~U_{12}=\frac{A_{12}}q=I_{12}\*R_{12}\text{; elektriskais spriegums }\mathrm{[U]}\text{ voltos}\\[0.25em]
+(6)~~~R_{\rarr}=\sum_i R\text{; elekriskā pretestība virknes slēgumam }\mathrm{[\Omega=\frac VA]}\text{ omos}\\
+(7)~~~R_{\parallel}=(\sum_i R_i^{-1})^{-1}\text{; elekriskā pretestība paralēlajam slēgumam }\mathrm{[\Omega]}\text{ omos}\\
+(9)~~~\Gamma=\frac1R\text{; elektriskā vadītspēja (pretējais pretestībai, vec.) }\mathrm{[S=\Omega^{-1}]}\text{ simensos}\\[0.5em]
+\text{Aprēķino ķēdes pretestību, jāņem arī vadītāja īpatnēja pretestība.}\\
+\text{To var aprēķināt, izmantojot sekojošo formulu:}\\
+(10)~R=\rho\frac lS\text{, kur }\rho\text{ ir vada materiāla īpatnējā pretestība; }\mathrm{[\Omega]}\text{ omos}\\
+\text{Materiāla pretestība ir atkarīga no temperatūras. Metāliem tā ir lineāri augoša,}\\
+\text{bet elektrolītiem, pusvadītājiem un izolatoriem tā ir eksponenciāli dilstoša.}\\
+(11)~\rho_\text{met.}=\rho_0+\rho_0\*\alpha t\text{; }\mathrm{[\Omega\*m]}\\
+(12)~\rho=\rho_\infin e^{2kT:W}\text{, kur }W\text{ ir aktivācijas ener\'{g}ija; }\mathrm{[\Omega\*m]}\\[0.25em]
+(13)~I=\frac{\eds}{R+r}\text{; Oma likums noslēgtai ķēdei }\mathrm{[A]}\text{ ampēros}\\
+\textbf{Kirhofa likums: }\text{mezglā plūstošo strāvu algebriska summa ir vienāda ar
+nulli.}\\
+\boxed{\textstyle
+I_\text{izejas}=I_\text{ieejas}\Leftrightarrow \sum_i I_i=0
+}\\
+\textbf{Kirhofa likums: }\text{Sprieguma kritumu algebriskā summa pa noslēgtu kontūru}\\
+\text{ir vienāda ar elektrodzinējspēku algebrisko summu, kuri darbojas šinī kontūrā.}\\
+\text{(Šo likumu vislabāk uztver caur vektoralgebru.)}\\
+\boxed{\textstyle
+\sum_i I_iR_i=\sum_i\eds_i
+}\\
+\\[6em]
+\h3{Elektrisko strāvu magnētiskā mijiedarbība}\\[1em]
+\displaystyle
+(1)~~~\Delta F_{a\rarr b}=\frac{kI_aI_bd\Delta l_a}{a}\text{; magnētiskais spēks, kas veido vads }a\text { posmā }dl_a\text { uz vadu }b\\
+(*)~~~k=\frac{\mu_0}{2\pi}\text{, kur }\mu_0\approx12,57\*10^{-7}{\textstyle\mathrm{[\frac N {A^2}]}}\text{ (konstante)}\\
+(2)~~~f=\dfrac{dF}{dl}=\frac{\mu_0\mu_\text{vides}}{2\pi}\frac{I_aI_b}{a}\text{; spēks, kas iedarbojas uz vada posmu magnētiskā spēka dēļ}\\
+(3)~~~p_m=I\*S\Leftrightarrow\vec p_m=I\*S\*\vec n\text{; kontūra magnētiskais moments }\mathrm{[A\*m^2]}\\
+\text{Kontūra magnētiskais moments ir perpendikulārs virsmai tā, ka, ja nolikt labo roku}\\
+\text{ar "ieslēgtiem" pirkstiem, kuri rādīs strāvas virzienu kontūrā, īkšķis rādīs }\vec p_m\text{ virzienā.}\\
+\htmlStyle{background: white;display: inline-flex;}{\includegraphics[width=16em, height=17.48em]{https://upload.wikimedia.org/wikipedia/ru/thumb/2/27/Электромагнетизм.svg/800px-Электромагнетизм.svg.png}}\\
+(4)~~~\vec n\stackrel{\perp}\to\vec B\text{; kontūra normālei jābūt paralēlai magnētiskās indukcijas vektoram}\\
+\text{līdzsvara stāvoklī. Magnētiskās indukcijas mērvienība ir }\mathrm{[T]}\text{ teslas.}\\
+(5)~~~M=B\*I\*S\*\sin\alpha=B\*p_m\*\sin\alpha\text{; kontūra (griešanās) spēka moments }\mathrm{[N\*m]}\\
+(6)~~~\vec H=\frac{\vec B}{\mu_0\mu}\text{; magnētiskā lauka intensitāte }{\textstyle\mathrm{[\frac Am]}}\\[1em]
+
+\h3{Magnētiskā lauka indukcijas vektora plūsma}\\[1em]
+d\Phi_M=\vec B\vec n\*dS\text,~\vec B\vec n=B\cos\alpha=B_n\Rarr d\Phi_M=B_n\*dS\\
+\text{Pie }\alpha<0,5\pi\land d\Phi_M>0\text{ plūsma ir izejošā, }
+\text{pie }\alpha>0,5\pi\land d\Phi_M<0\text{ plūsma ir ieejošā.}\\[1em]
+\textbf{Gausa teorēma: magnētisko lādiņu nav, magn. lauka avots ir elek. strāvas!}\\[10em]
+
+\h3{Bio-Savara-Laplasa likums}\\[1em]
+\text{Tas ir likums, kas apraksta magnētiskā lauka izraisi ar elektrisko strāvu.}\\
+\text{Ir zināms, ka }\vec B\perp d\vec l\perp\vec r\\
+\text{BSL likums saka, ka }dB=\frac{\mu_0\mu}{4\pi}\frac{I\*dl\*\sin\alpha}{r^2}\\
+\kern{14em}\Downarrow\\
+\kern{9.5em}d\vec B=\frac{\mu_0\mu}{4\pi}\frac{I\*d\vec l\times\vec r}{r^3}\\
+\kern{14em}\Downarrow\\
+\kern{9.7em}d\vec H=\frac1{4\pi}\frac{I\*d\vec l\times\vec r}{r^3}\\
+\kern{14em}\Downarrow\\
+\kern{9.3em}d\vec H=\frac1{4\pi}\frac{I\*d\vec l\*\sin\alpha}{r^2}\\
+\kern{14em}\Downarrow\\
+\kern{9.7em}dH=\frac{I\*\sin\alpha\*d\alpha}{4\pi x}\\
+\\[1em]
+
+\h3{Ampērā spēks}\\[1em]
+\text{Ampēra spēks ir spēks, ar kuru magn. lauks ietekmē uz vadītāju ar plūstošo strāvu.}\\
+F=I\*l\*B\*\sin\theta\text,~\vec F=I\*\vec l\times\vec B\\
+\text{Lasot no shēmas, }\vec F\text{ virzienu iegūst šādi:}\\
+\text{1. kreisā roku rāda strāvas virzienā;}\\
+\text{2. rokas plauksts ir jāpagriež uz sevi, ja }\vec B=\odot\text{, vai pret sevi, ja }\vec B=\otimes\\
+\text{3. izcelts īkšķis rādīs }\vec F\text{ (kontūra iekšā vai ārā).}\\
+\text{Ja }\vec n\upuparrows\vec B\text{, tad kontūram ir stabils līdzsvars.}\\
+\text{Ja }\vec n\uparrow\downarrow\vec B\text{, tad kontūram ir labils līdzsvars.}
+\\[1em]
+
+\h3{Lorenca spēks}\\[1em]
+
+\text{Lorenca spēks tas ir pilns spēks, kas darbojas ar elektrisko lādiņu,}\\
+\text{kas pārvietojas elektromagnētiskajā laukā.}\\
+d\vec F_L=q\*d\vec E+q(\vec v\times d\vec B)\text{, kur }\vec E\text{ ir elektriskā lauka intensitāte. (}\vec E=\frac{\vec F_{\to q}}q\text{, }\mathrm{\textstyle[\frac NC\Lrarr\frac Vm]}\text)
