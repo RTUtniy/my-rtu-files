@@ -1,0 +1,65 @@
+\displaystyle
+\def\*{\cdot}
+\def\defi{\textbf{Definīcija}\text{: }}
+\def\ssubset{⊆}
+\def\proj#1#2{\mathrm{proj}_{#1}{#2}}
+\def\cortage#1{~⟨#1⟩~}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+{\LARGE\textbf{Diskrētās struktūras datorzinātnēs}}\\
+{\Large\textbf{Lekcija}}\\
+\h3{Leksikografiskais sakārtojuma princips}\\
+{\tt{aba}\rarr\tt{abava}\rarr\tt{abra}}\\
+\begin{array}{c|c|c|c|c}
+\tt a & \tt b & \tt a & \varnothing & \varnothing\\\hdashline
+= & = & = & > & >\\\hdashline
+\tt a & \tt b & \tt a & \tt v & \tt a\\\hdashline
+= & = & > & > & >\\\hdashline
+\tt a & \tt b & \tt r & \tt a & \varnothing
+\end{array}
+\\
+\textbf{Elementu salīdzināšana sakārtotās kopās}\\
+X=\cortage…;A\ssubset X\\
+
+\defi m\in X\text{ sauc par kopas }A\text{ augšējo slieksni jeb mažoranti,}\\
+\text{ja visiem elementiem }a\in A\text{ izpildās attieksme }aRm\text,\\
+\text{kur }R\text{ ir kaut kāda sakārtojuma attieksme.}\\
+\defi n\in X\text{ sauc par kopas }A\text{ apakšdjo slieksni jeb minoranti,}\\
+\text{ja visiem elementiem }a\in A\text{ izpildās attieksme }nRa\text.\\[0.5em]
+
+X=\set{0,1,2,3,4,5,6,7,8,9}\\
+A_1=\set{2,3,4}\\
+A_1\text{ mažorantes ir }5,6,7,8,9\\
+A_1\text{ minorantes ir }1,0\\
+A_2=\set{6,7,8,9}\\
+A_2\text{ mažorantes ir }\varnothing\text{ (mažoranšu nav)}\\
+A_2\text{ minorantes ir }5,4,3,2,1,0\\
+A_3=\set{0,1}\\
+A_3\text{ mažorantes ir }2,3,4,5,6,7,8,9\\
+A_3\text{ minorantes ir }\varnothing\text{ (minoranšu nav)}\\[0.5em]
+
+\defi\text{ja mažoranšu kopai eksistē minimums, tad to sauc par kopas }A~\underline{\text{supremu}}.\\
+\defi\text{ja minoranšu kopai eksistē maksimums, tad to sauc par kopas }A~\underline{\text{infioru}}.\\[0.5em]
+
+X=\set{a,b,c}\\
+\set a\subset\set{a,b}\\
+\set a\subset\set{a,c}\\
+\set b\subset\set{a,b}\\
+\set b\subset\set{b,c}\\
+\set c\subset\set{a,c}\\
+\set c\subset\set{b,c}\\
+\therefore\set{a,b,c}\text{ – maksimālais elements}\\
+\land~\set a,\set b,\set c\text{ ir 3 minimāli elementu}\\[1em]
+\h3{Kopu attēlojumi}\\
+\defi a\in A\text{ attēlu sauc to kopas }B\text{ elementus,}\\
+\text{kas ir definēti ar piekārtojumu }a\varphi\\
+\defi\text{par }b\in B\text{ pirmtēlu sauc to kopas }A\text{ elementus,}\\
+\text{kuru piekārtojumi (}b\varphi^{-1}\text{) satur }b\text.\\[1em]
+
+\h3{Attēlojumu veidi}\\
+
+\defi\text{Attēlojumu sauc par pilnu jeb pārklājošu,}\\
+\text{ja visiem }a\in A\text{ ir definēti attēli, t.i. kopas }B\text{ elementi.}\\
+\defi\text{Attēlojums ir daļējais, ja kopā }A\text{ ir elementi,}\\
+\text{kuru attēli nav definēti vai ir tukši.}\\
