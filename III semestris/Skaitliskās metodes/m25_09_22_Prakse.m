@@ -4,10 +4,10 @@
 % Kontroldarbā būs 3 Gausa, 2 Jakobi uzdevumi
 % ChatGPT izmantošana ir ok, izņemot kontroldarbu laikā
 
-%% Uzdevumi patstâvîgai risinâðanai
+%% Uzdevumi patstāvīgai risināšanai
 % 2.1. - 2.5.uzdevumi ( 64. - 68.lpp.)
 
-%% 2.3. uzdevums
+%% 2.3. uzdevums                   %%JA
 clc, clearvars, format long
 A = [13,10,13;10,8,10;13,10,14];  B = [2;22;3];
 if det(A) == 0
@@ -51,7 +51,7 @@ fprintf(' kļūda = %.6f\n' ,prnorm(row,2))
 fprintf(' x_tuvinājumi : { %.4f , %.4f, %.4f }\n',x_approx(:)')
 disp(" Jakobi metode diverģē")
 
-%% 2.4. uzdevums
+%% 2.4. uzdevums                   %%JA
 clc, clearvars, format long
 A = [2,14,10;
      14,2,8;
@@ -116,7 +116,7 @@ disp('Atbilde:')
 fprintf(' iterāciju skaits = %.0f --> kļūda = %.6f\n',prnorm(row,1),prnorm(row,2)) 
 fprintf(' iterāciju skaits = %.0f --> kļūda = %.6f\n',prnorm(row-2,1),prnorm(row-2,2))
 fprintf(' x_tuvinājumi : { %.4f , %.4f, %.4f }\n',x_approx(:)')
-%% 2.5. uzdevums
+%% 2.5. uzdevums                   %%JA
 clc, clearvars, format long
 A= [14,3,8;
     3,12,7;
@@ -173,24 +173,23 @@ fprintf(' iterāciju skaits = %.0f\n',prnorm(row,1))
 fprintf(' kļūda = %.6f\n' ,prnorm(row,2))
 fprintf(' x_tuvinājumi : { %.4f , %.4f, %.4f }\n',x_approx(:)')
 
-%% ârçjas funkcijas %%  ârçjas funkcijas  %%   ârçjas funkcijas %%%%%%%%%%
+%% ārējās funkcijas
 % pamatprogrammas beigas
 
 
-% ârçja funkcija ( 1.16.piemçrs ). Faktorizâcijas  metode
+% ārējā funkcija ( 1.16. piemērs ). Faktorizācijas  metode
 function fun_prob16(a_el,b_el,c_el)
    n = length(a_el);
    for i = 1:n
       if abs(b_el(i)) < ( abs(a_el(i))+abs(c_el(i)) )
-         disp(' Faktorizâcijas metode nav stabila'), return
+         disp(' Faktorizācijas metode nav stabila'), return
       end
     end
     disp(' Faktorizâcijas metode ir stabila')  
 end
 
-
-% ârçja funkcija ( 2.3.piemçrs ). Jakobi metode
-% pârbaude: vai Jakobi metode konverìç?
+% ārējā funkcija ( 2.3. piemērs ). Jakobi metode
+% pārbaude: vai Jakobi metode koverģē?
 function fun_prob3(A_mat)
  [row,col] = size(A_mat);
  for i = 1:row
@@ -206,5 +205,5 @@ function fun_prob3(A_mat)
       return
     end
  end
- disp(' Izpildâs konver.pietiekamais nosacîjums - Jakobi metode konverìç')
+ disp(' Izpildās konver.pietiekamais nosacījums - Jakobi metode koverģē')
 end

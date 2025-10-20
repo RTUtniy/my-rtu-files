@@ -1,4 +1,4 @@
-%% Lineāru vienādojumu sistēmas. Tie��s metodes 
+%% Lineāru vienādojumu sistēmas. Tiešās metodes 
 % 7.-39.lpp.
 
 %% Visu uzdevumu numerācija sakrīt ar uzdevumu numerāciju
@@ -7,7 +7,7 @@
 
 %% Gausa metode: 7.-16.lpp.
 
-%% 1.1. uzdevums
+%% 1.1. uzdevums                   %%GA
 clc, clearvars, format compact 
 A = [3,-1,4;2,3,1;1,-5,-3];
 B = [-3;5;3];
@@ -24,7 +24,7 @@ disp('Atbilde:')
 disp(' LVS ir saderīga un noteikta,tai ir viens vienīgs atrisinājums')
 solution = table(X_name,X_value)
 
-%% 1.2. uzdevums
+%% 1.2. uzdevums                   %%GA
 clc, clearvars, format compact 
 A = [3, -1, 4;
      2,  3, 1;
@@ -45,7 +45,7 @@ disp(' LVS ir saderīga un nenoteikta (bezgalīgi daudz atrisinājumu)')
 fprintf('x = %s, y = %s; \n', X_gen(1:2))
 fprintf('z - jebkurš reāls skaitlis\n')
 
-%% 1.3. uzdevums
+%% 1.3. uzdevums                   %%GA
 clc, clearvars, format compact 
 A = [3, -3,  3, 6;
      3,  6, -3, 7;
@@ -70,7 +70,7 @@ fprintf('x1 = %s, x2 = %s, x3=%s; \n', X_gen(1:3))
 fprintf('x4 - jebkurš reāls skaitlis\n\n')
 fprintf('x1 = %s\n', x1_ver)
 
-%% 1.4. uzdevums
+%% 1.4. uzdevums                   %%GA
 clc, clearvars, format compact 
 A = [1, 2,  1, -3;
      2, 1, -2,  9;
@@ -96,7 +96,7 @@ fprintf('x1 = %s, x2 = %s; \n', X_gen(1:2))
 fprintf('x3 un x4 - jebkuri reāli skaitļi\n\n')
 fprintf('x2 = %s\n', x2_ver)
 
-%% 1.9. uzd
+%% 1.9. uzd                   %%GA
 clc, clearvars, format compact 
 A = [0,  1,  2, -1;
      2, -3,  2,  0;
@@ -113,7 +113,7 @@ if Aaug_rank ~= A_rank
     fprintf('Atbilde:\n LVS ir nesaderīga (nav atrsinājuma)\n')
 end
 
-%% 1.10. uzd
+%% 1.10. uzd                   %%GA
 clc, clearvars, format compact 
 A = [1, 1, 1,  1, 1;
      1, 2, 2,  4, 2;

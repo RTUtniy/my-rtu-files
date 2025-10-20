@@ -1,4 +1,4 @@
-%% 2.6. Iterāciju metode
+%% 2.6. Iterāciju metode                   %%IT
 clc, clearvars, format compact
 A=[9,2,5;
    2,18,6;
@@ -41,7 +41,7 @@ fprintf('  x tuvinājumi = { %.4f, %.4f, %.4f }\n', x_app(1), x_app(2), x_app(3)
 fprintf('  tuvinātā atr. norma 12. iter. = %.4f\n', norm(x_app))
 fprintf('  nesaistes norma 12. iter. = %.4f\n', norm(resid))
 
-%% 2.7. Iterāciju metode
+%% 2.7. Iterāciju metode                   %%IT
 clc, clearvars, format compact
 A = [9, 2, 5;
      2, 18, 6;
