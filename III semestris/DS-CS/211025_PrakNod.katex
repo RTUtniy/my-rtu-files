@@ -1,0 +1,67 @@
+\displaystyle
+\def\*{\cdot}
+\def\h3#1{{\large\textbf{#1}}}
+\def\t#1{\text{#1}}
+\def\cortage#1{⟨#1⟩}
+\def\p#1{~\*~\t{#1}}
+\def\hr{\frac{\kern{28em}}{}\\}
+\def\pr#1#2{\mathrm{pr_{#1}{(#2)}}
+\def\sel#1#2{\mathrm{sel_{#1}}{(#2)}}
+\def\table#1#2{\begin{array}{#1}#2\end{array}}
+{\LARGE\textbf{Diskrētās struktūras datorzinātnē}}\\
+{\Large\textbf{Praktiskā nodarbība}}\\
+
+A\stackrel{F}{\to}B\\
+\cortage{a_1, b_1}\cortage{a_1,b_2}\\
+\varphi(a_1)=b_1,b_2\\
+\t{Pilns attēlojums: }\forall a\in A|\set{\varphi(a)}|\gt1\\
+\t{Attēlojums uz kopu: }\exists a\in A\to\forall b\in B, b\in\set{\varphi(a)}\\[0.5em]
+
+\t{Attēlojums ir viennozīmīgs (funkcionāls), ja }\forall a\in A~|\set{\varphi(a)}|=1\\
+\t{Ja gan }F\t{, gan }F^{-1}\t{ ir viennozīmīgs, tas ir vienviennozīmīgs}\\
+\textbf{Sirjekcija}\t{ ir viennozīmīgs attēlojums uz kopu...}\\
+\textbf{Injekcija}\t{ ir vienviennozīmīgs attēlojums kopā}\\
+\textbf{Bijekcija}\t{ ir sirjekcija+injekcija.}\\[1em]
+
+f(x)=\frac{x^2+1}{x^2+2}\\
+\t{Nav injekcija }R\t{ kopā, jo }f(x)\t{ negatīviem skaitļiem nav attēla}\\
+\t{(nav viennozīmīguma }F^{-1}\t)\\[1em]
+
+g(x)=x^3\\
+\t{Nav sirjekcija, jo nav uz kopu (ir kopā).}\\[1em]
+
+\hr
+
+T_1=\table{|c|c|c|c|}{\hline
+\t{PRN} & \t{Priekšmeta nosaukums} & \t{St. sk. ned.} & \t{Auditorija}\\\hdashline
+}\\
+T_2=\table{|c|c|c|c|c|}{\hline
+\t{Priekšmeta nosaukums} & \t{PRN} & \t{Studenta vārds} & \t{St. apl. nr.} & \t{Vērtējums}\\\hdashline
+}\\[0.2em]
+\t{1. Apvienojums}\\
+\pr{1,2}{T_1}= T_1^\prime,~\pr{2,1}{T_2}=T_2^\prime\\
+T_1^\prime\cup T_2^\prime\\[0.5em]
+
+\t{2. Samazināt ierakstu skaitu.}\\
+T_1^\prime=\sel{st.sk.ned.>3}{T_1}\\
+T_1^{\prime\prime}=\pr{2}{T_1^\prime}=\table{|c|}{\hline
+\textbf{Priekšmeta nosaukums}\\\hline
+\t{Ievads programmēšanā}\\
+\t{Programmēšana 1 }\\
+\t{Diskrētā matemātika}\\\hline
+}\\[0.5em]
+\t{3. Savienot ieskaiti un priekšmetus}\\
+T_1^\prime=\pr{3,4,2,1}{T_1}\\
+T^\ast=T_1^\prime\Join T_2=\\
+\table{|c|c|c|c|c|c|c|}{\hline
+\textbf{St. sk. ned.} & \textbf{Auditorija} & \textbf{Priekšmeta nosaukums} & \textbf{PRN} & \textbf{Studenta vārds} & \textbf{St. apl. nr.} & \textbf{Vērtējums}\\\hline
+3 & \t{Zun10-103} & \t{Datoru arhitektūra} & 240 & \t{Ivars Gulbis} & 3246 & 6\\
+3 & \t{Zun10-103} & \t{Datoru arhitektūra} & 240 & \t{Juris Kalns} & 4430 & 6\\
+3 & \t{Zun8-302} & \t{Algoritmi un datu struktūras} & 310 & \t{Pēteris Putniņš} & 0988 & 5\\
+3 & \t{Zun8-302} & \t{Algoritmi un datu struktūras} & 310 & \t{Edgars Liepiņš} & 5448 & 7\\
+3 & \t{Zun8-302} & \t{Algoritmi un datu struktūras} & 310 & \t{Kristīne Liepa} & 0788 & 8\\
+3 & \t{Zun10-405} & \t{Operētājsistēmas} & 440 & \t{Kristīne Liepa} & 0788 & 9\\\hline
+}
+\\[0.5em]
+\t{4. Atrast pasn. vārds, pie kuriem vērt.=9}\\
+%pr pr j pr

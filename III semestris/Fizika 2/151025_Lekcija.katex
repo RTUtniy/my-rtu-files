@@ -1,0 +1,49 @@
+\displaystyle
+\def\*{\cdot}
+\def\const{\mathrm C}
+\def\therefore{\Rightarrow}
+\def\h3#1{{\large\textbf{#1}}\\}
+{\LARGE\textbf{Fizika 2}}\\
+{\Large\textbf{Lekcija}}\\
+f\*\lambda=v\\
+\text{Vides laušanās koeficients: }n=\frac Cv\\
+\boxed{v_2=\frac{v_1}{n_2};~\lambda_2=\frac{\lambda_1}{n_2}}\\[1em]
+
+\h3{EM. viļņi}\\[1em]
+
+\dfrac{\partial^2y}{\partial x^2}=\frac1{v^2}\dfrac{\partial^2y}{\partial t^2}\text{ (mehāniskā viļņa diferenciālvienādojums)}\\
+\dfrac{\partial^2\vec E}{\partial x^2}+\dfrac{\partial^2\vec E}{\partial y^2}+\dfrac{\partial^2\vec E}{\partial z^2}=\varepsilon_0\mu_0\varepsilon\mu\dfrac{\partial^2\vec E}{\partial t^2}\text{ (viļņa dif. vien. el. lauka intens. }E\text)\\
+\dfrac{\partial^2\vec H}{\partial x^2}+\dfrac{\partial^2\vec H}{\partial y^2}+\dfrac{\partial^2\vec H}{\partial z^2}=\varepsilon_0\mu_0\varepsilon\mu\dfrac{\partial^2\vec H}{\partial t^2}\text{ (viļņa dif. vien. magn. lauka intens. }H\text)\\
+
+\boxed{v=\frac{1}{\sqrt{\varepsilon_0\mu_0\varepsilon\mu}}}\\
+v_\text{vakuumā}=3\*10^8~\mathrm{\frac{m}{s}}\\[1em]
+
+\h3{Plakans monohromatiskais EMV.}\\[1em]
+
+\vec E\text{ un }\vec H\text{ mainās ar vienādām frekvencēm: }\omega_1=\omega_2=\omega\\
+k_1=k_2=k,~k=\frac\omega v~\text(k\text{ ir viļņu skaits, }k=\frac{2\pi}\lambda\text)\\
+\varphi_{01}=\varphi_{02}=\varphi_0\\
+\boxed{\sqrt{\varepsilon_0\varepsilon}E_m=\sqrt{\mu_0\mu}H_m}\\
+\textbf{Monohromatiskā plakana viļņa vienādojumi: }\\
+\vec E=\vec E_m\cos(\omega t-kx+\varphi_0)\\
+\vec H=\vec H_m\cos(\omega t-kx+\varphi_0)\\[1em]
+
+\h3{EMV svarīgākās īpašības.}\\[1em]
+
+\text{1. Atstarošana un laušana}\\[0.5em]
+% a gde
+\text{2. Viļņu enerģija un tās blīvums.}\\
+w=\dfrac{dW}{dV}\text{ - enerģijas blīvums}\\
+w=w_E+w_H=\frac{\varepsilon_0\varepsilon E^2}{2}\frac{\mu_0\mu H^2}2\\
+\sqrt{\varepsilon_0\varepsilon}E=\sqrt{\mu_0\mu}H\\
+w=\sqrt{\varepsilon_0\mu_0\varepsilon\mu}EH\therefore w=\frac1vEH\\[0.5em]
+\text{3. Enerģijas plūsma un tās blīvums.}\\
+\vec S=\vec E\times\vec H~\text{(jaudas plūsma)}\\[0.5em]
+% там было ещё что-то, S=\frac{...}{...}
+\text{4. EMV impulss un spiediens}\\
+\varepsilon=\text{const, }\mu=\text{const}\\
+dF=dIlB=jdLlB=jsV\mu_0\mu H\\
+\boxed{p=\frac{(1+r)dW}{vLdt}=(1+r)\frac Sv=(1+r)w}\\
+\text{Saule: }p\approx20~\mu\mathrm{Pa}\\
+\text{Modernie lāzeri: }E_s=10^{25}\mathrm{\frac{W}{m^2}};\\
+p=3\*10^{16}~\mathrm{Pa}\approx3\*10^{11}~\mathrm{atm.}

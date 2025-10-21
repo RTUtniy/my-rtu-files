@@ -1,0 +1,75 @@
+\displaystyle
+\def\*{\cdot}
+\def\h3#1{{\large\textbf{#1}}}
+\def\t#1{\text{#1}}
+\def\p#1{~\*~\t{#1}}
+\def\hr{\frac{\kern{20em}}{}\\}
+\def\proj#1#2{\mathrm{proj_{#1}{(#2)}}}
+\def\sel#1#2{\mathrm{sel_{#1}{(#2)}}}
+\def\table#1#2{\begin{array}{#1}#2\end{array}}
+{\LARGE\textbf{Diskrētās struktūras datorzinātnē}}\\
+{\Large\textbf{Lekcija}}\\
+
+\h3{Vaicājumu formēšana}\\
+\p{attieksmju (relāciju) algebra;}\\
+\p{attieksmju (relāciju) rēķini;}\\
+%\color{#4a4a4a}{\text{бля у него опять сбоку уведомление с обновой программы}}\\
+%\t{Relāciju rēķinu būtība ir savas tabulas }
+\h3{Tabulu izskatitļošanas procedūra. Vaicājumu koks.}\\
+\textbf{Dažādi varianti vaicājumu kokiem.}\\
+\boxed{t_1},~\boxed{t_2},~...,~\boxed{t_n}\text{ -- vajadzīgās tabulas.}\\
+t_1\times t_2\times...\times t_n=\boxed{T_1}~\t{Dekarta reizinājums.}\\
+\sel{f_1}{T_1}=\boxed{T_2}~\t{Selekcija.}\\
+\sel{f_2}{T_2}=\boxed{T_3}~\t{Cita selekcija.}\\
+\proj{?a}{T_3}=\boxed{T_4}~\t{Projekcija.}\\
+
+\hr
+
+\boxed{t_1},~\boxed{t_2},~...,~\boxed{t_n}\text{ -- vajadzīgās tabulas.}\\
+t_1\Join t_2\Join...\Join t_n=\boxed{T_1}~\t{Savienošana}\\
+\sel{f_1}{T_1}=\boxed{T_2}~\t{Selekcija.}\\
+\proj{?a}{T_2}=\boxed{T_3}~\t{Projekcija.}\\[1em]
+
+\textbf{Uzdevums: atrast tos pasniedzēju vārdus, kas vada 3 stundas nedēļā.}\\[0.5em]
+T_1=\t{PASNIEDZĒJI }\times\t{PRIEKŠMETI}\\
+T_2=\sel{\text{PASN. PRIEKŠM N.=PRIEKŠM.N}}{T_1}\\
+%\t{интернут ортуса би лайк}\\
+T_3=\sel{PRIEKŠM.ST.SK.NED.=3}{T_2}\\
+T_4=\proj{PASN.VĀRDS,~PRIEKŠMETI.PRIEKŠMETA NOSAUKUMS}{T_3}\\[1em]
+
+T_1=\proj{1,3,2}{\t{PASN.}}\Join\t{PRIEKŠMETI}\\
+T_2=\sel{PRIEKŠMETI.st.sk.n = 3}{T_1}\\
+T_3=\proj{\t{PASNIEDZĒJI.pasn.vārds,~PRIEKŠMETI.priekšm.nos.}}{T_2}\\[1em]
+
+\h3{Relāciju rēķini}\\
+\p{mainīgie korteži}\\
+\p{mainīgie domēni}\\
+\t{Formulas }f\t{ tiek veidotas no termiem, salīdzināšanas un loģiskaiem operatoriem}\\
+\t{Termi ir 3 tipu:}\\
+\t{1) }t\in R\t{ (piederība tabulai)}\\
+\t{2) }p.3=q.5\t{ (tabulas iekšējo vērtību salīdzināšana)}\\
+\t{3) }d.n > 300\t{ (salīdzināšana ar konstantēm)}\\[0.5em]
+
+\textbf{Termi ir pareizi konsatruētas formulas (PKF).}\\
+\t{ Ja }F_1\t{ un }F_2\t{ ir PKF, tad arī }F_1\&F_2\t,~F_1\lor F_2\t,~\neg F_1\t,~\neg F_2\t{ ir PKF.}\\[1em]
+
+\h3{Pseidovaloda}\\[.5em]
+
+{\tt IEGŪT~TAB(}\overbrace{..............}^{\t{atribūti}}{\tt):~L}\larr\t{nosacījumi}\\
+\t{Piemērs: }{\tt IEGŪT~TAB(ATZĪMES\_1.PRN):~ATZĪMES\_1.atzīmes<4}\\
+\table{|c|}{\hline
+{\tt ATZĪMES\_1.PRN}\\\hline
+{\tt 210}\\\hline
+}\\
+
+\hr
+
+\t{Uzdevums: atrast pasniedzēja vārdus, kuriem ir 3 stundas nedēļā.}\\
+{\tt IEGŪT~TAB(PASN.pasn.v.):~(\exists x~(x.PRN = PASN.PRN~\&~x.st.sk.n=3))}\\
+
+\hr
+
+%{\tt IEGŪT~TAB(PR.priekšm.nos.,~PASN.pasn.v.):}
+%(x\in PRIEKŠM.,~y\in PASN.)
+{\tt IEGŪT~TAB(ATZĪMES.atzīmes):~(\exists x(x.PRN=ATZĪMES.PRN\&PR.st.sk.n.=4)~\&}\\
+{\tt\exists y(y.PRN=x.PRN)\&~y.Pasn.v.="Bērzinš")}
