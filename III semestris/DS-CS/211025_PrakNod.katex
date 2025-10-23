@@ -5,7 +5,7 @@
 \def\cortage#1{⟨#1⟩}
 \def\p#1{~\*~\t{#1}}
 \def\hr{\frac{\kern{28em}}{}\\}
-\def\pr#1#2{\mathrm{pr_{#1}{(#2)}}
+\def\pr#1#2{\mathrm{pr_{#1}{(#2)}}}
 \def\sel#1#2{\mathrm{sel_{#1}}{(#2)}}
 \def\table#1#2{\begin{array}{#1}#2\end{array}}
 {\LARGE\textbf{Diskrētās struktūras datorzinātnē}}\\
