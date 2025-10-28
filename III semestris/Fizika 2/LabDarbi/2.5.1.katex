@@ -1,0 +1,63 @@
+\displaystyle
+\def\*{\cdot}
+\def\hr{\frac{\kern{31em}}{}\\}
+\def\merv#1{~\mathrm{#1}}
+{\LARGE\textbf{Aprēķini}}\\
+{3.\kern{0.35em}}\mathllap{\Large\raisebox{0em}{$\bigcirc$}}\text{ Aprēķināt }B_0\text{ pie katra strāvas stipruma ņemot vidējo leņķi.}\\[0.25em]
+
+\boxed{B_0=\frac{\mu_0nI}{2R\tg\varphi}}\\[0.5em]
+
+1)~B_0=\frac{12,57\*10^{-7}\*3\*1}{2\*0,18\*\tg\frac{33\degree+32\degree}{2}}\approx1,6442\*10^{-5}\merv T\\[.5em]
+2^\ast)~B_0=\frac{12,57\*10^{-7}\*3\*2}{2\*0,18\*\tg\frac{51\degree+42\degree}{2}}\approx1,9881\*10^{-5}\merv T\\[.5em]
+3)~B_0=\frac{12,57\*10^{-7}\*3\*3}{2\*0,18\*\tg\frac{62\degree+64\degree}{2}}\approx1,6019\*10^{-5}\merv T\\[.5em]
+4)~B_0=\frac{12,57\*10^{-7}\*3\*4}{2\*0,18\*\tg\frac{68\degree+70\degree}{2}}\approx1,6084\*10^{-5}\merv T\\[.5em]
+5)~B_0=\frac{12,57\*10^{-7}\*3\*5}{2\*0,18\*\tg\frac{72\degree+76\degree}{2}}\approx1,5018\*10^{-5}\merv T\\[1em]
+
+{4.\kern{0.35em}}\mathllap{\Large\raisebox{0em}{$\bigcirc$}}\text{ Kļūdu aprēķini}\\[0.25em]
+
+\boxed{
+  \begin{matrix*}[l]
+    \varphi, R\text{ un }I\text{ ir tiešo mērījumu kļūdas.}\\
+    B_0\text{ ir netiešo mērījumu kļūdas}
+  \end{matrix*}
+}\\[0.5em]
+
+\hr
+
+\overline\varphi=\frac 15\left(\frac{32+33}2+\frac{51+42}2+\frac{62+64}2+\frac{68+70}2+\frac{72+76}2\right)=\\
+=\frac15(32,5+46,5+63+69+74)=57\degree\\
+S_\varphi=\sqrt{\frac{(57-32,5)^2+(57-46,5)^2+(57-63)^2+(57-69)^2+(57-74)^2}{5\*4}}\approx7,6795\\
+\Delta\varphi_\text s=\frac13\*1,96\approx0,6533\\
+\Delta\varphi_\text g=S_a\*t_\beta(5)=7,6795\*2,78=21,349\\
+\Delta\varphi=\sqrt{(\Delta a_\text s)^2+(\Delta a_\text g)^2}=\sqrt{0,6533^2+21,349^2}\approx21,359\\
+\varepsilon_{\varphi}=21,359:57\approx37,47\%\\
+\boxed{\varphi=(57\pm21,359)\degree\text{ pie }\beta=0,95\text{ un }\varepsilon_\varphi=37,47\%}\\[1em]
+
+\hr
+
+\Delta R=\sqrt{(\Delta R_\text s)^2}=\frac{\delta_n}3\*1,96=\frac{0,005}{3}\*1,96\approx0,0033\\
+\varepsilon_R=\frac{\Delta R}{R}=\frac{0,0033}{0,18}=1,83\%\\
+\boxed{R=(0,18\pm0,0033)\merv{m}\text{ pie }\beta=0,95\text{ un }\varepsilon_\varphi=1,83\%}\\[1em]
+
+\hr
+
+\overline I=3\\
+S_I=\sqrt{\frac{(5-3)^2+(4-3)^2+(3-3)^2+(2-3)^2+(1-3)^2}{5\*4}}=\\
+=\sqrt\frac12\approx0,7071\\
+\Delta I_\text s=\frac{0,075}3\*1,96\approx0,049\\
+\Delta I_\text g=S_I\*t_\beta(5)=0,7071\*2,78\approx1,9657\\
+\Delta I=\sqrt{(\Delta I_\text s)^2+(\Delta I_\text g)^2}\approx1,9663\\
+\varepsilon_I=\frac{\Delta I}{\overline I}=\frac{1,9663}{3}=65,54\%\\
+\boxed{I=(3\pm1,9663)\merv{A}\text{ pie }\beta=0,95\text{ un }\varepsilon_\varphi=65,54\%}\\[1em]
+
+\hr
+
+\overline{B_0}=\frac{\mu_0n\overline I}{2R\tg\overline \varphi}=\frac{12,57\*10^{-7}\*3\*3}{2\*0,18\*\tg57\degree}\approx2,0408\*10^{-5}\merv T\\
+\Delta B_0^\ast=\sqrt{\left(\dfrac{\partial B_0}{\partial I}\*\Delta I\right)^2+\left(\dfrac{\partial B_0}{\partial R}\*\Delta R\right)^2+\left(\dfrac{\partial B_0}{\partial\varphi}\*\Delta\varphi\right)^2}=\\
+=\sqrt{\left(\frac{\mu_0n}{2R\tg\varphi}\*\Delta I\right)^2+\left(\frac{-\mu_0n I}{2R^2\tg\varphi}\*\Delta R\right)^2+\left(\frac{-\mu_0nI}{2R\sin^2\varphi}\*\Delta\varphi\right)^2}=\\
+=\sqrt{\left(\frac{12,57\*10^{-7}\*3}{2\*0,18\*\tg46,5\degree}\*1,9663\right)^2+\left(\frac{-12,57\*10^{-7}\*3\*2}{2\*0,18^2\*\tg46,5\degree}\*0,0033\right)^2+}\\
+\overline{+\left(\frac{-12,57\*10^{-7}\*3\*2}{2\*0,18\*\sin^2 46,5\degree}\*21,359\right)^2}\approx8,5066\*10^{-4}\\
+\varepsilon_{B_0^\ast}=\frac{\Delta B_0}{\overline{B_0}}\approx4168,26\%\\
+\boxed{B_0^\ast=(1,9881\*10^{-5}\pm8,5066\*10^{-4})\merv T\text{ pie }\beta=0,95\text{ un }\varepsilon_{B_0^\ast}=4168,26\%}\\[1em]
+
+{5.\kern{0.35em}}\mathllap{\Large\raisebox{0em}{$\bigcirc$}}\text{Secinājumi}\\[0.25em]
