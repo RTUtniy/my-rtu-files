@@ -1,0 +1,148 @@
+\displaystyle
+\def\cortage#1{⟨#1⟩}
+\def\h3#1{{\large\textbf{#1}}}
+\def\table#1#2{\begin{array}{#1}#2\end{array}}
+\def\proj#1#2{\operatorname{proj}_{#1}(#2)}
+\def\sel#1#2{\operatorname{sel}_{#1}(#2)}
+
+{\LARGE\textbf{Sagatavošanās materiāls 1. K/D}}\\
+{\Large\textbf{Diskrētās struktūras datorzinātnē}}\\[2em]
+
+\h3{1. uzdevums.}\\
+
+\text{Attieksme ir simetriska, ja }R=R^{-1}\text{. jeb }\boxed{\forall\cortage{x, y}\in R\Lrarr\cortage{y,x}\in R}\text{. Piemēri:}\\
+\begin{pmatrix}
+ 1 & 0 & 1\\
+ 0 & 0 & 0\\
+ 1 & 0 & 0
+\end{pmatrix},
+\begin{pmatrix}
+ 1 & 0 & 1 & 0\\
+ 0 & 1 & 1 & 0\\
+ 1 & 1 & 0 & 1\\
+ 0 & 0 & 1 & 1
+\end{pmatrix},\set{\cortage{a, b}, \cortage{b, a}, \cortage{c,c}, \cortage{d,f}, \cortage{e,f}, \cortage{f,d}, \cortage{f, e}}\\
+\text{Ja attieksme ir uzdota grafu veidā, visām saitēm jābūt biorientētām. }\boxed\lrarr\\[1em]
+\text{Attieksme ir refleksīva, ja }\boxed{\forall x\in A\exists\cortage{x,x}\in R}\text{. Īsāk sakot, matricu pierakstā}\\
+\text{galvenā diagonāle jābūt aizpildītai ar "1", kortežu kopas pierakstā katram iespējamam}\\
+\text{elementam jābūt kortežs pašam ar sevi, bet grafu veidā katram mezglam jānorāda}\\
+\text{pašam uz sevi.}\\[1em]
+\text{Attieksme ir transitīva, ja "no elementa a ir netieša saite ar elementu c, tad jāeksistē arī }\\
+\text{tiešai saitei". Matricu pierakstā nedrīkst būt nekvadrātisko četrstūru ar vienu neaizpildītu}\\
+\text{stūri (zīmējot nekvadr. četrst. virs matricas, stūros jābūt "1"), kortežu kopas pierakstā}\\
+\text{jāizpildās nosacījumam }\boxed{\exists\cortage{x,y}\in R\land\exists\cortage{y,z}\Rarr\cortage{x,z}\in R}\text{, bet, attēlojot ar grafiem,}\\
+\text{jābūt taisnam norādījumam līdz katram elementam, ja līdz tam var nonākt caur citiem.}\\
+\text{(t.sk. arī pašam uz sevi, ja mezglam ir biorientēta saite }\boxed\lrarr\text)\\
+\left(\begin{array}{c|}
+  & \alpha & \beta & \delta & \gamma\\\hline
+a &    1   &   0   &    1   &    1  \\
+b &    0   &   1   &    1   &    0  \\
+c &    1   &   0   &    0   &    1  \\
+d &    1   &   0   &    1   &    0
+\end{array}\right)~
+\underbrace{\begin{matrix*}[l]
+ a\alpha-a\delta-d\delta-d\alpha\text{ ir pilnīgi aizpildīts;}\\
+ a\alpha-a\delta-c\delta-c\alpha\text{ ir kvadr. četrstūris, tāpēc tas nav jāņem vērā;}\\
+ a\beta-a\delta-c\delta-c\beta\text{ ir kvadr. četrstūris, tāpēc tas nav jāņem vērā;}\\
+ a\delta-a\gamma-b\gamma-b\delta\text{ ir kvadr. četrstūris, tāpēc tas nav jāņem vērā;}\\
+ \underline{a\delta-a\gamma-c\gamma-c\delta\text{ ir nekvadr. četrst. ar vienu neaizpildītu stūri...}}
+\end{matrix*}}_{\small\text{Nav transitīva}}
+\\[2em]
+
+\h3{2. uzdevums}\\
+
+\text{Lai veikt ar tabulām kopu opeācijas (}\cup, \cap, \setminus)\text{, tām ir jābūt saderīgām: jāsakrīt atribūtiem}\\
+\text{un to secībai.}\\
+\table{|c|c|c|}{\hline
+\tt Attr3 & \tt Attr2 &\tt Attr1\\\hline
+\tt ... & \tt ... & \tt ... \\\hdashline
+} \not= \table{|c|c|c|}{\hline
+\tt Attr1 & \tt Attr2 &\tt Attr3\\\hline
+\tt ... & \tt ... & \tt ... \\\hdashline
+}\\
+
+\text{Lai sakārtot tabulas atribūtus vai noslēpt tos, ir jāizmanto projekciju.}\\
+\boxed{\proj{\text{atribūtu nosaukumi vai indeksi}}{\text{Tabulas nosaukums}}}\\
+\text{Ierakstot funkcijas indeksā atribūtus, iznākumā būs argumentā dotā tabula ar norādītiem}\\
+\text{atribūtiem pierakstītajā secībā. Piemēram:}\\
+T_1 = \table{|c|c|c|}{\hline
+ \tt Vārds & \tt Uzvārds & \tt Atzīme\\\hline
+ \text{Iaroslav} & \text{Viazmitin} & 6\\
+ \text{Rostislavs} & \text{Kuzņecovs} & 4\\\hline
+}~\proj{\tt Atzīme,~Uzvārds}{T_1}=\table{|c|c|}{\hline
+ \tt Atzīme & \tt Uzvārds\\\hline
+ 6 & \text{Viazmitin}\\
+ 4 & \text{Kuzņecovs}\\\hline
+}\\
+\text{Kopu operācijas lietošanas piemēri:}\\
+T_2 = \table{|c|c|c|}{\hline
+ \tt Vārds & \tt Uzvārds & \tt Atzīme\\\hline
+ \text{Iaroslav} & \text{Viazmitin} & 6\\
+ \text{Iaroslav} & \text{Viazmitin} & 9\\\hline
+}\\[.5em]
+
+T_1 \cup T_2 = \table{|c|c|c|}{\hline
+ \tt Vārds & \tt Uzvārds & \tt Atzīme\\\hline
+ \text{Iaroslav} & \text{Viazmitin} & 6\\
+ \text{Iaroslav} & \text{Viazmitin} & 9\\
+ \text{Rostislavs} & \text{Kuzņecovs} & 4\\\hline
+}\\[.5em]
+
+T_1 \cap T_2 = \table{|c|c|c|}{\hline
+ \tt Vārds & \tt Uzvārds & \tt Atzīme\\\hline
+ \text{Iaroslav} & \text{Viazmitin} & 6\\\hline
+}\\[.5em]
+
+T_1 \setminus T_2 = \table{|c|c|c|}{\hline
+ \tt Vārds & \tt Uzvārds & \tt Atzīme\\\hline
+ \text{Rostislavs} & \text{Kuzņecovs} & 4\\\hline
+}\\[1em]
+
+\h3{3. uzdevums}\\
+
+\text{Lai samazinātu ierakstu skaitu tabulā, ir operācija selekcija. }\\
+\boxed{\sel{\text{Loģisks nosacījums}}{\text{Tabula}}}\\
+\def\or{\lor}
+\def\and{\&}
+\def\not{\neg}
+\text{Selekcias loģisks nosacījums varbūt ekvivalence (}{\tt Attr1="text"}\text{), salīdzinājums}\\
+\text({\tt Atzīme \ge 4}\text{) vai to kombinēšana ar būla operatoriem "un" (}\and\text{), "vai" (}\or\text{), "ne-" (}\not\text{).}\\[.5em]
+\text{Atrast ierakstus, kur atzīmes, kas ir mazākas par 4}\to\boxed{\sel{\tt Atzīme<4}{T_1}=\varnothing}\\[1em]
+
+\h3{4. uzdevums}\\
+\text{Savienošanas operācija }(\Join,\href{https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_join_inner_prod}{\textit{join}}\text{) ir domāta tabulas paplašināšanai. Lai to varētu izpildīt,}\\
+\text{kreisai tabulai ir jābeidzas ar tiem pašiem atribūtiem, ar kuriem sākas labā tabula:}\\
+T_3=\table{|c|c|c|}{\hline
+  \tt ID & \tt Attr1 & \tt Attr2 \\\hline
+  1      & \text{abc} & 123\\
+  2      & \text{def} & 123\\\hline
+}~
+T_4=\table{|c|c|c|}{\hline
+  \tt ID & \tt Attr3 & \tt Attr4 \\\hline
+  1      & \text{smezir} & 4:04\\
+  2      & \text{bootleg} & 4:27\\\hline
+}\\
+~~~~~~~~~~~~~~~~~~~~~~~\Darr\\
+T_5=\table{|c|c|c|}{\hline
+  \tt Attr1 & \tt Attr2 & \tt ID \\\hline
+  \text{abc} & 123 & 1\\
+  \text{def} & 123 & 2\\\hline
+}\\
+~~~~~~~~~~~~~~~~~~~~~~~\Darr\\
+T_6=T_5\Join T_4=\table{|c|c|c|c|c|}{\hline
+  \tt Attr1 & \tt Attr2 & \tt ID & \tt Attr3 & \tt Attr4 \\\hline
+  \text{abc} & 123 & 1 & \text{smezir} & 4:04\\
+  \text{def} & 123 & 2 & \text{bootleg} & 4:27\\\hline
+}\\
+\text{Ja ir vairākas sakritošās kolonnas, tad tās arī jābīda ar projecēšanu.}\\[1em]
+
+\h3{5. uzdevums}\\
+\text{Būtībā tas ir 3 iepriekšējo uzdevumu apkopojums + Dekarta reizinājums (iespējams).}\\
+\text{Dekarta reizinājuma piemērs:}\\
+T_3\times T_4=\table{|c|c|c|c|c|c|}{\hline
+ \tt T3.ID & \tt Attr1 & \tt Attr2 & \tt T4.ID & \tt Attr3 & \tt Attr4\\\hline
+ 1 & \text{abc} & 123 & 1 & \text{smezir} & 4:04\\
+ 1 & \text{abc} & 123 & 2 & \text{bootleg} & 4:27\\
+ 2 & \text{def} & 456 & 1 & \text{smezir} & 4:04\\
+ 2 & \text{def} & 456 & 2 & \text{bootleg} & 4:27\\\hline
+}
