@@ -1,0 +1,80 @@
+\displaystyle
+\def\*{\cdot}
+\def\st#1{t_\beta(#1)}
+\def\merv#1{~\mathrm{#1}}
+\def\hr{\frac{\kern{36em}}{}\\}
+\def\eps{\varepsilon}
+\def\hidden#1{\htmlStyle{visibility: hidden}{#1}}
+
+\textbf{1. uzdevums}\\
+m=5\\
+\lambda_\text{šaur.}=\frac{D_i\*d}{a\*m}=\frac{(x_{i+m}-x_i)\*d}{a\*m}\\[.4em]
+\lambda_\text{šaur.}=\frac{(1,72\merv{mm}-0,02\merv{mm})\*0,344\merv{mm}}{23,3\merv{cm}\*5}\approx501,97\merv{nm}\\[1em]
+
+\textbf{2. uzdevums}\\
+\lambda_\text{šaur. 1.}\approx501,97\merv{nm},~\lambda_\text{šaur. 2.}\approx504,93\merv{nm}\\
+\lambda_\text{šaur. 3.}\approx504,93\merv{nm},~\lambda_\text{šaur. 4.}\approx504,93\merv{nm}\\
+\lambda_\text{šaur. 5.}\approx487,21\merv{nm},~\overline\lambda_\text{šaur.}=\frac15\sum_{i=1}^5\lambda_{\text{šaur. }i}\approx496,07\merv{nm}\\
+
+\Delta\lambda=\sqrt{\left(\dfrac{\partial\lambda}{\partial a}\*\Delta a\right)^2+\left(\dfrac{\partial\lambda}{\partial D}\*\Delta D\right)^2}=\sqrt{\left(-\frac{\overline D\*d}{m\*\overline a^2}\*\Delta a\right)^2+\left(\frac{d}{m\*\overline a^2}\*\Delta D\right)^2}=\\
+=\sqrt{\left(-\frac{0,7433\*10^{-3}\*0,344\*10^{-3}}{5\*0,233^2}\*0,0327\right)^2+\left(\frac{0,344\*10^{-3}}{5\*0,233}\*2,522\*10^{-5}\right)^2}=\\
+=\sqrt{(-3,0803\*10^{-8})^2+(7,4469\*10^{-9})^2}\approx3,169\*10^{-8}\merv m\\[1em]
+
+\textbf{3. uzdevums}\\
+d_\text{plat. 1}=\frac{a}{D_\text{plat.}}\*m\*\lambda_\text{šaur.}=\\
+~~~~~~~~~~~=\frac{233\merv{mm}}{1,72\merv{mm}-0,81\merv{mm}}\*6\*496,07\merv{nm}\approx0,7621\merv{mm}\\
+d_\text{plat. 2}=\frac{233\merv{mm}}{1,87\merv{mm}-0,96\merv{mm}}\*6\*496,07\merv{nm}\approx0,7621\merv{mm}\\
+d_\text{plat. 3}=\frac{233\merv{mm}}{2,01\merv{mm}-1,10\merv{mm}}\*6\*496,07\merv{nm}\approx0,7621\merv{mm}\\
+d_\text{plat. 4}=\frac{233\merv{mm}}{2,18\merv{mm}-1,27\merv{mm}}\*6\*496,07\merv{nm}\approx0,7621\merv{mm}\\
+d_\text{plat. 5}=\frac{233\merv{mm}}{2,31\merv{mm}-1,42\merv{mm}}\*6\*496,07\merv{nm}\approx0,7792\merv{mm}\\\\[.4em]
+\overline d_\text{plat.}=\frac{0,7621+0,7621+0,7621+0,7621+0,7792}5\approx0,76552\merv{mm}\\[1em]
+
+\textbf{4. uzdevums}\\
+
+a=23,3\pm0,05\merv{cm}\\
+\Delta a=\sqrt{(\Delta a_\text s)^2}=\frac{\delta_a}3\*\st\infin=\frac{0,05\merv{cm}}3\*1,96\approx0,0327\merv{cm}\\
+\eps_a=\frac{0,0327}{23,3}=0,14\%\\[.4em]
+\boxed{a=(23,3\pm0,0327)\merv{cm}\text{ pie }\beta=0,95\text{ un }\eps_a=0,14\%}\\
+
+\hr
+
+T_D=\begin{array}{|c|}\hline
+\bm{x_{i+m}-x_{i}=D\kern{10.2em}}\\\hline
+1,59-0,81=0,71\merv{mm}=0,71\*10^{-3}\merv m\\\hline
+1,72-0,96=0,76\merv{mm}=0,76\*10^{-3}\merv m\\\hline
+1,87-1,1=0,77\merv{mm}=0,77\*10^{-3}\merv m\hidden{0}\\\hline
+2,01-1,27=0,74\merv{mm}=0,74\*10^{-3}\merv m\\\hline
+2,18-1,42=0,76\merv{mm}=0,76\*10^{-3}\merv m\\\hline
+2,31-1,59=0,72\merv{mm}=0,72\*10^{-3}\merv m\\\hline
+\end{array}\\[.5em]
+
+\overline D=\frac{0,71+0,76+0,77+0,74+0,76+0,77}6\*10^{-3}\approx0,7433\*10^{-3}\merv m\\[.2em]
+
+\def\vkkak#1{(#1\*10^{-3}-0,7433\*10^{-3})^2}
+
+S_D=\sqrt{\vkkak{0,71}+\vkkak{0,76}+}\\
+\overline{+\vkkak{0,77}+\vkkak{0,74}+}\\
+\overline{+\vkkak{0,76}+\vkkak{0,72}}:\sqrt{5\*6}\approx\\
+\approx9,8883\*10^{-6}\\[.2em]
+
+\Delta D_\text s=\frac{\delta_D}3\*\st\infin=\frac{0,005\*10^{-3}}3\*1,96\approx3,2667\*10^{-6}\\
+
+\Delta D_\text g=S_d\*\st6=3,2667\*10^{-6}\*2,57\approx2,5413\*10^{-5}\\
+
+\Delta D=\sqrt{(\Delta D_\text g)^2+(\Delta D_\text s)^2}\approx2,522\*10^{-5}\merv m\\
+
+\eps_D=\frac{\Delta D}{\overline D}=3,4\%\\[.4em]
+
+\boxed{D=(0,7433\*10^{-3}\pm2,522\*10^{-5})\merv{m}\text{ pie }\beta=0,95\text{ un }\eps_D=3,4\%}\\
+
+\hr
+
+\overline\lambda(\overline D, \overline a)=\frac{\overline D\*d}{m\*\overline a}=\frac{0,7433\*10^{-3}\*0,344\*10^{-3}}{5\*0,233}=2,1948\*10^{-7}\\[.5em]
+
+\Delta\lambda=\sqrt{\left(\dfrac{\partial\lambda}{\partial a}\*\Delta a\right)^2+\left(\dfrac{\partial\lambda}{\partial D}\*\Delta D\right)^2}=\sqrt{\left(-\frac{\overline D\*d}{m\*\overline a^2}\*\Delta a\right)^2+\left(\frac{d}{m\*\overline a^2}\*\Delta D\right)^2}=\\
+=\sqrt{\left(-\frac{0,7433\*10^{-3}\*0,344\*10^{-3}}{5\*0,233^2}\*0,0327\right)^2+\left(\frac{0,344\*10^{-3}}{5\*0,233}\*2,522\*10^{-5}\right)^2}=\\
+=\sqrt{(-3,0803\*10^{-8})^2+(7,4469\*10^{-9})^2}\approx3,169\*10^{-8}\merv m\\
+
+\eps_\lambda=\frac{\Delta\lambda}{\overline\lambda}=\frac{3,169\*10^{-8}}{2,1948\*10^{-7}}\approx14,44\%\\[.4em]
+
+\boxed{\lambda=(2,1948\*10^{-7}\pm3,169\*10^{-8})\merv{m}\text{ pie }\beta=0,95\text{ un }\eps_a=14,44\%}
