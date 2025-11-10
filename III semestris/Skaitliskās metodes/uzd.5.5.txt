@@ -1,0 +1,18 @@
+clc, clearvars,format compact, close all                 % notīra komandu logu, izdzēš mainīgos, aizver figūras
+
+% Dotā funkcija f(x) = ∫_0^x (t + t^2) / (1 + t + sqrt(cos(t^2) + 3)) dt
+syms t, y = @(t)( (t + t.^2) ./ (1 + t + sqrt(cos(t.^2) + 3)) );   % definē anonīmo funkciju integrandam
+
+i = 0;                                                   % indeksa inicializēšana
+for x = 0.2:0.15:1.7                                     % x vērtības intervālā [0.2; 1.7] ar soli 0.15
+    i = i+1;                                             % rindas skaitītāja palielināšana
+    f(i) = integral(y,0,x);                              % aprēķina f(x) kā noteikto integrāli no 0 līdz x
+end
+
+xpoints = (0.2:0.15:1.7)';                               % x vērtību kolonna
+ypoints = f';                                            % f(x) vērtību kolonna
+
+p = polyfit(xpoints,ypoints,3)                           % aproksimē datus ar 3. kārtas polinomu; atgriež koeficientus p
+                                                         % p = [a b c d], kur polinoms ir a*x^3 + b*x^2 + c*x + d
+
+pol_ver = polyval(p,1.32)                                % polinoma vērtība dotajā punktā x₁ = 1.32

@@ -1,0 +1,23 @@
+clc, clearvars,format compact, close all                 % notīra komandu logu, mainīgos; kompaktāks izvads; aizver visas figūras
+
+xpoints = [3.3,3.8,4.5,5.4,6.1,6.8,7.5,8.2]';            % x punkti (kolonvektors, ' — transponēšana)
+ypoints = [3.42,3.37,2.59,1.88,1.63,2.30,3.9,5.7]';      % y punkti (kolonvektors)
+
+plot(xpoints,ypoints,'or','LineWidth',3)                 % uzzīmē datu punktus (sarkani aplīši)
+grid on                                                  % ieslēdz režģi
+title('Datu punkti')                                     % grafika virsraksts
+
+% --- Aproksimācija ar trigonometrisko funkciju: y = a + b*sin(x) + c*cos(x)
+ft = fittype({'1','sin(x)','cos(x)'});                   % definē bāzes funkciju tipu (1, sin x, cos x)
+[p,reg] = fit(xpoints,ypoints,ft)                        % pielāgo parametrus (a,b,c); reg satur statistiku (piem., R^2)
+figure                                                   
+plot(p,xpoints,ypoints), grid on                         % parāda pielāgoto līkni kopā ar datiem
+title('Aproksimācija ar trig. funkciju y = a + b*sinx + c*cosx') % virsraksts
+
+% --- Aproksimācija ar paplašinātu funkciju: y = a + b*sin(x) + c*cos(x) + d*sin(2x)
+ft = fittype({'1','sin(x)','cos(x)','sin(2*x)'});       % pievieno papildu bāzi sin(2x)
+[p,reg] = fit(xpoints,ypoints,ft)                        % pielāgo parametrus (a,b,c,d); atjauno reg statistiku
+figure
+plot(p,xpoints,ypoints), grid on                         % parāda jauno pielāgoto līkni
+title(['Aproksimācija ar trig. funkciju ', ...
+       'y = a + b*sinx + c*cosx + d*sin2x'])             % virsraksts ar formulu

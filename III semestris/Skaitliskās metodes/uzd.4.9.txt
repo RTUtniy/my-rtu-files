@@ -1,0 +1,23 @@
+%%uzd.4.9
+clc, clearvars,format compact, close all                 % notīra logu, izdzēš mainīgos, aizver figūras
+
+% Definējam funkciju f(x) (dotā formula uzdevumā)
+f = @(x)(x.^3 + log(x.^2 + 2)) ./ (x.^3 + sqrt(x.*5 + 7) + 6);
+
+xpoints = (0.2:0.3:2.9)'                                 % x vērtības intervālā [0.2; 2.9] ar soli 0.3
+ypoints = f(xpoints)                                     % aprēķinām tabulas y vērtības
+
+% Aproksimācijas funkcija: y = a + b*x + c*cos(x) + d*sin(2x)
+ft = fittype({'1','x','cos(x)','sin(2*x)'});             % definē bāzes funkcijas aproksimācijai
+
+[y,reg] = fit(xpoints,ypoints,ft)                        % atrod koeficientus (a, b, c, d) un regresijas statistiku
+
+figure
+plot(y,xpoints,ypoints)                                  % uzzīmē aproksimācijas līkni kopā ar punktiem
+grid on
+title('Aproksimācija ')                                  % virsraksts
+
+% Aprēķina aproksimācijas kļūdu punktā x0 = 2.22
+% (kā |y(x0) - f(x0)|)
+x0 = 2.22;
+apr_error = abs(y(x0) - f(x0))                           % absolūtā kļūda aproksimācijas punktā
