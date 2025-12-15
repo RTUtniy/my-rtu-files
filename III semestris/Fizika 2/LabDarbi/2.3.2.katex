@@ -1,0 +1,171 @@
+\displaystyle
+\def\*{\cdot}
+\def\hr{\frac{\kern{37.5em}}{}\\}
+\def\merv#1{~\mathrm{#1}}
+\def\ae{\Delta E}
+\def\epsi{\varepsilon}
+\def\over{}
+{\LARGE\textbf{Aprēķini}}\\
+
+\kern{.25em}{3.\kern{0.35em}}\mathllap{\Large\raisebox{0em}{$\bigcirc$}}
+~\text{Aprēķināt dotā pusvadītāja aizliegtās zonas platumu dzesēšanas posmam}\\[1.25em]
+
+\ae_{\searrow~\text{sāk.}}=2k\frac{\ln(R_p^{-1})-\ln(R_1^{-1})}{T_1^{-1}-T_p^{-1}}=2\*1,\!381\*10^{-23}\*\frac{-5,\!7138-\ln(\frac1{342})}{\frac1{35+273,15}-0,\!0031}\approx\\
+\approx1,\!3633\*10^{-20}\merv J\approx0,\!0851\merv{eV}\\[.5em]
+
+\ae_{\searrow~\text{beig.}}=2k\frac{\ln(R_7^{-1})-\ln(R_p^{-1})}{T_p^{-1}-T_7^{-1}}=2\*1,\!381\*10^{-23}\*\frac{\ln(\frac1{270})+5,\!7138}{0,\!0031-\frac1{71+273,15}}\approx\\
+\approx3,\!3797\*10^{-20}\merv J\approx0,\!211\merv{eV}\\[.75em]
+
+\kern{.25em}{4.\kern{0.35em}}\mathllap{\Large\raisebox{0em}{$\bigcirc$}}
+~\text{Kļūdu aprēķini}\\[0.25em]
+
+\boxed{
+  \begin{matrix*}[l]
+    t_1, t_p, t_2, R_{t_1}, R_p\text{ un }R_{t_2}\text{ ir tiešo mērījumu kļūdas}\\
+    \ae\text{ ir netiešo mērījumu kļūdas}
+  \end{matrix*}
+}\\[.75em]
+
+\Delta t_1=\Delta t_{\searrow p}=\Delta t_{\nearrow p}=\Delta t_7=\Delta t=\sqrt{\Delta t_s^2}=\frac{\delta_t}3\*t_{0,95}(\infin)=\frac{0,\!5}3\*1,\!96\approx0,\!3266\\[.5em]
+
+\epsi(t_1)=\frac{\Delta t}{t_1}=\frac{0,\!3266}{35}\approx0,\!9331\%\\
+\boxed{t_1=(35\pm0,\!3266)\merv{\degree C}\text{ pie }\beta=0,\!95\text{ un }\epsi(t_1)=0,\!9331\%}\\[.5em]
+
+\epsi(t_{\searrow p})=\frac{\Delta t}{t_{\searrow p}}=\frac{0,\!3266}{0,\!0031^{-1}-273,\!15}\approx0,6607\%\\
+\boxed{t_{\searrow p}=(49,\!4306\pm0,\!3266)\merv{\degree C}\text{ pie }\beta=0,\!95\text{ un }\epsi(t_{\searrow p})=0,\!6607\%}\\[.5em]
+
+\epsi(t_{\nearrow p})=\frac{\Delta t}{t_{\nearrow p}}=\frac{0,\!3266}{0,\!003^{-1}-273,\!15}\approx0,5427\%\\
+\boxed{t_{\nearrow p}=(60,\!1833\pm0,\!3266)\merv{\degree C}\text{ pie }\beta=0,\!95\text{ un }\epsi(t_{\nearrow p})=0,\!5427\%}\\[.5em]
+
+\epsi(t_7)=\frac{\Delta t}{t_7}=\frac{0,\!3266}{71}\approx0,\!4628\%\\
+\boxed{t_7=(71\pm0,\!3266)\merv{\degree C}\text{ pie }\beta=0,\!95\text{ un }\epsi(t_7)=0,\!4628\%}\\[.75em]
+
+\hr[.5em]
+
+~~~~\Delta R_{\searrow1}=\Delta R_{\searrow p}=\Delta R_{\searrow7}=\\
+=\Delta R_{\nearrow1}=\Delta R_{\nearrow p}=\Delta R_{\nearrow7}=\Delta R=\sqrt{\Delta R_s^2}=\frac{\delta_R}3\*t_{0,95}(\infin)=\frac13\*1,\!96\approx0,\!6533\\[.5em]
+
+\epsi(R_{\searrow1})=\frac{\Delta R}{R_{\searrow1}}=\frac{0,\!6533}{342}\approx0,\!191\%\\
+\boxed{R_{\searrow1}=(342\pm0,\!6533)\merv \Omega\text{ pie }\beta=0,\!95\text{ un }\epsi(R_{\searrow1})=0,\!191\%}\\[.5em]
+
+\epsi(R_{\searrow p})=\frac{\Delta R}{R_{\searrow p}}=\frac{0,\!6533}{1:e^{-5,7138}}\approx0,\!2156\%\\
+\boxed{R_{\searrow p}=(303,\!0204\pm0,\!6533)\merv \Omega\text{ pie }\beta=0,\!95\text{ un }\epsi(R_{\searrow p})=0,\!2156\%}\\[.5em]
+
+\epsi(R_{\searrow7})=\frac{\Delta R}{R_{\searrow7}}=\frac{0,\!6533}{270}\approx0,\!242\%\\
+\boxed{R_{\searrow7}=(270\pm0,\!6533)\merv \Omega\text{ pie }\beta=0,\!95\text{ un }\epsi(R_{\searrow7})=0,\!242\%}\\[.75em]
+
+\hr[.5em]
+
+\epsi(R_{\nearrow1})=\frac{\Delta R}{R_{\nearrow1}}=\frac{0,\!6533}{339}\approx0,\!1927\%\\
+\boxed{R_{\nearrow1}=(339\pm0,\!6533)\merv \Omega\text{ pie }\beta=0,\!95\text{ un }\epsi(R_{\nearrow1})=0,\!1927\%}\\[.5em]
+
+\epsi(R_{\nearrow p})=\frac{\Delta R}{R_{\nearrow p}}=\frac{0,\!6533}{1:e^{-5,7311}}\approx0,\!2119\%\\
+\boxed{R_{\nearrow p}=(308,\!3082\pm0,\!6533)\merv \Omega\text{ pie }\beta=0,\!95\text{ un }\epsi(R_{\nearrow p})=0,\!2119\%}\\[.5em]
+
+\epsi(R_{\nearrow7})=\frac{\Delta R}{R_{\nearrow7}}=\frac{0,\!6533}{262}\approx0,\!2494\%\\
+\boxed{R_{\nearrow7}=(262\pm0,\!6533)\merv \Omega\text{ pie }\beta=0,\!95\text{ un }\epsi(R_{\nearrow7})=0,\!2494\%}\\[.75em]
+
+\hr[.5em]
+
+\ae_1=\ae_{\searrow~\text{sāk.}}=1,\!3633\*10^{-20}\merv J\\
+\Delta(\ae_1)=\\=\sqrt{
+  \left(\dfrac{\partial\ae_1}{\partial R_{\searrow p}}\*\Delta R\right)^2 +
+  \left(\dfrac{\partial\ae_1}{\partial R_{\searrow 1}}\*\Delta R\right)^2 +
+}\\
+\overline{+
+  \left(\dfrac{\partial\ae_1}{\partial t_1}\*\Delta t\right)^2 +
+  \left(\dfrac{\partial\ae_1}{\partial t_p}\*\Delta t\right)^2
+}=\\[.5em]
+=\sqrt{
+  \left(\frac{-2k\*\Delta R}{(T_1^{-1}-T_p^{-1})\*R_{\searrow p}}\right)^2 +
+  \left(\frac{2k\*\Delta R}{(T_1^{-1}-T_p^{-1})\*R_{\searrow 1}}\right)^2 + 
+}\\
+\overline{+
+  \left(\frac{-2k(\ln\left(R_{\searrow 1}^{-1}\right) - \ln\left(R_{\searrow p}^{-1}\right)) T_p^2\*\Delta t}{(T_1 - T_p)^2}\right)^2 +
+  \left(\frac{2k(\ln\left(R_{\searrow 1}^{-1}\right) - \ln\left(R_{\searrow p}^{-1}\right))T_1^2\*\Delta t}{(T_p - T_1)^2}\right)^2
+}=\\[.5em]
+=\sqrt{
+  \left(\frac{-2\*1,\!381\*10^{-23}\*0,\!6533}{((35+273,\!15)^{-1}-0,\!0031):e^{-5,7138}}\right)^2 +
+  \left(\frac{2\*1,\!381\*10^{-23}\*0,\!6533:342}{(35+273,\!15)^{-1}-0,\!0031}\right)^2 +}\\
+\overline{+ 
+  \left(\frac{-2\*1,\!381\*10^{-23}\*(\ln(342^{-1})+5,\!7138)\*0,\!3266}{((35+273,\!15)-0,\!0031^{-1})^2:(0,\!0031^{-1})^2}\right)^2 + }\\
+\overline{+
+  \left(\frac{2\*1,\!381\*10^{-23}\*(\ln(342^{-1})+5,\!7138)}{(0,\!0031^{-1}-(35+273,\!15))^2:(35+273,\!15)^2:0,\!3266}\right)^2
+}=\\[.5em]
+=\sqrt{(-4,\!1018\*10^{-22})^2+(3,\!6343\*10^{-22})^2+(-5,\!4547\*10^{-22})^2+(-4,\!9776\*10^{-22})^2}=\\[.5em]
+=9,\!1958\*10^{-22}\merv J\\[.5em]
+
+\epsi(\ae_1)=\frac{\Delta(\ae_1)}{\ae_1}=\frac{9,\!1958\*10^{-22}}{1,\!3633\*10^{-20}}=6,\!7543\%\\[.5em]
+\boxed{\ae_1=(1,\!3633\*10^{-20}\pm9,\!1958\*10^{-22})\merv J\text{ pie }\beta=0,\!95,~\epsi(\ae_1)=6,\!7543\%}\\[.75em]
+
+\hr[.5em]
+
+\ae_2=
+\ae_{\searrow~\text{beig.}}=3,\!3797\*10^{-20}\\[.5em]
+\Delta(\ae_2)=\\[.5em]
+=\sqrt{
+  \left(\frac{-2\*1,\!381\*10^{-23}\*0,\!6533:270}{0,\!0031-(71+273,\!15)^{-1}}\right)^2 +
+  \left(\frac{2\*1,\!381\*10^{-23}\*0,\!6533\*e^{-5,7138}}{0,\!0031-(71+273,\!15)^{-1}}\right)^2 +}\\
+\overline{+ 
+  \left(\frac{-2\*1,\!381\*10^{-23}\*(-5,\!7138-\ln(270^{-1}))\*0,\!3266}{(0,\!0031^{-1}-(71+273,\!15))^2:(71+273,\!15)^2}\right)^2 + }\\
+\overline{+
+  \left(\frac{2\*1,\!381\*10^{-23}\*(-5,\!7138-\ln(270^{-1}))\*0,\!3266}{((71+273,\!15)-0,0031^{-1})^2:(0,\!0031^{-1})^2}\right)^2
+}=\\[.5em]
+=\sqrt{(-3,\!4397\*10^{-22})^2+(3,\!0649\*10^{-22})^2+(2,\!6496\*10^{-22})^2+(2,\!3279\*10^{-22})^2}=\\[.5em]
+=5,\!8021\*10^{-22}\merv J\\[.5em]
+
+\epsi(\ae_2)=\frac{\Delta(\ae_2)}{\ae_2}=\frac{5,\!8021\*10^{-22}}{3,\!3797\*10^{-20}}=1,\!7168\%\\[.5em]
+\boxed{\ae_2=(3,\!3797\*10^{-20}\pm5,\!8021\*10^{-22})\merv J\text{ pie }\beta=0,\!95,~\epsi(\ae_2)=1,\!7168\%}\\[.75em]
+
+\hr[.5em]
+
+\ae_3=\ae_{\nearrow~\text{sāk.}}=2k\frac{\ln(R_p^{-1})-\ln(R_1^{-1})}{T_1^{-1}-T_p^{-1}}=2\*1,\!381\*10^{-23}\*\frac{-5,\!7311-\ln(\frac1{339})}{\frac1{35+273,15}-0,\!003}\approx\\
+\approx1,\!8055\*10^{-20}\merv J\approx0,\!1127\merv{eV}\\[0.5em]
+\Delta(\ae_3)=\\[.5em]
+=\sqrt{
+  \left(\frac{-2\*1,\!381\*10^{-23}\*0,\!6533}{((35+273,\!15)^{-1}-0,\!003):e^{-5,7311}}\right)^2 +
+  \left(\frac{2\*1,\!381\*10^{-23}\*0,\!6533:339}{(35+273,\!15)^{-1}-0,\!003}\right)^2 +}\\
+\overline{+ 
+  \left(\frac{-2\*1,\!381\*10^{-23}\*(\ln(339^{-1})+5,\!7311)\*0,\!3266}{((35+273,\!15)-0,\!003^{-1})^2:(0,\!003^{-1})^2}\right)^2 + }\\
+\overline{+
+  \left(\frac{2\*1,\!381\*10^{-23}\*(\ln(339^{-1})+5,\!7311)}{(0,\!003^{-1}-(35+273,\!15))^2:(35+273,\!15)^2:0,\!3266}\right)^2
+}=\\[.5em]
+=\sqrt{(-2,\!3872\*10^{-22})^2+(2,\!171\*10^{-22})^2+(1,\!4998\*10^{-22})^2+(-1,\!2831\*10^{-22})^2}=\\[.5em]
+=3,\!7826\*10^{-22}\merv J\\[.5em]
+
+\epsi(\ae_3)=\frac{\Delta(\ae_3)}{\ae_3}=\frac{3,\!7826\*10^{-22}}{1,\!8055\*10^{-20}}=2,\!095\%\\[.5em]
+\boxed{\ae_3=(1,\!8055\*10^{-20}\pm3,\!7826\*10^{-22})\merv J\text{ pie }\beta=0,\!95,~\epsi(\ae_3)=2,\!095\%}\\[.75em]
+
+\hr[.5em]
+
+\ae_4=\ae_{\nearrow~\text{beig.}}=2\*1,\!381\*10^{-23}\*\frac{\ln(\frac1{262})+5,\!7311}{0,\!0031-\frac1{71+273,15}}\approx2,\!3137\*10^{-20}\merv J=0,\!1444\merv{eV}\\[.5em]
+
+\Delta(\ae_4)=\\[.5em]
+=\sqrt{
+  \left(\frac{-2\*1,\!381\*10^{-23}\*0,\!6533:262}{0,\!003-(71+273,\!15)^{-1}}\right)^2 +
+  \left(\frac{2\*1,\!381\*10^{-23}\*0,\!6533\*e^{-5,7311}}{0,\!003-(71+273,\!15)^{-1}}\right)^2 +}\\
+\overline{+ 
+  \left(\frac{-2\*1,\!381\*10^{-23}\*(-5,\!7311-\ln(262^{-1}))\*0,\!3266}{(0,\!003^{-1}-(71+273,\!15))^2:(71+273,\!15)^2}\right)^2 + }\\
+\overline{+
+  \left(\frac{2\*1,\!381\*10^{-23}\*(-5,\!7311-\ln(262^{-1}))\*0,\!3266}{((71+273,\!15)-0,\!003^{-1})^2:(0,\!003^{-1})^2}\right)^2
+}=\\[.5em]
+=\sqrt{(-7,\!3041\*10^{-22})^2+(6,\!207\*10^{-22})^2+(-1,\!2862\*10^{-21})^2+(-1,\!2943\*10^{-21})^2}=\\[.5em]
+=2,\!0611\*10^{-21}\merv J\\[.5em]
+
+\epsi(\ae_4)=\frac{\Delta(\ae_4)}{\ae_4}=\frac{2,\!0611\*10^{-21}}{2,\!3137\*10^{-20}}=8,\!9082\%\\[.5em]
+\boxed{\ae_4=(2,\!3137\*10^{-20}\pm2,\!0611\*10^{-21})\merv J\text{ pie }\beta=0,\!95,~\epsi(\ae_4)=8,\!9082\%}\\[.75em]
+
+\kern{.25em}{5.\kern{0.35em}}\mathllap{\Large\raisebox{0em}{$\bigcirc$}}~\text{Secinājumi}\\[0.25em]
+
+\text{Pētamā viela visticamāk ir ģermānijs -- tā }\ae_{T=300\degree\mathrm K}\text{ ir mazāka par 1 eV}\\
+\text{(apmēram 0,62 eV), atšķirībā no citiem iespējamiem pusvadītājiem.}\\
+\text{Eksperimentāli iegūtās vērtības ir vistuvāk šai atzīmei.}\\[1em]
+
+\text{Grafiks nav taisne, jo viela nav ideāli viendabīga -- tā sastāv no piejaukumiem,}\\
+\text{kam no temperatūras mainījās pretestība savā veidā atkarībā no pamata materiāla.}\\[1em]
+
+\text{Neskatoties uz to, ka }\epsi(\ae)<10\%\text{, darbu ir iespējams vēl vairāk pilnveidot.}\\
+\text{Eksperimentāli iegūtās vērtības tomēr nav tuvu ģermānijam, bet ir tam vistuvāk.}\\
+\text{Labākus rezultātus būtu iespējams iegūt, ja tiktu ievērots pirmais uzdevuma punkts:}\\
+\text{būtu veikti mērījumi no 26, nevis }35\merv{\degree C}\text{ -- lielāks datu apjoms varētu koreģēt gala }\\
+\ae\text{ vērtības, kas labāk atbilstu kādam materiālam (iespējams pat citam).}
