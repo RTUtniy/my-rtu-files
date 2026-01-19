@@ -1,0 +1,34 @@
+{\Large\textbf{Tiešo mērījumu kļūdas aprēķins}}\\
+
+\boxed{\text{Dota izmērīta mērvienība: }a\text{, kuru izmērīja }n>1\text{ reižu.}}\\[.2em]
+
+1.~\text{Vidējā vērtība: }\overline a=\frac1n\sum_{i=1}^n a_i\\
+2.~\text{Vidējā kvadrātiskā kļūda: }S_a=\sqrt{\frac1{n(n-1)}\sum_{i=1}^n(\overline a-a_i)^2}\\
+3.~\text{Sistemātiskā kļūda: }\Delta a_\text s=\frac{\delta_a}3\cdot t_\beta(\infin)\text{, kur}\\
+~~~~\delta_a\text{ -- mērinstrumenta pamatkļūda,}\\
+~~~~t_\beta(\infin)\text{ -- Stjūdenta koeficients no bezgalības (}t_{0,95}(\infin)=1,96)\\
+4.~\text{Gadījuma kļūda: }\Delta a_\text g=S_a\cdot t_\beta(n)\\
+5.~\text{Absolūtā kļūda: }\Delta a=\sqrt{(\Delta a_\text g)^2+(\Delta a_\text s)^2}\\
+6.~\text{Relatīvā kļūda: }\varepsilon_a=\frac{\Delta a}{\overline a}\cdot 100\%\text{ (rezultāts procentos)}\\
+7.~\text{Rezultāts: }\boxed{a=(\overline a\pm\Delta a)\textcolor{#ccc}{\text{ mērvienību}}\text{, }\varepsilon_a=...\text{ pie }\beta=0,95}\\
+
+\frac{\kern{27.2em}}{}\\
+
+\boxed{\text{Dota izmērīta mērvienība: }a\text{, kuru izmērīja 1 reizi.}}\\[.2em]
+
+1.~\text{Absolūtā kļūda: }\Delta a=\sqrt{(\Delta a_\text s)^2}=\Delta a_\text s=\frac{\delta_a}3\cdot t_\beta(\infin)\\
+2.~\text{Relatīvā kļūda: }\varepsilon_a=\frac{\Delta a}{a}\cdot 100\%\text{ (rezultāts procentos)}\\
+3.~\text{Rezultāts: }\boxed{a=(a\pm\Delta a)\textcolor{#ccc}{\text{ mērvienību}}\text{, }\varepsilon_a=...\text{ pie }\beta=0,95}\\[1em]
+
+\frac{\kern{27.2em}}{}\\[-1em]\frac{\kern{27.2em}}{}\\[1em]
+
+{\Large\textbf{Netiešo mērījumu kļūdas aprēķins}}\\
+
+\boxed{\text{Dota funkcija: }f\text{, kura atkarīga no }n\text{ mainīgajiem }x\text.}\\[.2em]
+
+1.~\text{Aprēķināt tiešo mērījumu kļūdu visiem }x\text{ mainīgajiem.}\\
+2.~\text{Vidējā vērtība: }\overline f=f(\overline x_1, \overline x_2, ..., \overline x_n)\\
+3.~\text{Absolūtā kļūda: }\Delta f=\sqrt{\sum_{i=1}^n\Delta f^2_{x_i}}=\sqrt{\sum_{i=1}^n\left(\frac{\partial f}{\partial x_i}\cdot\Delta x_i\right)^2}\text,\\
+\text{kur }\Delta x_i\text{ ir }i\text{-tā mainīgā absolūtā kļūda}\\
+4.~\text{Relatīvā kļūda: }\varepsilon_f=\frac{\Delta f}{\overline f}\cdot 100\%\text{ (rezultāts procentos)}\\
+7.~\text{Rezultāts: }\boxed{f=(\overline f\pm\Delta f)\textcolor{#ccc}{\text{ mērvienību}}\text{, }\varepsilon_f=...\text{ pie }\beta=0,95\\[1em]}

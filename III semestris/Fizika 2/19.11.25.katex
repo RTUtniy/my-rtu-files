@@ -1,0 +1,14 @@
+\displaystyle
+\def\*{\cdot}
+\def\p#1{~\*~\text{#1}}
+\def\merv#1{~\mathrm{#1}}
+\def\h3#1{{\Large\textbf{#1}}}
+
+
+mvr=n\*\frac h{2\pi}\\[0.5em]
+
+f=\frac{mc^2}{h}\\[0.5em]
+
+\lambda=\frac{h}{mv}\\[0.5em]
+
+% h=6,626\*10^{-34}\\[0.5em]

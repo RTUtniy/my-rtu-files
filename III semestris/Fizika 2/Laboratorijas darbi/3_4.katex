@@ -105,7 +105,9 @@ C_x=\frac{\varphi_x}{\overline{[\alpha]_{C\not=0}}\*l}~~~\text{(Netiešo mērīj
 \Delta[\alpha]=\sqrt{(2,\!6499\*10^{-4})^2+(2,\!713\*10^{-4})^2+(1,\!9768\*10^{-3})^2}\approx0,\!002\\
 
 \epsi[\alpha]=\left|\frac{\Delta[\alpha]}{\overline{[\alpha]}}\right|=\left|\frac{0,\!002}{-0,\!0084}\right|\approx23,\!81\%\\
-\boxed{[\alpha]=(-0,\!0084\pm0,\!002)\igsm\text{ pie }\beta=0,\!95,~\epsi[\alpha]=23,\!81\%}\\[5.5em]
+\boxed{[\alpha]=(-0,\!0084\pm0,\!002)\igsm\text{ pie }\beta=0,\!95,~\epsi[\alpha]=23,\!81\%}\\%[5.5em]
+
+\hr
 
 \kern{.25em}{5.\kern{0.35em}}\mathllap{\Large\raisebox{0em}{$\bigcirc$}}~\text{Secinājumi}\\[0.25em]
 

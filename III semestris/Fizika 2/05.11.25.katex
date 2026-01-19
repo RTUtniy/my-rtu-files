@@ -1,0 +1,38 @@
+\displaystyle
+\def\*{\cdot}
+\def\p#1{~\*~\text{#1}}
+\def\merv#1{~\mathrm{#1}}
+\def\h3#1{{\Large\textbf{#1}}}
+\begin{array}{|c|c|c|}
+I_\text{gala}=0,09\merv{Id} & I_0=(1-a)(1-r)\*\frac12 I_d & \cos\alpha=\sqrt{\frac{0,09}{0,5(1-0,01)^2(1-0,04)^2}}\\
+a=0,01 & I=(1-a)(1-r)I_0\cos^2\alpha\\
+r=0,04 & I=(1-a)^2(1-r)^2\frac12I_d\cos^2\alpha\\
+\alpha=~? & \cos\alpha=\sqrt{\frac{I}{I_d(1-a)^2(1-r)^2}}
+\end{array}\\[1em]
+
+\h3{Kvantu optika}\\
+
+\textbf{Termiskais starojums}\\
+
+\p{izstaro visi ķermeņi, kuru temperatūra }T>0~K;\\
+\p{sistēma nonāk ierosinātā stāvoklī termiskās kustības dēļ;}\\
+\p{var atrasties termiskā līdzsvara ar starojošiem ķermeņiem;}\\
+\p{līdzsvars ir stabils;}\\[.5em]
+
+\text{Intergrālā absorbcijas spēja: } a=\frac{P^\prime}P\\
+\text(P^\prime\text{ -- absorbētā, }P\text{ -- krītošā enerģijas plūsma)}\\[0.5em]
+
+\text{Spektrālā absorbcijas spēja: }a_\lambda=\frac{dP^\prime_\lambda}{dP_\lambda}\\
+
+\text{Absolūti melns ķermenis: }a_\lambda=1=const\\[.5em]
+
+\textbf{Kirhofa likums: }\text{Ja ķermeņi absorbē dažādu enerģiju,}\\
+\text{tad arī to emisijai jābūt dažādai, pie tam:}\\
+\boxed{\left(\frac{r_{\lambda T}}{a_{\lambda T}}\right)_1=\left(\frac{r_{\lambda T}}{a_{\lambda T}}\right)_2=...}\\
+R^*=\frac{W}{S\*t}=\sigma T^4,\sigma=5,67\*10^{-8}\merv{\frac{W}{m^2\*s}}\\[1em]
+...\\[1em]
+
+\boxed{\lambda_m=\frac bT}~b=2,898\*10^{-3}\merv{m\*K}\\
+
+r_{\lambda T}=\frac{2\pi hc^2}{\lambda^5}\frac{1}{\exp(\frac{hc}{\lambda kT})-1}\\
+
