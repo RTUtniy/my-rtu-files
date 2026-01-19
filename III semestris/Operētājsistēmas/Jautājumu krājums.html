@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="lv-LV">
+
+<head>
+    <title>Operētājsistēmas kursa jautājumu krājums</title>
+    <meta charset="utf-8">
+    <style>
+        kbd {
+            background-color: #eee;
+            border-radius: 3px;
+            border: 1px solid #b4b4b4;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 0.2), 0 2px 0 0 rgb(255 255 255 / 0.7) inset;
+            color: #333333;
+            display: inline-block;
+            font-size: 0.85em;
+            font-weight: bold;
+            line-height: 1;
+            padding: 2px 4px;
+            white-space: nowrap;
+        }
+
+        fieldset {
+            border: 1px solid #aaa;
+            margin: 1em 0;
+        }
+
+        table.clean {
+            border: 0;
+        }
+
+        table.lines {
+          border-collapse: collapse;
+          
+            & tr:not(:last-child) {
+                border-bottom: 1px solid #aaa;
+            }
+
+            & td{
+                padding: .25em 0;
+            }
+
+            & tr:last-child td{
+                padding-bottom: 0;
+            }
+        }
+
+        table select {
+            width: 100%;
+            text-overflow: ellipsis;
+        }
+
+        table.key-value {
+            width: 100%;
+        }
+    </style>
+    <style media="screen">
+        html {
+            background: white;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        body {
+            margin: 0;
+            width: 800px;
+            max-width: calc(100% - 2em);
+        }
+    </style>
+    <style media="print">
+        fieldset {
+            page-break-inside: avoid;
+        }
+
+        button {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Operētājsistēmas kursa jautājumu krājums</h1>
+    <button onclick="window.print()">Saglabāt kā PDF</button>
+
+    <hr>
+
+    <h2>No testa 1. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Operētājsistēmu kursa laboratorijas / praktisko darbu izpildei uz lokālās virtuālās mašīnas minimāli nepieciešamā datora specifikācija priekš Windows 11 Pro ir:</legend>
+        <input name="q1" type="checkbox"><label>fiziska CD/ DVD iekārta</label><br>
+        <input name="q1" type="checkbox" checked=""><label>1. praktisko darbu var izpildūt tikai uz Windows 10/11 Pro/Edu/Enterprise</label><br>
+        <input name="q1" type="checkbox" checked=""><label>Lai lokāli virtualizētu 64 bitu servera OS, arī pamatsistēmai jābūt 64 bitu.</label><br>
+        <input name="q1" type="checkbox"><label>1. praktisko daru var izpildīt uz jebkurā Windows, piemēram, Home versijā bez VM</label><br>
+        <input name="q1" type="checkbox"><label>32 bitu procesors, lai varētu darbināt Windows 10 Home versiju</label><br>
+        <input name="q1" type="checkbox"><label>RAM 16 GB</label><br>
+        <input name="q1" type="checkbox" checked=""><label>RAM 8 GB</label><br>
+        <input name="q1" type="checkbox" checked=""><label>64 bitu ISA instrukcijas atbalstošs procesors, piemēram, i5, i7, AMD64</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš no izteikumiem vislabāk atbilst operētājsistēmas jēdziena paskaidrojumam</legend>
+        <input type="radio" name="q2"><label>Operētājsistēmas ir IT biznesa liekais virsslānis, ko apstiprina fakts, ka izteikums "Windows drošība" ir tikai urbāns joks</label><br>
+        <input name="q2" type="radio"><label>OS tikai nodrošina lietojumprogrammu darbu ar ārējām iekārtām, piemēram, drukas iekārtu, skeneri, peli</label><br>
+        <input checked="" name="q2" type="radio"><label>OS ir programmatūra, kas nodrošina lietojumprogrammu un lietotāja darbu ar datora / datorsistēmas aparatūru.</label><br>
+        <input name="q2" type="radio"><label>Operētājsistēma ir datortīklu administratoru interfeiss attālinātai piekļuvei lietotāju datiem</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Ar kādu failsistēmu jābūt formatētai USB zibatmiņai vai ārējam cietajam diskam, lai tajā varētu iekopēt par 4 GB lielākus failus, piemēram, 25 GB lielu VM .vdi, un to lasītu Windows:</legend>
+        <input type="checkbox" name="q3"><label>FAT32</label><br>
+        <input type="checkbox" name="q3"><label>ext4</label><br>
+        <input type="checkbox" checked="" name="q3"><label>NTFS</label><br>
+        <input type="checkbox" checked="" name="q3"><label>exFAT</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kā atšifrējas procesora (CPU) ISA:</legend>
+        <input type="radio" name="q4"><label>Industry Standard Architecture</label><br>
+        <input type="radio" name="q4"><label>Individual savings account</label><br>
+        <input type="radio" name="q4"><label>Instruction saving architecture</label><br>
+        <input type="radio" name="q4"><label>International Society of Automation</label><br>
+        <input checked="" type="radio" name="q4"><label>Instruction set architecture</label>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 2. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Kurā e-pasta vēstules rakstīšanas lodziņā ieraksta adresātu, kurš saņem vēstules kopiju, bet neredz pārējos saņēmējus:</legend>
+        <input type="radio" name="q5"><label>Cc:</label><br>
+        <input type="radio" name="q5"><label>Subject:</label><br>
+        <input type="radio" name="q5"><label>Attach:</label><br>
+        <input type="radio" name="q5"><label>To:</label><br>
+        <input checked="" type="radio" name="q5"><label>Bcc:</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Ar kādu komandu var aizslēgt datoru (noslēgt ekrānu)?</legend>
+        <input type="checkbox" name="q6"><label><kbd>Shift</kbd>+<kbd>Delete</kbd></label><br>
+        <input type="checkbox" name="q6"><label><kbd>Ctrl</kbd>+<kbd>Delete</kbd>+<kbd>Shift</kbd></label><br>
+        <input type="checkbox" name="q6"><label><kbd>Alt</kbd> + <kbd>Delete</kbd> + <kbd>Shift</kbd> un izvēlas Lock</label><br>
+        <input type="checkbox" name="q6"><label><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> + <kbd>Shift</kbd></label><br>
+        <input type="checkbox" checked="" name="q6"><label><kbd>Windows key</kbd> + <kbd>L</kbd></label><br>
+        <input type="checkbox" checked="" name="q6"><label><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> un izvēlas Lock</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Cik dienu laikā pēc uzinstalēšanas ir jāaktivizē Microsoft Windows 10 Pro darbstacijas instalācija (ierakstiet skaitli)?</legend>
+        <input type="number" name="q7" value="30">
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuras paroles ir pārāk vienkāršas?</legend>
+        <input type="checkbox" name="q8"><label>Oo!dlx2d</label><br>
+        <input type="checkbox" checked="" name="q8"><label>Aristotel</label><br>
+        <input type="checkbox" checked="" name="q8"><label>ronickrjc</label><br>
+        <input type="checkbox" name="q8"><label>S#n$IUsN7</label><br>
+        <input type="checkbox" checked="" name="q8"><label><i>2026. gada eksāmenā parādījās jauns pareizs variants, bet tā saturs nav saglabāts</i></label>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 3. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Kurš no apgalvojumiem ir vispareizākais par koplietojuma resursa (Share) izveidi?</legend>
+        <input type="checkbox" name="q9"><label>Mapju tiesības jāliek lielākās lietotājam nepieciešamās</label><br>
+        <input type="checkbox" name="q9"><label>Koplietojuma resursa tiesībās jānorāda mazākās lietotāju grupai nepieciešamās</label><br>
+        <input type="checkbox" checked="" name="q9"><label>Koplietojuma resursa tiesībās jānorāda lielākās lietotāju grupai nepieciešamās</label><br>
+        <input type="checkbox" checked="" name="q9"><label>Mapju tiesības jāliek mazākās lietotājam nepieciešamās</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Vai ir taisnība, ka Microsoft gatavojas piedāvāt lietotāju kontus bez parolēm vai PIN, tā vietā lietotājiem būs jāizmanto: a) drošas atslēgas, vai b) kodi, kas saņemti uz e-pastu vai telefonā, c) Windows Hello biometrija, d) Microsoft Authenticator mobilā lietotne.</legend>
+        <input type="radio" name="q10"><label>Aplami</label><br>
+        <input checked="" type="radio" name="q10"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kādēļ ir nepieciešams pāriet uz 64 bitu datoriem?</legend>
+        <input name="q11" type="radio"><label>Lai varētu izmantot MS Server 2008</label><br>
+        <input name="q11" type="radio"><label>Lai varētu izmantot MS Windows Vista</label><br>
+        <input name="q11" type="radio"><label>Lai varētu pieslēgt HDD virs 100 GB</label><br>
+        <input name="q11" type="radio"><label>Lai varētu izmantot vairāk kā 1 GB RAM</label><br>
+        <input checked="" name="q11" type="radio"><label>Lai varētu izmantot vairāk kā 4 GB RAM</label><br>
+        <input name="q11" type="radio"><label>Lai varētu izmantot vairāk kā 8 GB RAM</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kura no NTFS atļaujām (security/ permissions) nodrošina iespēju izdzēst mapi?</legend>
+        <input type="radio" name="q12"><label>Read &amp; Execute</label><br>
+        <input type="radio" name="q12"><label>Write</label><br>
+        <input type="radio" name="q12" checked=""><label>Modify</label><br>
+        <input type="radio" name="q12"><label>Read</label><br>
+        <input type="radio" name="q12"><label>Administer</label>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 4. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>UEFI opcija Secure Boot ir domāta</legend>
+        <input type="radio" name="q13"><label>lai apgrūtinātu Linux instalēšanu</label><br>
+        <input type="radio" name="q13"><label>pret kešatmiņas pārpildīšanos</label><br>
+        <input type="radio" checked="" name="q13"><label>pret sistēmlaužņiem (rootkits)</label><br>
+        <input type="radio" name="q13"><label>pret antivīrusiem</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Windows administratīvām vajadzībām automātiski publisko (share - koplietojuma resurss) mapes. Kāds speciālais simbols tiek pievienots publisko mapju vārdam?</legend>
+        <input type="radio" name="q14"><label>_</label><br>
+        <input type="radio" name="q14"><label>@</label><br>
+        <input type="radio" checked="" name="q14"><label>$</label><br>
+        <input type="radio" name="q14"><label>#</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Vai ir patiess apgalvojums, ka Windows domēnam pievienotā darbstacijā var mainīt tikai tās politikas, kuras ir iestatītas domēna līmenī.</legend>
+        <input checked="" type="radio" name="q15"><label>Aplami</label><br>
+        <input type="radio" name="q15"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Savietojiet operētājsistēmas tipu ar tajā izmantoto cietā diska kriptēšanu:</legend>
+        <ol>
+            <li>Linux <select name="q16s1">
+                    <option value="1" selected="">dm-crypt + LUKS</option>
+                    <option value="2">BitLocker</option>
+                    <option value="3">FileVault 3</option>
+                </select>
+            </li>
+            <li>Windows <select name="q16s2">
+                    <option value="1">dm-crypt + LUKS</option>
+                    <option value="2" selected="">BitLocker</option>
+                    <option value="3">FileVault 3</option>
+                </select>
+            </li>
+            <li>Apple Mac <select name="q16s3">
+                    <option value="1">dm-crypt + LUKS</option>
+                    <option value="2">BitLocker</option>
+                    <option value="3" selected="">FileVault 3</option>
+                </select>
+            </li>
+        </ol>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 5. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Ar ko atšķiras lokālo tīklu paveidi: domēns un darba grupa?</legend>
+        <input type="radio" name="q17"><label>vel viena atbilde</label><br>
+        <input type="radio" name="q17"><label>Darba grupā var būt faktiski neierobežots lietotāju skaits, kamēr domēnā tikai līdz 10 (Windows 8 - 20)</label><br>
+        <input type="radio" checked="" name="q17"><label>Domēns, atšķirībā no darba grupas, tiek pārvaldīts centralizēti</label><br>
+        <input type="radio" name="q17"><label>Darba grupas ietvaros lietotāji var apmainīties ar failiem, bet domēna ietvaros - nevar</label><br>
+        <input type="radio" name="q17"><label>Ne ar ko neatšķiras. "Domēns" un "darba grupa" ir viena veida tīkla dažādi nosaukumi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš no minētajiem tīkla protokoliem ir nepieciešams datoram, lai tas varētu strādāt Internetā?</legend>
+        <input type="radio" name="q18"><label>FTPS</label><br>
+        <input type="radio" name="q18"><label>SMTP</label><br>
+        <input type="radio" name="q18"><label>FTP</label><br>
+        <input type="radio" name="q18"><label>NetBEUI</label><br>
+        <input type="radio" checked="" name="q18"><label>TCP/IP</label><br>
+        <input type="radio" name="q18"><label>IPX/SPX</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Cik vienlaicīgus pieslēgumus no citiem datoriem drukāšanas servisiem spēj nodrošināt Windows 10 Professional darbstacija?</legend>
+        <input type="number" name="q19" value="20">
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 6. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Jautājums angļu val. terminoloģijas precizitātei:<br>
+            3 Key Objectives of Network Security are:</legend>
+        <input type="checkbox" checked="" name="q20"><label>Availability</label><br>
+        <input type="checkbox" name="q20"><label>Identity</label><br>
+        <input type="checkbox" checked="" name="q20"><label>Confidentiality</label><br>
+        <input type="checkbox" checked="" name="q20"><label>Integrity</label><br>
+        <input type="checkbox" name="q20"><label>Continuity</label><br>
+        <input type="checkbox" name="q20"><label>Spaywarebility</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Describe authentification types:</legend>
+        <span>Something you are <select name="q21s1">
+                <option value="1" selected="">Fingerprint, retina scanner, face control</option>
+                <option value="2">Smart card, token, RSA key-stick</option>
+                <option value="3">username + password, PIN code</option>
+            </select>
+        </span><br>
+        <span>Something you have <select name="q21s2">
+                <option value="1">Fingerprint, retina scanner, face control</option>
+                <option value="2" selected="">Smart card, token, RSA key-stick</option>
+                <option value="3">username + password, PIN code</option>
+            </select>
+        </span><br>
+        <span>Something you know <select name="q21s3">
+                <option value="1">Fingerprint, retina scanner, face control</option>
+                <option value="2">Smart card, token, RSA key-stick</option>
+                <option value="3" selected="">username + password, PIN code</option>
+            </select>
+        </span>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Which 3 A describes identification process:</legend>
+        <input type="checkbox" checked="" name="q22"><label>Authentification</label><br>
+        <input type="checkbox" name="q22"><label>Always Awake</label><br>
+        <input type="checkbox" checked="" name="q22"><label>Accountability</label><br>
+        <input type="checkbox" checked="" name="q22"><label>Authorization</label><br>
+        <input type="checkbox" name="q22"><label>Assurance</label><br>
+        <input type="checkbox" name="q22"><label>Administration</label>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 7. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Mēs izmantojam uz lomām (roles) bāzētu servera instalāciju.</legend>
+        <input type="radio" name="q23"><label>Aplami</label><br>
+        <input checked="" type="radio" name="q23"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Uz Windows servera lietotāju konti tipiski tiek glabāti Computer Management nevis Active Directory.</legend>
+        <input name="q24" checked="" type="radio"><label>Aplami</label><br>
+        <input type="radio" name="q24"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuri ir 2. praktiskajā darbā obligāti veicamie uzdevumi:</legend>
+        <input type="checkbox" name="q25"><label>e-pasta servisi</label><br>
+        <input type="checkbox" checked="" name="q25"><label>tīmekļa lapas hostēšanas serviss</label><br>
+        <input type="checkbox" checked="" name="q25"><label>domēna politiku iestatījumi</label><br>
+        <input type="checkbox" name="q25"><label>pievienot Windows 10 domēnam</label><br>
+        <input name="q25" type="checkbox" checked=""><label>koplietojuma resurss ar mājas mapēm un dokumentu mapēm</label><br>
+        <input type="checkbox" checked="" name="q25"><label>Active Directory (aktīvais katalogs), domēns</label><br>
+        <input type="checkbox" checked="" name="q25"><label>organizatoriskās vienības, lietotāju konti, grupas</label>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 8. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Ko ierobežo lietotājam vienā ieregulējumā noteiktas diska kvotas (Quotas)?</legend>
+        <input type="radio" name="q26"><label>lietotāja piederību administratīvajai grupai</label><br>
+        <input type="radio" name="q26"><label>uz visiem diskiem diska saglabājamo failu apjomu pa visām partīcijām</label><br>
+        <input type="radio" checked="" name="q26"><label>uz diska saglabājamo failu apjomu pa visām vienas partīcijas (diska daļas) mapēm</label><br>
+        <input type="radio" name="q26"><label>uz diska saglabājamo failu apjomu tikai lietotāja mājas mapē</label><br>
+        <input type="radio" name="q26"><label>lietotājam atļautos pieslēgšanās serverim laikus</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš no nosauktajiem servisiem ir nepieciešams, lai pilnvērtīgi strādātu Aktīvā direktorija?</legend>
+        <input type="radio" name="q27"><label>IIS</label><br>
+        <input type="radio" name="q27"><label>FTP</label><br>
+        <input type="radio" checked="" name="q27"><label>DNS</label><br>
+        <input type="radio" name="q27"><label>NNTP</label><br>
+        <input type="radio" name="q27"><label>SMTP</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Active Directory var pielietot konfigurācijas iespēju Raise Domain Functional Level no Server 2008 uz Server 2016, ja visi serveri tīklā Windows Server 2016 saimes. Vai ir pareizi uzskatīt, ka šī darbība ir atgriezeniska?</legend>
+        <input checked="" type="radio" name="q28"><label>Aplami</label><br>
+        <input type="radio" name="q28"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kādam nolūkam Aktīvajā Katalogā veido konteinerus (Organizational Units)?</legend>
+        <input type="checkbox" checked="" name="q29"><label>lai lielās organizācijās grupētu AD lietotājus pa nodaļām</label><br>
+        <input type="checkbox" checked="" name="q29"><label>lai izmantotu grupu politiku veidošanai</label><br>
+        <input type="checkbox" name="q29"><label>lai nosūtītu grupas e-pastu</label><br>
+        <input type="checkbox" name="q29"><label>lai izmantotu mapju (folders) piekļuves tiesībās</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kādam nolūkam Aktīvajā Katalogā veido grupas (global, security)?</legend>
+        <input type="checkbox" checked="" name="q30"><label>lai nosūtītu grupas e-pastu</label><br>
+        <input type="checkbox" checked="" name="q30"><label>lai izmantotu mapju (folders) piekļuves tiesībās</label><br>
+        <input type="checkbox" name="q30"><label>lai lielās organizācijās grupētu AD lietotājus pa nodaļām</label><br>
+        <input type="checkbox" name="q30"><label>lai izmantotu tīkla pieslēgumam</label>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 10. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Kuras kombinācijas der Windows Server politiku iestatījumiem organizācijā ar domēnu?</legend>
+        <span>Darbstaciju ekrāna tapete (attēls) <select name="select">
+                <option selected="" value="q31s1v1">Domēna līmenī, lietotāju iestaījumos</option>
+                <option value="q31s1v2">Domēna līmenī, datoru iestaījumos</option>
+                <option value="q31s1v3">Lokālo datoru līmenī, datoru iestaījumos</option>
+                <option value="q31s1v4">Lokālo datoru līmenī, lietotāju iestaījumos</option>
+            </select>
+        </span><br>
+        <span>Paroles, logfailu rakstīšana <select name="select">
+                <option value="q31s2v1">Domēna līmenī, lietotāju iestaījumos</option>
+                <option selected="" value="q31s2v2">Domēna līmenī, datoru iestaījumos</option>
+                <option value="q31s2v3">Lokālo datoru līmenī, datoru iestaījumos</option>
+                <option value="q31s2v4">Lokālo datoru līmenī, lietotāju iestaījumos</option>
+            </select>
+        </span>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 11. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Norādiet pareizo komandu un to nozīmju atbilstību!</legend>
+        <span><code>sudo apt install gftp</code> <select name="q32s1">
+                <option value="1">atjauno repozitāriju informāciju</option>
+                <option selected="" value="2">instalē programmu gftp</option>
+                <option value="3">instalē sistēmas atjauninājumus</option>
+                <option value="4">tikai lejuplādē atjauninājumu sarakstu</option>
+                <option value="5">instalē programmu apt</option>
+            </select>
+        </span><br>
+        <span><code>sudo apt upgrade</code> <select name="q32s2">
+                <option value="1">atjauno repozitāriju informāciju</option>
+                <option value="2">instalē programmu gftp</option>
+                <option selected="" value="3">instalē sistēmas atjauninājumus</option>
+                <option value="4">tikai lejuplādē atjauninājumu sarakstu</option>
+                <option value="5">instalē programmu apt</option>
+            </select>
+        </span><br>
+        <span><code>sudo apt update</code> <select name="q32s3">
+                <option selected="" value="q32s1v1">atjauno repozitāriju informāciju</option>
+                <option value="2">instalē programmu gftp</option>
+                <option value="3">instalē sistēmas atjauninājumus</option>
+                <option value="4">tikai lejuplādē atjauninājumu sarakstu</option>
+                <option value="5">instalē programmu apt</option>
+            </select>
+        </span>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Komanda, kas tiek izmantota, lai izpildītu kādu citu komandu ar cita lietotāja (parasti administratora) privilēģijām:</legend>
+        <input type="text" value="sudo" name="q33">
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Norādiet pieejas tiesību skaitliskā pieraksta atbilstību "rwx" pierakstam:</legend>
+        <span><code>---</code> <select name="q34s1">
+                <option value="1" selected="">0</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+                <option value="6">5</option>
+                <option value="7">6</option>
+                <option value="8">7</option>
+            </select>
+        </span><br>
+        <span><code>--x</code> <select name="q34s2">
+                <option value="q34s1v1">0</option>
+                <option value="q34s1v2" selected="">1</option>
+                <option value="q34s1v3">2</option>
+                <option value="q34s1v4">3</option>
+                <option value="q34s1v5">4</option>
+                <option value="q34s1v6">5</option>
+                <option value="q34s1v7">6</option>
+                <option value="q34s1v8">7</option>
+            </select>
+        </span><br>
+        <span><code>-w-</code> <select name="q34s3">
+                <option value="q34s1v1">0</option>
+                <option value="q34s1v2">1</option>
+                <option value="q34s1v3" selected="">2</option>
+                <option value="q34s1v4">3</option>
+                <option value="q34s1v5">4</option>
+                <option value="q34s1v6">5</option>
+                <option value="q34s1v7">6</option>
+                <option value="q34s1v8">7</option>
+            </select>
+        </span><br>
+        <span><code>-wx</code> <select name="q34s4">
+                <option value="q34s1v1">0</option>
+                <option value="q34s1v2">1</option>
+                <option value="q34s1v3">2</option>
+                <option value="q34s1v4" selected="">3</option>
+                <option value="q34s1v5">4</option>
+                <option value="q34s1v6">5</option>
+                <option value="q34s1v7">6</option>
+                <option value="q34s1v8">7</option>
+            </select>
+        </span><br>
+        <span><code>r--</code> <select name="q34s5">
+                <option value="q34s1v1">0</option>
+                <option value="q34s1v2">1</option>
+                <option value="q34s1v3">2</option>
+                <option value="q34s1v4">3</option>
+                <option value="q34s1v5" selected="">4</option>
+                <option value="q34s1v6">5</option>
+                <option value="q34s1v7">6</option>
+                <option value="q34s1v8">7</option>
+            </select>
+        </span><br>
+        <span><code>r-x</code> <select name="q34s6">
+                <option value="q34s1v1">0</option>
+                <option value="q34s1v2">1</option>
+                <option value="q34s1v3">2</option>
+                <option value="q34s1v4">3</option>
+                <option value="q34s1v5">4</option>
+                <option value="q34s1v6" selected="">5</option>
+                <option value="q34s1v7">6</option>
+                <option value="q34s1v8">7</option>
+            </select>
+        </span><br>
+        <span><code>rw-</code> <select name="q34s7">
+                <option value="q34s1v1">0</option>
+                <option value="q34s1v2">1</option>
+                <option value="q34s1v3">2</option>
+                <option value="q34s1v4">3</option>
+                <option value="q34s1v5">4</option>
+                <option value="q34s1v6">5</option>
+                <option value="q34s1v7" selected="">6</option>
+                <option value="q34s1v8">7</option>
+            </select>
+        </span><br>
+        <span><code>rwx</code> <select name="q34s8">
+                <option value="q34s1v1">0</option>
+                <option value="q34s1v2">1</option>
+                <option value="q34s1v3">2</option>
+                <option value="q34s1v4">3</option>
+                <option value="q34s1v5">4</option>
+                <option value="q34s1v6">5</option>
+                <option value="q34s1v7">6</option>
+                <option value="q34s1v8" selected="">7</option>
+            </select>
+        </span>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Norādiet Linux direktoriju nozīmi:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td>/etc</td>
+                    <td>
+                        <select name="q35s1">
+                            <option value="1" selected="">sistēmas konfigurācijas faili</option>
+                            <option value="2">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3">ierīces</option>
+                            <option value="4">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7">lietotāju mājas mapes</option>
+                            <option value="8">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/opt</td>
+                    <td>
+                        <select name="q35s2">
+                            <option value="1">sistēmas konfigurācijas faili</option>
+                            <option value="2" selected="">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3">ierīces</option>
+                            <option value="4">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7">lietotāju mājas mapes</option>
+                            <option value="8">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/dev</td>
+                    <td>
+                        <select name="q35s3">
+                            <option value="1">sistēmas konfigurācijas faili</option>
+                            <option value="2">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3" selected="">ierīces</option>
+                            <option value="4">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7">lietotāju mājas mapes</option>
+                            <option value="8">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/sbin</td>
+                    <td>
+                        <select name="q35s4">
+                            <option value="1">sistēmas konfigurācijas faili</option>
+                            <option value="2">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3">ierīces</option>
+                            <option value="4" selected="">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7">lietotāju mājas mapes</option>
+                            <option value="8">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/media</td>
+                    <td>
+                        <select name="q35s5">
+                            <option value="1">sistēmas konfigurācijas faili</option>
+                            <option value="2">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3">ierīces</option>
+                            <option value="4">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5" selected="">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7">lietotāju mājas mapes</option>
+                            <option value="8">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/boot</td>
+                    <td>
+                        <select name="q35s6">
+                            <option value="1">sistēmas konfigurācijas faili</option>
+                            <option value="2">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3">ierīces</option>
+                            <option value="4">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6" selected="">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7">lietotāju mājas mapes</option>
+                            <option value="8">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/home</td>
+                    <td>
+                        <select name="q35s7">
+                            <option value="1">sistēmas konfigurācijas faili</option>
+                            <option value="2">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3">ierīces</option>
+                            <option value="4">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7" selected="">lietotāju mājas mapes</option>
+                            <option value="8">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/root</td>
+                    <td>
+                        <select name="q35s8">
+                            <option value="1">sistēmas konfigurācijas faili</option>
+                            <option value="2">mape, kurā parasti tiek glabāti 3-pušu programmatūra</option>
+                            <option value="3">ierīces</option>
+                            <option value="4">izpildāmie faili, kas nepieciešami sistēmas pamatfunkcionalitātes un administrēšanas nodrošināšanai</option>
+                            <option value="5">mape, kurā tiek piemontētas ārējās datu ierīces</option>
+                            <option value="6">ar sistēmas sāknēšanu saistīti faili</option>
+                            <option value="7">lietotāju mājas mapes</option>
+                            <option value="8" selected="">administratora mājas mapes</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 12. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Atzīmējiet pareizos apgalvojumus par Linux:</legend>
+        <input type="checkbox" name="q36"><label>Linux ir novecojusi vienkāršota operētājsistēma</label><br>
+        <input type="checkbox" checked="" name="q36"><label>Linux ir daudzlietotāju (multiuser)</label><br>
+        <input type="checkbox" checked="" name="q36"><label>Linux komponenti ir vāji integrēti, tam ir komponenšu struktūra</label><br>
+        <input type="checkbox" checked="" name="q36"><label>Linux ir daudzuzdevumu (multitasking)</label><br>
+        <input type="checkbox" checked="" name="q36"><label>Linux grafiskais interfeiss ir atsevišķi no pamatsistēmas, to var neinstalēt</label><br>
+        <input type="checkbox" checked="" name="q36"><label>Linux ir integrēts ar termināli (shell)</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Fails, uz kuru īpašniekam ir pilnas tiesības, bet pārējiem tikai lasīšanas:</legend>
+        <input type="radio" name="q37"><label>dr--r--r--</label><br>
+        <input type="radio" name="q37"><label>-rwx-w--w-</label><br>
+        <input type="radio" name="q37"><label>-r--r--r--</label><br>
+        <input type="radio" name="q37"><label>-r-xr-----</label><br>
+        <input type="radio" checked="" name="q37"><label>-rwxr--r--</label><br>
+        <input type="radio" name="q37"><label>-r--------</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>WireShark un tcpdump ir utilītas/ programmas:</legend>
+        <input type="checkbox" checked="" name="q38"><label>tīkla pakešu uztveršanai un analīzei</label><br>
+        <input type="checkbox" name="q38"><label>ugunsmūra noteikumu iestatīšanai</label><br>
+        <input type="checkbox" name="q38"><label>tās ir Steam platformas bibliotēkas</label><br>
+        <input type="checkbox" name="q38"><label>tās ir nākamās paaudzes ugunsmūri</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš vienkāršākais ugunsmūris ir noklusēti iekļauts Ubuntu Desktop?</legend>
+        <input type="radio" name="q39"><label>iptables</label><br>
+        <input type="radio" name="q39"><label>x-Man safer</label><br>
+        <input type="radio" checked="" name="q39"><label>UFW</label><br>
+        <input type="radio" name="q39"><label>Get Your Own Damn</label>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 13. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Norādiet pareizo atbilstību starp Linux komandām un to nozīmi:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td>rm</td>
+                    <td>
+                        <select name="q40s1">
+                            <option value="1">pārvieto vai pārsauc failu</option>
+                            <option value="2">izdrukā direktorijas saturu</option>
+                            <option value="3">izveido jaunu direktoriju</option>
+                            <option value="4">ar tās palīdzību var iegūt sīkāku informāciju par citām komandām</option>
+                            <option value="5">izdrukā faila pēdējās 10 rindas</option>
+                            <option selected="selected" value="6">dzēš failu</option>
+                            <option value="7">kopē failu</option>
+                            <option value="8">izdrukā faila saturu</option>
+                            <option value="9">izdrukā faila pirmās 10 rindas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>cp</td>
+                    <td>
+                        <select name="q40s2">
+                            <option value="1">pārvieto vai pārsauc failu</option>
+                            <option value="2">izdrukā direktorijas saturu</option>
+                            <option value="3">izveido jaunu direktoriju</option>
+                            <option value="4">ar tās palīdzību var iegūt sīkāku informāciju par citām komandām</option>
+                            <option value="5">izdrukā faila pēdējās 10 rindas</option>
+                            <option value="6">dzēš failu</option>
+                            <option selected="selected" value="7">kopē failu</option>
+                            <option value="8">izdrukā faila saturu</option>
+                            <option value="9">izdrukā faila pirmās 10 rindas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ls</td>
+                    <td>
+                        <select name="q40s3">
+                            <option value="1">pārvieto vai pārsauc failu</option>
+                            <option selected="selected" value="2">izdrukā direktorijas saturu</option>
+                            <option value="3">izveido jaunu direktoriju</option>
+                            <option value="4">ar tās palīdzību var iegūt sīkāku informāciju par citām komandām</option>
+                            <option value="5">izdrukā faila pēdējās 10 rindas</option>
+                            <option value="6">dzēš failu</option>
+                            <option value="7">kopē failu</option>
+                            <option value="8">izdrukā faila saturu</option>
+                            <option value="9">izdrukā faila pirmās 10 rindas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>cat</td>
+                    <td>
+                        <select name="q40s4">
+                            <option value="1">pārvieto vai pārsauc failu</option>
+                            <option value="2">izdrukā direktorijas saturu</option>
+                            <option value="3">izveido jaunu direktoriju</option>
+                            <option value="4">ar tās palīdzību var iegūt sīkāku informāciju par citām komandām</option>
+                            <option value="5">izdrukā faila pēdējās 10 rindas</option>
+                            <option value="6">dzēš failu</option>
+                            <option value="7">kopē failu</option>
+                            <option selected="selected" value="8">izdrukā faila saturu</option>
+                            <option value="9">izdrukā faila pirmās 10 rindas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>man</td>
+                    <td>
+                        <select name="q40s5">
+                            <option value="1">pārvieto vai pārsauc failu</option>
+                            <option value="2">izdrukā direktorijas saturu</option>
+                            <option value="3">izveido jaunu direktoriju</option>
+                            <option selected="selected" value="4">ar tās palīdzību var iegūt sīkāku informāciju par citām komandām</option>
+                            <option value="5">izdrukā faila pēdējās 10 rindas</option>
+                            <option value="6">dzēš failu</option>
+                            <option value="7">kopē failu</option>
+                            <option value="8">izdrukā faila saturu</option>
+                            <option value="9">izdrukā faila pirmās 10 rindas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>mkdir</td>
+                    <td>
+                        <select name="q40s6">
+                            <option value="1">pārvieto vai pārsauc failu</option>
+                            <option value="2">izdrukā direktorijas saturu</option>
+                            <option selected="selected" value="3">izveido jaunu direktoriju</option>
+                            <option value="4">ar tās palīdzību var iegūt sīkāku informāciju par citām komandām</option>
+                            <option value="5">izdrukā faila pēdējās 10 rindas</option>
+                            <option value="6">dzēš failu</option>
+                            <option value="7">kopē failu</option>
+                            <option value="8">izdrukā faila saturu</option>
+                            <option value="9">izdrukā faila pirmās 10 rindas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>mv</td>
+                    <td>
+                        <select name="q40s7">
+                            <option selected="selected" value="1">pārvieto vai pārsauc failu</option>
+                            <option value="2">izdrukā direktorijas saturu</option>
+                            <option value="3">izveido jaunu direktoriju</option>
+                            <option value="4">ar tās palīdzību var iegūt sīkāku informāciju par citām komandām</option>
+                            <option value="5">izdrukā faila pēdējās 10 rindas</option>
+                            <option value="6">dzēš failu</option>
+                            <option value="7">kopē failu</option>
+                            <option value="8">izdrukā faila saturu</option>
+                            <option value="9">izdrukā faila pirmās 10 rindas</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Termins, ko 90-to gadu beigās kopā ar domubiedriem ieviesa Eric S. Raymond, lai aizvietotu terminu "brīvā programmatūra":</legend>
+        <input type="radio" name="q41"><label>GNU/Linux</label><br>
+        <input type="radio" name="q41"><label>Free software</label><br>
+        <input type="radio" checked="" name="q41"><label>Open source</label><br>
+        <input type="radio" name="q41"><label>GNU GPL</label><br>
+        <input type="radio" name="q41"><label>Libre software</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Nosauciet grafisko vidi, kas redzama attēlā:</legend>
+        <img src="https://distrowatch.com/images/slinks/plamo.png" style="width: 640px;margin: 0 auto 0.5em;display: block;max-width: 66%;">
+        <input type="text" name="q42" value="Xfce">
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 14. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Paskaidrojiet phpinfo() nozīmi un lietojumu!</legend>
+        <input type="radio" name="q43"><label>tā ir PHP funkcija Apache servera pārkonfigurēšanai</label><br>
+        <input type="radio" checked="" name="q43"><label>tā ir PHP funkcija servera konfigurācijas informācijas ieguvei</label><br>
+        <input type="radio" name="q43"><label>nav tādas funkcijas phpinfo(), ir infophp()</label><br>
+        <input type="radio" name="q43"><label>tā ir tipiska Unix konsoles komanda php konfigurēšanai</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Abreviatūra (4 burti), kas tiek izmantota Linux instalēšanas utilītā tasksel, lai apzīmētu programmatūras kopumu, kas sastāv no Linux operētājsistēmas, tīmekļa servera, datu bāzes un programmēšanas valodas:</legend>
+        <input type="text" name="q44" value="LAMP">
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 15. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Norādiet pareizo atbilstību starp Linux komandām un to nozīmi:</legend>
+        <table class="lines key-value">
+            <tbody>
+                <tr>
+                    <td><code>sudo tcpdump -nn -i eth0 port 445</code></td>
+                    <td>
+                        <select name="q45s1">
+                            <option value="1">skatīt datora noslodzi, procesus reāla laika režīmā</option>
+                            <option selected="selected" value="2">novērot Samba trafiku pa kabeli</option>
+                            <option value="3">MySQL moodle datu bāzes rezerves kopijas izveide</option>
+                            <option value="4">aptur un aizliedz ssh dēmonu</option>
+                            <option value="5">tīmekļa lapu statiskās daļas rezerves kopijas izveide</option>
+                            <option value="6">ierakstīt failā visu tīkla trafiku</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>sudo tar -cvvf arhivs.tar /var/www/</code></td>
+                    <td>
+                        <select name="q45s2">
+                            <option value="1">skatīt datora noslodzi, procesus reāla laika režīmā</option>
+                            <option value="2">novērot Samba trafiku pa kabeli</option>
+                            <option value="3">MySQL moodle datu bāzes rezerves kopijas izveide</option>
+                            <option value="4">aptur un aizliedz ssh dēmonu</option>
+                            <option selected="selected" value="5">tīmekļa lapu statiskās daļas rezerves kopijas izveide</option>
+                            <option value="6">ierakstīt failā visu tīkla trafiku</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>sudo top</code></td>
+                    <td>
+                        <select name="q45s3">
+                            <option selected="selected" value="1">skatīt datora noslodzi, procesus reāla laika režīmā</option>
+                            <option value="2">novērot Samba trafiku pa kabeli</option>
+                            <option value="3">MySQL moodle datu bāzes rezerves kopijas izveide</option>
+                            <option value="4">aptur un aizliedz ssh dēmonu</option>
+                            <option value="5">tīmekļa lapu statiskās daļas rezerves kopijas izveide</option>
+                            <option value="6">ierakstīt failā visu tīkla trafiku</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>mysqldump -u username -p -C -Q -e -a moodle &gt; moodle-backup-123.sql</code></td>
+                    <td>
+                        <select name="q45s4">
+                            <option value="1">skatīt datora noslodzi, procesus reāla laika režīmā</option>
+                            <option value="2">novērot Samba trafiku pa kabeli</option>
+                            <option selected="selected" value="3">MySQL moodle datu bāzes rezerves kopijas izveide</option>
+                            <option value="4">aptur un aizliedz ssh dēmonu</option>
+                            <option value="5">tīmekļa lapu statiskās daļas rezerves kopijas izveide</option>
+                            <option value="6">ierakstīt failā visu tīkla trafiku</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>sudo tcpdump -w fails.pcap</code></td>
+                    <td>
+                        <select name="q45s5">
+                            <option value="1">skatīt datora noslodzi, procesus reāla laika režīmā</option>
+                            novērot Samba trafiku pa kabeli
+                            <option value="3">MySQL moodle datu bāzes rezerves kopijas izveide</option>
+                            <option value="4">aptur un aizliedz ssh dēmonu</option>
+                            <option value="5">tīmekļa lapu statiskās daļas rezerves kopijas izveide</option>
+                            <option selected="selected value=" 6"="">ierakstīt failā visu tīkla trafiku</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>sudo systemctl stop sshd.service sshd.socket<br>
+sudo systemctl disable sshd.socket<br>
+sudo systemctl disable sshd.service</code></td>
+                    <td>
+                        <select name="q45s6">
+                            <option value="1">skatīt datora noslodzi, procesus reāla laika režīmā</option>
+                            <option value="2">novērot Samba trafiku pa kabeli</option>
+                            <option value="3">MySQL moodle datu bāzes rezerves kopijas izveide</option>
+                            <option selected="selected" value="4">aptur un aizliedz ssh dēmonu</option>
+                            <option value="5">tīmekļa lapu statiskās daļas rezerves kopijas izveide</option>
+                            <option value="6">ierakstīt failā visu tīkla trafiku</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Ko dara šīs komandas:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td><code>Apache2 modulis mod_evasive</code> (vai sakonfigurēts mod_security)</td>
+                    <td>
+                        <select name="q46s1">
+                            <option value="1">pieslēdzas ssh pa norādīto portu</option>
+                            <option value="2">statiski aizliedz visus tīkla pieslēgumus</option>
+                            <option selected="selected" value="3">aizliedz 1 sek piem. 50 reizes pārlādēt lapu (pret DDOS)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>failā /etc/hosts.deny (ja tāds ir) atkomentēt <code>ALL: PARANOID</code></td>
+                    <td>
+                        <select name="q46s2">
+                            <option value="1">pieslēdzas ssh pa norādīto portu</option>
+                            <option value="2" selected="selected">statiski aizliedz visus tīkla pieslēgumus</option>
+                            <option value="3">aizliedz 1 sek piem. 50 reizes pārlādēt lapu (pret DDOS)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ssh user@195.13.152.100 -p 1234</code></td>
+                    <td>
+                        <select name="q46s3">
+                            <option value="1" selected="selected">pieslēdzas ssh pa norādīto portu</option>
+                            <option value="2">statiski aizliedz visus tīkla pieslēgumus</option>
+                            <option value="3">aizliedz 1 sek piem. 50 reizes pārlādēt lapu (pret DDOS)</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <hr>
+
+    <h2>No testa 16. lekcijas beigās</h2>
+    <fieldset disabled="">
+        <legend>Kurš no šiem ir sociālās inženierijas uzbrukumi</legend>
+        <input type="checkbox" checked="" name="q47"><label>Baiting</label><br>
+        <input type="checkbox" checked="" name="q47"><label>Phishing</label><br>
+        <input type="checkbox" checked="" name="q47"><label>Spam, Junk mail</label><br>
+        <input type="checkbox" checked="" name="q47"><label>Tailgating</label><br>
+        <input type="checkbox" checked="" name="q47"><label>Pretexting</label><br>
+        <input type="checkbox" checked="" name="q47"><label>Impersonation</label><br>
+        <input type="checkbox" checked="" name="q47"><label>Shoulder surfing</label><br>
+        <input type="checkbox" checked="" name="q47"><label>Something for Something / "Quid proquo"</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Globāli skatoties, uzņēmuma drošības politiku kategorijas ir:</legend>
+        <input type="checkbox" name="q48"><label>Vacation Time Planning Policy</label><br>
+        <input type="checkbox" checked="" name="q48"><label>Acceptable Use Policies</label><br>
+        <input type="checkbox" checked="" name="q48"><label>Remote Access Policies</label><br>
+        <input type="checkbox"  name="q48"><label>Employee bonus policy</label><br>
+        <input type="checkbox" checked="" name="q48"><label>Password Policies</label><br>
+        <input type="checkbox" checked="" name="q48"><label>Identification and Authentication Policies</label><br>
+        <input type="checkbox" name="q48"><label>Policy on celebration of bosses' anniversaries</label><br>
+        <input type="checkbox" checked="" name="q48"><label>Network Maintenance Policies</label><br>
+        <input type="checkbox" checked="" name="q48"><label>Incident Handling Policies</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Vai ir patiess apgalvojums, ka datu fiziskai pasargāšanai no nesankcionētas piekļuves nepieciešama cietā diska kriptēšana (Bitlocker, LUKS, FileVault), bet sāknēšanas failu un OS kodola pasargāšanai no nomainīta palaišanas nepieciešams UEFI iespējot Secure Boot.</legend>
+        <input type="radio" name="q49"><label>Aplami</label><br>
+        <input checked="" type="radio" name="q49"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Ievadiet naturālo skaitli — pareizo atbilžu skaitu šajā tīmekļa pārlūkošanas drošības labo ieteikumu sarakstā:</legend>
+        <ol>
+            <li>Privātā pārlūkošanas logs</li>
+            <li>Uznirstošo logu bloķētājs</li>
+            <li>Viedais ekrāna filtrs (MS Edge), iespējojiet/atzīmējiet ActiveX filtrēšanu</li>
+            <li>Nepieņemt trešo pušu sīkfailus (ja iespējams)</li>
+            <li>Nesaglabājiet kontus un paroles</li>
+            <li>Automātiski iztīriet visus kešatmiņā saglabātos datus (grāmatzīmes paliek noteiktā vietā)</li>
+            <li>Apturiet procesus pēc pārlūkprogrammas aizvēršanas</li>
+            <li>Izmantojiet tikai pārlūkprogrammu Firefox</li>
+            <li>Pārlūkprogrammas iestatījumos atspējojiet kameru, mikrofonu, pārlūkprogrammas ekrānuzņēmumus, lenti pār reālo kameru</li>
+            <li>Atļaujiet lejupielādēt failus tikai ar īpašiem papildinājumiem</li>
+            <li>Neinstalējiet Flash (nav iespējams notīrīt Flash sīkfailus)</li>
+            <li>Neizmantojiet Google meklēšanu, izmantojiet tikai AI piem. Otrais pilots</li>
+            <li>Viltus pretvīrusu programmatūra ir labāka par Windows Defender pretvīrusu</li>
+        </ol>
+        <input type="number" name="q50" value="9">
+    </fieldset>
+
+    <hr>
+
+    <h2>Citi jautājumi no eksāmena</h2>
+    <fieldset disabled="">
+        <legend>Atvērtā pirmkoda programmatūra, ar kuras palīdzību Linux vidē var darbināt Windows programmas (neuzstādot pašu Windows operētājsistēmu):</legend>
+        <input type="text" name="q51" value="Wine">
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kā izvairīties no līdzīgiem IT drošības incidentiem nākotnē (pirmā darbība):</legend>
+        <input type="radio" name="q52"><label>Atjaunināt antivīrusa vīrusu definīciju datubāai</label><br>
+        <input type="radio" name="q52"><label>Nomainīt visu kontu paroles</label><br>
+        <input type="radio" checked="" name="q52"><label>Veikt analīzi pēc incidenta</label><br>
+        <input type="radio" name="q52"><label>Sakrustot pirkstus un domāt pozitīvi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kā sauc kaitniecisku uzbrukumu organizācijai vai atsevišķam serverim, kurš notiek no daudzām sistēmām (datoriem) vienlaikus, palēnina interneta piekļuvi vai pat atsevišķus serverus padara nepieejamus.</legend>
+        <input type="radio" name="q53"><label>Viltus AP (rogue AP)</label><br>
+        <input type="radio" name="q53"><label>Zero day</label><br>
+        <input type="radio" name="q53"><label>Backdoor</label><br>
+        <input type="radio" name="q53"><label>DoS</label><br>
+        <input type="radio" checked="" name="q53"><label>DDoS</label><br>
+        <input type="radio" name="q53"><label>DNS keša saindēšana</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Linux ls komandai ir atslēgas:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td>-s</td>
+                    <td>
+                        <select name="q54s1">
+                            <option value="1">parāda failus reversivi</option>
+                            <option value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option selected value="3">rāda failu izmēru 1K blokos</option>
+                            <option value="4">rādit slēptos failus</option>
+                            <option value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option value="6">parāda pilnajā formā</option>
+                            <option value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-F</td>
+                    <td>
+                        <select name="q54s2">
+                            <option value="1">parāda failus reversivi</option>
+                            <option value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option value="3">rāda failu izmēru 1K blokos</option>
+                            <option value="4">rādit slēptos failus</option>
+                            <option selected value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option value="6">parāda pilnajā formā</option>
+                            <option value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-t</td>
+                    <td>
+                        <select name="q54s3">
+                            <option value="1">parāda failus reversivi</option>
+                            <option value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option value="3">rāda failu izmēru 1K blokos</option>
+                            <option value="4">rādit slēptos failus</option>
+                            <option value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option value="6">parāda pilnajā formā</option>
+                            <option value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option selected value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-h</td>
+                    <td>
+                        <select name="q54s4">
+                            <option value="1">parāda failus reversivi</option>
+                            <option value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option value="3">rāda failu izmēru 1K blokos</option>
+                            <option value="4">rādit slēptos failus</option>
+                            <option value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option value="6">parāda pilnajā formā</option>
+                            <option selected value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-l</td>
+                    <td>
+                        <select name="q54s5">
+                            <option value="1">parāda failus reversivi</option>
+                            <option value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option value="3">rāda failu izmēru 1K blokos</option>
+                            <option value="4">rādit slēptos failus</option>
+                            <option value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option selected value="6">parāda pilnajā formā</option>
+                            <option value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-R</td>
+                    <td>
+                        <select name="q54s6">
+                            <option value="1">parāda failus reversivi</option>
+                            <option selected value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option value="3">rāda failu izmēru 1K blokos</option>
+                            <option value="4">rādit slēptos failus</option>
+                            <option value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option value="6">parāda pilnajā formā</option>
+                            <option value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-a</td>
+                    <td>
+                        <select name="q54s7">
+                            <option value="1">parāda failus reversivi</option>
+                            <option value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option value="3">rāda failu izmēru 1K blokos</option>
+                            <option selected value="4">rādit slēptos failus</option>
+                            <option value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option value="6">parāda pilnajā formā</option>
+                            <option value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-r</td>
+                    <td>
+                        <select name="q54s8">
+                            <option selected value="1">parāda failus reversivi</option>
+                            <option value="2">parāda direktoriju saturu rekursīvi- pilnībā saturu uzrāda</option>
+                            <option value="3">rāda failu izmēru 1K blokos</option>
+                            <option value="4">rādit slēptos failus</option>
+                            <option value="5">marķē direktorijas ar "/" un palaižamos failus ar "*"</option>
+                            <option value="6">parāda pilnajā formā</option>
+                            <option value="7">rāda failu izmērus ikdienišķā veidā (piem, 4096 vietā 4.0k)</option>
+                            <option value="8">biežāk modificētos rāda vispirms</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>No kāda angļu val. izteikuma veidota abreviatūra SSL?</legend>
+        <input type="radio" name="q55"><label>Some Slow Lazy boys</label><br>
+        <input type="radio" name="q55"><label>Single Sign on Layer</label><br>
+        <input type="radio" checked="" name="q55"><label>Secure Sockets Layer</label><br>
+        <input type="radio" name="q55"><label>Secure Server Layer</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Komanda, kas paredzēta, lai aizvērtu procesu:</legend>
+        <input type="text" name="q56" value="kill">
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Operētājsistēma pēc definīcijas ir...</legend>
+        <input type="radio" checked="" name="q57"><label>Programmatūra, kas tikai ļauj citām programmām "sazināties" ar datora ārējo aparatūru, piemēram, printeri, monitoru, klaviatūru, utml.</label><br>
+        <input type="radio" name="q57"><label>Programmatūra, kas nodrošina datora ārējo, iekšējo iekārtu un programmatūras savstarpējo sadarbību</label><br>
+        <input type="radio" name="q57"><label>Jebkura programmatūra, kas veic matemātiskas operācijas</label><br>
+        <input type="radio" name="q57"><label>Datorizēts datortīkla administratora aizstājējs</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Mūsdienās izmanto dažas RAID pamattehnoloģijas un dažādas to kombinācijas. Pie pamattehnoloģijām pieder:</legend>
+        <table class="lines key-value">
+            <style>table select{width: auto;}</style>
+            <tbody>
+                <tr>
+                    <td>stripping - sākotnējās idejas realizācija, kas palielina tikai darbības ātrumu</td>
+                    <td>
+                        <select name="q58s1">
+                            <option value="1">RAID 3</option>
+                            <option value="2">RAID 5</option>
+                            <option selected value="3">RAID 0</option>
+                            <option value="4">RAID 50</option>
+                            <option value="5">RAID 10</option>
+                            <option value="6">RAID 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>nepieciešami vismaz 3 diski. Papildus diskā glabā kontroles datus , kas ļauj viena no divu pamatdisku kļūdas gadījumā to izlabot. Šāda sistēma darbojas, ja viens no diskiem nedarbojas vispār</td>
+                    <td>
+                        <select name="q58s2">
+                            <option selected value="1">RAID 3</option>
+                            <option value="2">RAID 5</option>
+                            <option value="3">RAID 0</option>
+                            <option value="4">RAID 50</option>
+                            <option value="5">RAID 10</option>
+                            <option value="6">RAID 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>darbojas līdzīgi kā RAID&nbsp;3, tikai nav atsevišķa kontroles datu diska. Visi dati, līdzīgi kā pie RAID&nbsp;0 tiek sadalīti pa visiem diskiem</td>
+                    <td>
+                        <select name="q58s3">
+                            <option value="1">RAID 3</option>
+                            <option selected value="2">RAID 5</option>
+                            <option value="3">RAID 0</option>
+                            <option value="4">RAID 50</option>
+                            <option value="5">RAID 10</option>
+                            <option value="6">RAID 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>RAID&nbsp;0, kas papildināts ar datu dublēšanu (RAID&nbsp;1)</td>
+                    <td>
+                        <select name="q58s4">
+                            <option value="1">RAID 3</option>
+                            <option value="2">RAID 5</option>
+                            <option value="3">RAID 0</option>
+                            <option value="4">RAID 50</option>
+                            <option selected value="5">RAID 10</option>
+                            <option value="6">RAID 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>RAID&nbsp;0, kuru veido no RAID&nbsp;5 iegūtiem blokiem</td>
+                    <td>
+                        <select name="q58s5">
+                            <option value="1">RAID 3</option>
+                            <option value="2">RAID 5</option>
+                            <option value="3">RAID 0</option>
+                            <option selected value="4">RAID 50</option>
+                            <option value="5">RAID 10</option>
+                            <option value="6">RAID 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>mirroring jeb spoguļdiski - paraleli notiek vienu un to pašu datu ieraksts divos eksemplāros, lai palielinātu drošību un paātrinātu nolasīšanu, ko var veikt paraleli</td>
+                    <td>
+                        <select name="q58s6">
+                            <option value="1">RAID 3</option>
+                            <option value="2">RAID 5</option>
+                            <option value="3">RAID 0</option>
+                            <option value="4">RAID 50</option>
+                            <option value="5">RAID 10</option>
+                            <option selected value="6">RAID 1</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuras no zemāk nosauktajām PHP funkcijām paaugstinātu drošības apsvērumu kontekstā ir vēlam atspējot php konfigurācijas failā (ja neizmanto webiskos administrēšanas rīkus):</legend>
+        <input type="checkbox" checked="" name="q59"><label>passthru</label><br>
+        <input type="checkbox" name="q59"><label>system</label><br>
+        <input type="checkbox" name="q59"><label>exec</label><br>
+        <input type="checkbox" checked="" name="q59"><label>dl</label><br>
+        <input type="checkbox" checked="" name="q59"><label>shell_exec</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Programmatūras kategorijas programmēšanas kompānijas serverī:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td>Relatīvi viegli virtualizācijas konteineri</td>
+                    <td>
+                        <select name="q60s1">
+                            <option value="1" selected>Docker, Podman</option>
+                            <option value="2">GitHub, GitLab, Gitea</option>
+                            <option value="3">Apache, Nginx, Caddy</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Versiju kontroles sistēmas vietne izstrādātājiem</td>
+                    <td>
+                        <select name="q60s2">
+                            <option value="1">Docker, Podman</option>
+                            <option value="2" selected>GitHub, GitLab, Gitea</option>
+                            <option value="3">Apache, Nginx, Caddy</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Xfce logu menedžerī tipiski (noklusēti) darbojas šādikarstie taustiņi:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd></td>
+                    <td>
+                        <select name="q61s1">
+                            <option value="1">pārtrauc neatbildošu procesu</option>
+                            <option value="2">pārstartē grafisko vidi</option>
+                            <option value="3">izsauc palīdzības (Help) datnes</option>
+                            <option value="4">izsauc grafisko programmu palaidēja komandrindu</option>
+                            <option selected value="5">pārstartē datoru</option>
+                            <option value="6">noslēdz ekrānu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>F2</kbd></td>
+                    <td>
+                        <select name="q61s2">
+                            <option value="1">pārtrauc neatbildošu procesu</option>
+                            <option value="2">pārstartē grafisko vidi</option>
+                            <option value="3">izsauc palīdzības (Help) datnes</option>
+                            <option selected value="4">izsauc grafisko programmu palaidēja komandrindu</option>
+                            <option value="5">pārstartē datoru</option>
+                            <option value="6">noslēdz ekrānu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd></td>
+                    <td>
+                        <select name="q61s3">
+                            <option value="1">pārtrauc neatbildošu procesu</option>
+                            <option selected value="2">pārstartē grafisko vidi</option>
+                            <option value="3">izsauc palīdzības (Help) datnes</option>
+                            <option value="4">izsauc grafisko programmu palaidēja komandrindu</option>
+                            <option value="5">pārstartē datoru</option>
+                            <option value="6">noslēdz ekrānu</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Pret ko sargā sistēma no 2 ugunsmūriem - ierīcē (datorā) instalēta un tīkla ugunsmura (maršrutētājā)?</legend>
+        <input type="checkbox" name="q62"><label>Lai aizsargātu mobilās ierīces, piemēŗam portatīvos datorus</label><br>
+        <input type="checkbox" name="q62"><label>Lai neļautu lietotājiem aizmirst paroles</label><br>
+        <input type="checkbox" checked="" name="q62"><label>Lai aizsargātu no ļaunatūras ievainotiem datoriem lokālajā tīklā</label><br>
+        <input type="checkbox" name="q62"><label>Lai aizsargātu lietotājus no WPS (Wi-Fi Protected Setup jeb Push Button) izmantošanas</label><br>
+        <input type="checkbox" checked="" name="q62"><label>Lai aizsargāto no man-in-the-middle tipa uzbrukumiem</label><br>
+        <input type="checkbox" checked="" name="q62"><label>Lai aizsargātu no DDoS uzbrukumiem</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Administrējot, izmantojiet lietotāja konta kontroli (UAC), lai novērstu ļaunprātīga koda palaišanu ar administratora tiesībām.</legend>
+        <input type="radio" name="q63"><label>Aplami</label><br>
+        <input checked="" type="radio" name="q63"><label>Patiesi</label>
+    </fieldset>
+    <fieldset>
+        <legend>Nosauciet šobrīd pasaulē visplašāk izmantoto pilna īpašību spektra tīmekļa serveri:</legend>
+        <input type="text" name="q64" placeholder="Konkrēti nav zināms - vai nu Apache, vai nu nginx" style="width: min(300px, 100%);">
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuras no nosauktajām utilītām tipiski ir pieejamas Mac OS:</legend>
+        <input type="checkbox" checked="" name="q65"><label>Mac Recovery Utilities</label><br>
+        <input type="checkbox" checked="" name="q65"><label>Data Erasing in in Disk Utility</label><br>
+        <input type="checkbox" checked="" name="q65"><label>Activity Monitor</label><br>
+        <input type="checkbox" checked="" name="q65"><label>FileVault</label><br>
+        <input type="checkbox" checked="" name="q65"><label>System Preferences</label><br>
+        <input type="checkbox" checked="" name="q65"><label>GateKeeper</label><br>
+        <input type="checkbox" checked="" name="q65"><label>System Log in Console</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Ubuntu Linux klasiskais noklusētais pakotņu formāts (paplašinājums):</legend>
+        <input type="radio" checked="" name="q66"><label>.deb</label><br>
+        <input type="radio" name="q66"><label>.rpm</label><br>
+        <input type="radio" name="q66"><label>.AppImage</label><br>
+        <input type="radio" name="q66"><label>.flatpak</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Linux komandrindas saskarnes komanda "alien":</legend>
+        <input type="radio" name="q67"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q67"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q67"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q67"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q67" checked><label>Ir rīks pakotņu konvertēšanai</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Lai dators tīklā nebūtu redzams, kad šārēšanas servisi darbojas, ar administratora tiesībām palaistā cmd ierakstam:</legend>
+        <input type="radio" name="q68"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q68"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q68"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q68" checked><label><code>net config server /hidden:yes</code></label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Nosauciet 4 darbības, ko Microsoft iesaka veikt Windows datora paātrināšanai:</legend>
+        <input type="checkbox" name="q69"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q69" checked><label>Veikt diska defragmentāciju</label><br>
+        <input type="checkbox" name="q69" checked><label>Atbrīvot cietā diska vietu - Disk Cleanup</label><br>
+        <input type="checkbox" name="q69"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q69"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q69"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q69"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q69" checked><label>Veikt diska pārbaudi uz kļūdām un bojātiem sektoriem</label><br>
+        <input type="checkbox" name="q69" checked><label>Aizsargāt datoru pret spiegprogrammatūru- spyware</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Windows Defender ir aktuālajās Windows versijās noklusēti iebūvētais antivīruss</legend>
+        <input type="radio" name="q70"><label>Aplami</label><br>
+        <input checked="" type="radio" name="q70"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Match Windows 10 shortcuts with meanings:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>F4</kbd></td>
+                    <td>
+                        <select name="q71s1">
+                            <option selected value="1">Close App</option>
+                            <option value="2">Undo</option>
+                            <option value="3">Lock your computer</option>
+                            <option value="4">Show or hide desktop</option>
+                            <option value="5">Switch Apps</option>
+                            <option value="6">Open Task Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+                    <td>
+                        <select name="q71s2">
+                            <option value="1">Close App</option>
+                            <option selected value="2">Undo</option>
+                            <option value="3">Lock your computer</option>
+                            <option value="4">Show or hide desktop</option>
+                            <option value="5">Switch Apps</option>
+                            <option value="6">Open Task Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><kbd>Windows</kbd> + <kbd>L</kbd></td>
+                    <td>
+                        <select name="q71s3">
+                            <option value="1">Close App</option>
+                            <option value="2">Undo</option>
+                            <option selected value="3">Lock your computer</option>
+                            <option value="4">Show or hide desktop</option>
+                            <option value="5">Switch Apps</option>
+                            <option value="6">Open Task Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><kbd>Windows</kbd> + <kbd>D</kbd></td>
+                    <td>
+                        <select name="q71s4">
+                            <option value="1">Close App</option>
+                            <option value="2">Undo</option>
+                            <option value="3">Lock your computer</option>
+                            <option selected value="4">Show or hide desktop</option>
+                            <option value="5">Switch Apps</option>
+                            <option value="6">Open Task Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>Tab</kbd></td>
+                    <td>
+                        <select name="q71s5">
+                            <option value="1">Close App</option>
+                            <option value="2">Undo</option>
+                            <option value="3">Lock your computer</option>
+                            <option value="4">Show or hide desktop</option>
+                            <option selected value="5">Switch Apps</option>
+                            <option value="6">Open Task Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Escape</kbd></td>
+                    <td>
+                        <select name="q71s6">
+                            <option value="1">Close App</option>
+                            <option value="2">Undo</option>
+                            <option value="3">Lock your computer</option>
+                            <option value="4">Show or hide desktop</option>
+                            <option value="5">Switch Apps</option>
+                            <option selected value="6">Open Task Manager</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Microsoft Windows OEM instalāciju šogad var iegādāties kopā ar (norādīt mazāko pietiekamo preci)</legend>
+        <input type="radio" name="q72"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q72"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q72"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q72"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q72" checked><label>jaunu jebkuru datora detaļu, piemēram, tīkla karti</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kāds protokols tiek izmantots, lai meklētu objektus aktīvajā katalogā pa tīklu?</legend>
+        <input type="radio" name="q73"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q73"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q73"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q73"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q73" checked><label>Lightweight Directory Access Protocol (LDAP)</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kādu grupu loceklīem ir tiesibas uz Windows Server izveidot PC kontu?</legend>
+        <input type="radio" name="q74"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q74"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q74" checked><label>Domains Admins</label><br>
+        <input type="radio" name="q74" checked><label>Account Operators</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kura ir pareizā sintakse lietotāja mājas mapes izveidei (Aktīvajā direktorijā)?</legend>
+        <input type="radio" name="q75"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q75"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q75"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q75" checked><label>\\serveris\šāre\%username%</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Vai ir patiess apgalvojums: ir iespējams izveidot serveri, kuram lietotāji var pieslēgties pa koplietojuma resursiem (šārēm) un glabāt tur savas datnes, ja serverim nav pieškirta domēna kontroliera loma, kaut arī labā prakse tā nav?</legend>
+        <input type="radio" name="q76"><label>Aplami</label><br>
+        <input checked="" type="radio" name="q76"><label>Patiesi</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Lai Windows domēna lietotāja profils nemainītos un būtu visiem vienas grupas lietotājiem vienāds, tās NTuser.dat jāpārsauc par</legend>
+        <input type="radio" name="q77"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q77"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q77"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q77" checked><label>NTuser.man</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Lietotāji var strādāt ar darbstaciju, bet nevar piekļūt Domēna servera koplietojuma mapēm.</legend>
+        <input type="radio" name="q78"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q78"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q78"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q78"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q78" checked><label>Lietotājs ielogojies lokālajā datorā nevis domēnā</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Atzīmējiet tos RAID masīvu veidus, kas garantē datu saglabāšanu pat tad, ja no ierindas izgājis 1 cietais disks, kas iekļauts masīvā:</legend>
+        <input type="checkbox" name="q79"><label>RAID&nbsp;0</label><br>
+        <input type="checkbox" checked="" name="q79"><label>RAID&nbsp;1</label><br>
+        <input type="checkbox" name="q79"><label>RAID&nbsp;3</label><br>
+        <input type="checkbox" checked="" name="q79"><label>RAID&nbsp;5</label><br>
+        <input type="checkbox" checked="" name="q79"><label>RAID&nbsp;6</label><br>
+        <input type="checkbox" name="q79"><label>RAID&nbsp;10</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Lietotājam ar reģistrēšanās vārdu JanisB jāpiekļūst Microsoft Access datu bāzes failam db.mdb, kas atrodas uz domēna kontroliera ezis.lv uz koplietojuma resursa ("šares") DB, pa kādu UNC ceļu lietotājs var piekļūt failam?</legend>
+        <input type="radio" name="q80"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q80"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q80"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q80"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q80" checked><label>\\ezis.lv\DB\db.mdb</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kam jābūt lokālā tīkla datoriem kopējam, lai tie varētu savā starpā pilnvērtīgi strādāt tīklā:</legend>
+        <input type="radio" name="q81"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q81"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q81"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q81" checked><label>datu pārraides protokolam</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Tīkla adrese ir 195.12.235.64 un maska 255.255.255.224. Kurš īsais pieraksts tai atbilst?</legend>
+        <input type="radio" name="q82"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q82"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q82"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q82"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q82"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q82" checked><label>195.12.235.64/27</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš no minētajiem tīkla protokoliem tipiski ir paredzēts tikai darbam lokālajā tīklā?</legend>
+        <input type="radio" name="q83"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q83"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q83"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q83"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q83"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q83" checked><label>FTP</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Uz HDD rakstīts: 7200 rpm. Tas raksturo:</legend>
+        <input type="radio" name="q84"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q84"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q84"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q84" checked><label>apgriezienu skaitu</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Atzīmējiet katra distributīva noklusēto grafisko vidi:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td>Kubuntu</td>
+                    <td>
+                        <select name="q85s1">
+                            <option selected value="1">KDE</option>
+                            <option value="2">LXDE</option>
+                            <option value="3">Gnome, Unity</option>
+                            <option value="4">XFCE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lubuntu</td>
+                    <td>
+                        <select name="q85s2">
+                            <option value="1">KDE</option>
+                            <option selected value="2">LXDE</option>
+                            <option value="3">Gnome, Unity</option>
+                            <option value="4">XFCE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ubuntu</td>
+                    <td>
+                        <select name="q85s3">
+                            <option value="1">KDE</option>
+                            <option value="2">LXDE</option>
+                            <option selected value="3">Gnome, Unity</option>
+                            <option value="4">XFCE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Xubuntu</td>
+                    <td>
+                        <select name="q85s4">
+                            <option value="1">KDE</option>
+                            <option value="2">LXDE</option>
+                            <option value="3">Gnome, Unity</option>
+                            <option selected value="4">XFCE</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Atvērts failu standarts teksta, izklājlapu u.c. dokumentu veidošanai, ko atbalsta vairāk kā 20 produktu, tai skaitā LibreOffice, GoogleDocs, u.c. Ir atzīts par Latvijas oficiālo failu standartu:</legend>
+        <input type="radio" name="q86"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q86"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q86"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q86" checked><label>DOC</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Nosauciet Ričarda Stalmana radīto projektu ar mērķi izveidot pilnībā brīvu operētājsistēmu:</legend>
+        <input type="radio" name="q87"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q87"><label>GNU/Linux</label><br>
+        <input type="radio" name="q87"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q87" checked><label>GNU</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Nosauciet visplašāk izmantoto brīvā programmatūras licenci:</legend>
+        <input type="radio" name="q88"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q88"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q88"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q88"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q88"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q88" checked><label>GNU General Public License</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Atzīmējiet 3 populārākās (pēc distributīvu skaita, kas tās izmanto kā noklusētās) grafiskās darba vides:</legend>
+        <input type="checkbox" name="q89"><label>vel viena atbilde</label><br>
+        <input type="checkbox" name="q89"><label>Budgie</label><br>
+        <input type="checkbox" name="q89"><label>LXDE</label><br>
+        <input type="checkbox" name="q89" checked><label>GNOME</label><br>
+        <input type="checkbox" name="q89" checked><label>KDE</label><br>
+        <input type="checkbox" name="q89" checked><label>XFCE</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Norādiet servisiem atbilstošos konfigurācijas failus (ar pareiziem ceļiem):</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td>FTP</td>
+                    <td>
+                        <select name="q90s1">
+                            <option selected value="1">/etc/vsftpd.conf</option>
+                            <option value="2">/etc/Apache2/</option>
+                            <option value="3">/etc/samba/smb.conf</option>
+                            <option value="4">/etc/apache2/sites-enabled/</option>
+                            <option value="4">/etc/ssh/sshd_config</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apache2</td>
+                    <td>
+                        <select name="q90s2">
+                            <option value="1">/etc/vsftpd.conf</option>
+                            <option selected value="2">/etc/Apache2/</option>
+                            <option value="3">/etc/samba/smb.conf</option>
+                            <option value="4">/etc/apache2/sites-enabled/</option>
+                            <option value="4">/etc/ssh/sshd_config</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Samba</td>
+                    <td>
+                        <select name="q90s3">
+                            <option value="1">/etc/vsftpd.conf</option>
+                            <option value="2">/etc/Apache2/</option>
+                            <option selected value="3">/etc/samba/smb.conf</option>
+                            <option value="4">/etc/apache2/sites-enabled/</option>
+                            <option value="4">/etc/ssh/sshd_config</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apache2 virtuālie hosti, Web domēni</td>
+                    <td>
+                        <select name="q90s4">
+                            <option value="1">/etc/vsftpd.conf</option>
+                            <option value="2">/etc/Apache2/</option>
+                            <option value="3">/etc/samba/smb.conf</option>
+                            <option selected value="4">/etc/apache2/sites-enabled/</option>
+                            <option value="4">/etc/ssh/sshd_config</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SSH2</td>
+                    <td>
+                        <select name="q90s5">
+                            <option value="1">/etc/vsftpd.conf</option>
+                            <option value="2">/etc/Apache2/</option>
+                            <option value="3">/etc/samba/smb.conf</option>
+                            <option value="4">/etc/apache2/sites-enabled/</option>
+                            <option selected value="4">/etc/ssh/sshd_config</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Ja virtuālo hostu failā /etc/apache2/sites-available/default starp &lt;Directory /var/www/&gt; un &lt;/Directory&gt; ieraksta direktīvu php_admin_value open_basedir /var/www/, tad:</legend>
+        <input type="radio" name="q91"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q91"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q91"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q91" checked><label>Apache Web serveris nevarēs piekļūt failiem ārpus Web failu mapes /var/www</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Atzīmējiet atvērtā pirmkoda datu bāžu pārvaldības sistēmas:</legend>
+        <input type="radio" name="q92"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q92"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q92" checked><label>MariaDB</label><br>
+        <input type="radio" name="q92"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q92"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q92" checked><label>MySQL</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kāpēc tiek izstrādātas datu privātuma politikas, GDPR:</legend>
+        <input type="checkbox" name="q93"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q93" checked><label>Lai novērstu sensitīvu datu ļaunprātīgu izmantošanu</label><br>
+        <input type="checkbox" name="q93" checked><label>Lai novērstu ka uzbrucēji nozog klientu datus</label><br>
+        <input type="checkbox" name="q93" checked><label>Lai novērstu saziņas noklausīšanos</label><br>
+        <input type="checkbox" name="q93"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q93"><label><i>Nepareizs variants</i></label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kādi ir ierobežojumi sensitīvu, konfidenciālu datu apstrādei:</legend>
+        <input type="radio" name="q94"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q94"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q94"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q94"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q94"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q94" checked><label>Tos drīkst glabāt tikai uz kriptēta (šifrēta) datu nesēja (cietā diska u.t.m.l.)</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš no Linux paveidiem satur visvairāk drošības, tīkla monitorēšānas un hakeru rīku:</legend>
+        <input type="radio" name="q95"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q95"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q95"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q95" checked><label>Kali</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuras 2 no speciālajām programmām ir izmantojamas datu notikumu ierakstīšanai failā un trafika analīzei?</legend>
+        <input type="checkbox" name="q96"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q96" checked><label>tcpdump</label><br>
+        <input type="checkbox" name="q96"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q96" checked><label>WireShark</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuras Windows tehniskās politikas ir ļoti ieteicamas darba un mājas datoros:</legend>
+        <input type="checkbox" name="q97"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q97" checked><label>Ir jāieslēdz uzskaites failu ierakstīšāna vismaz par pieteikšanos sistēmā</label><br>
+        <input type="checkbox" name="q97" checked><label>Paroles garums vismaz 9 simboli</label><br>
+        <input type="checkbox" name="q97" checked><label>Parolei jābūt kompleksai (visi 4 simbolu veidi)</label><br>
+        <input type="checkbox" name="q97" checked><label>Lietotāja konta bloķēšana uz 15... 30 min. pēc, piemēram, pēc kārtas 5 nepareizi ievadītiem paroles mēģinājumiem</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuri no dotajiem ir organizācijām domātu jaunās paaudzes ugunsmūru nosaukumi:</legend>
+        <input type="checkbox" name="q98" checked><label>Citu ugunsmūru ražotāju produkti: McAfee, Meraki MX Firewalls, Barracuda, Sonic Wall, Fortinet Fortigate, Check Point, WatchGuard</label><br>
+        <input type="checkbox" name="q98" checked><label>Atvērtā pirmkoda produkti: pfSense, ClearOS, VyOS, IPCop</label><br>
+        <input type="checkbox" name="q98" checked><label>Juniper Networks: APP Secure</label><br>
+        <input type="checkbox" name="q98"><label><i>Nepareizs variants</i></label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuri no dotajiem ir organizācijām domātu jaunās paaudzes ugunsmūru nosaukumi:</legend>
+        <input type="checkbox" name="q99"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q99"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q99"><label><i>Nepareizs variants</i></label><br>
+        <input type="checkbox" name="q99" checked><label>802.1x</label><br>
+        <input type="checkbox" name="q99" checked><label>WPA3 Enterprise</label><br>
+        <input type="checkbox" name="q99" checked><label>WPA2 Enterprise</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Savietojiet jēdzienu ar labāko paskaidrojumu:</legend>
+        <table class="clean key-value">
+            <tbody>
+                <tr>
+                    <td>Konfidencialitāte (Confidentiality)</td>
+                    <td>
+                        <select name="q100s1">
+                            <option value="1" selected>dati nav pieejami nevēlamām personām, organizācijām</option>
+                            <option value="2">dati ir precīzi un nav bojāti</option>
+                            <option value="3">dati ir pieejami tikai pēc autentifikācijas un autorizācijas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Integritāte (Integrity)</td>
+                    <td>
+                        <select name="q100s2">
+                            <option value="1">dati nav pieejami nevēlamām personām, organizācijām</option>
+                            <option value="2" selected>dati ir precīzi un nav bojāti</option>
+                            <option value="3">dati ir pieejami tikai pēc autentifikācijas un autorizācijas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pieejamība (Availability)</td>
+                    <td>
+                        <select name="q100s3">
+                            <option value="1">dati nav pieejami nevēlamām personām, organizācijām</option>
+                            <option value="2">dati ir precīzi un nav bojāti</option>
+                            <option value="3" selected>dati ir pieejami tikai pēc autentifikācijas un autorizācijas</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Pats pirmais fiziskā diska jeb galvenais galvas sektors, kurā glabājas diska apraksts (partition table), tas nosaka katras diska failu sistēmu un kopā BIOS dominances saīsināti saucas:</legend>
+        <input type="radio" name="q101"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q101"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q101"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q101" checked><label>MBR</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš no Microsoft Management Console pielikumiem (snap-in) ir jāizmanto, lai administrētu objektus aktīvajā katalogā?</legend>
+        <input type="radio" name="q102"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q102"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q102"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q102" checked><label>Active Directory Users and Computers</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Uzrakstit komandu, ar kādu Start/Run komandrindā var izsaukt lietotāju administrēšanas grafisko konsoli:</legend>
+        <input type="text" name="q103" value="compmgmt">
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kādā zemākajā grupā ir jābūt Windows lietotājam, lai tas varētu manipulēt ar savā darbstacijā piešķirtā printera dokumentiem?</legend>
+        <input type="radio" name="q104"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q104"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q104"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q104" checked><label>Users</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurš no minētajiem nav operētājsistēmas nosaukums?</legend>
+        <input type="radio" name="q105"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q105"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q105"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q105" checked><label>Win OS</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kurā e-pasta vēstules rakstīšanas lodziņā raksta adresātu, kurš saņem vēstules kopiju, redzot pārējos saņēmējus:</legend>
+        <input type="radio" name="q106" checked=""><label>Cc:</label><br>
+        <input type="radio" name="q106"><label>Subject:</label><br>
+        <input type="radio" name="q106"><label>Attach:</label><br>
+        <input type="radio" name="q106"><label>To:</label><br>
+        <input type="radio" name="q106"><label>Bcc:</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Lai MS Windows Server jauno cieto disku montētu uz vecā diska mapi:</legend>
+        <input type="radio" name="q107"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q107"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q107"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q107" checked><label>Tas jāpievieno kā dinamiskais disks</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Ko var iegūt ar utilītu MBSA (Microsoft Baseline Security Analyzer)? Dot vispilnīgāko atbildi</legend>
+        <input type="radio" name="q108"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q108"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q108" checked><label>Instalācijas drošības novērtējumu</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Komanda failu lejupielādēšanai (HTTP vai FTP) izmantojot komandrindas saskarni:</legend>
+        <input type="text" name="q109" value="get">
+    </fieldset>
+    <fieldset disabled="">
+        <legend>GIMP ir:</legend>
+        <input type="radio" name="q110"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q110"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q110"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q110" checked><label>Attēlu redaktors</label>
+    </fieldset>
+    <fieldset disabled="">
+        <legend>Kuri izteikumi būtiski raksturo sistēmlauzni:</legend>
+        <input type="radio" name="q111"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q111"><label><i>Nepareizs variants</i></label><br>
+        <input type="radio" name="q111" checked><label>Rada paaugstinātas privilēģijas</label><br>
+        <input type="radio" name="q111" checked><label>To ir grūti atklāt</label>
+    </fieldset>
+</body>
+
+</html>
