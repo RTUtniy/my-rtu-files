@@ -10,6 +10,7 @@
 | [Matemātika 1](https://github.com/RTUtniy/my-rtu-files/tree/main/I%20semestris/Matemātika)       | [Fizika](https://github.com/RTUtniy/my-rtu-files/tree/main/II%20semestris/Fizika)                             | [Diskrētās struktūras datorzinātnē](https://github.com/RTUtniy/my-rtu-files/tree/main/III%20semestris/DS-CS)  |
 |                                                                                                  | [Matemātika 2](https://github.com/RTUtniy/my-rtu-files/tree/main/II%20semestris/Matemātika%202)               | [Fizika 2](https://github.com/RTUtniy/my-rtu-files/tree/main/III%20semestris/Fizika%202)                      |
 |                                                                                                  | [Objektorientētā Programmēšana](https://github.com/RTUtniy/my-rtu-files/tree/main/II%20semestris/OOP)         | [Skaitliskās metodes](https://github.com/RTUtniy/my-rtu-files/tree/main/III%20semestris/Skaitliskās%20metodes)|
+
 ## Saraksts alfabēta secībā
 
 - [Datorvadības pamati](https://github.com/RTUtniy/my-rtu-files/tree/main/III%20semestris/DVP)
