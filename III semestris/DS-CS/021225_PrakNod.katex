@@ -1,0 +1,41 @@
+\displaystyle
+\def\treeone{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/021225_1.svg}
+
+\def\treetwo{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/021225_2.svg}
+
+\def\treethree{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/021225_3.svg}
+
+\def\treefour{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/021225_4.svg}
+
+{\LARGE \textbf{Diskrētās struktūras datorzinātnēs}}\\
+{\Large \textbf{Praktiskā nodarbība}}\\
+
+\text{\textquotedblright Dota pēcsakārtojuma rinda }KAXYBRMO\text{. Pārveido par grafu ar nosacījumu, ka}\\
+\text{virsotnei }O\text{ ir 3 pēcteči, bet }R\text{ un }B\text{ ir 2 pēcteči.\textquotedblleft}\\
+\boxed{\includegraphics[height=13.1em, width=8em, alt=Graph No1]{\treeone}}\\
+
+\frac{\kern{35.8em}}{}\\
+
+\text{\textquotedblright Dota prefiksa virkne }\boxed{\tt/+\uarr x3\ast6\uarr y4-4y}\text{, pārveido par grafu.\textquotedblleft}\\
+\boxed{\includegraphics[height=14.2em, width=20.1em, alt=Graph No2]{\treetwo}}\\
+
+\frac{\kern{35.8em}}{}\\
+
+
+\text{\textquotedblright Dota prefiksa virkne }\boxed{\tt -+*25\uarr 34*3A}\text{, pārveido par grafu un izpildi darbības.\textquotedblleft}\\
+\boxed{\includegraphics[height=8.8em, width=24em, alt=Graph No3]{\treethree}}\\
+
+(2\cdot5)=10=a\\
+(3^4)=81=b\\
+(3\cdot10)=30=c\\
+(a+b)=10+81=91=d\\
+(91-30)=\underline{\underline{61}}\\
+
+\frac{\kern{35.8em}}{}\\
+\text{\textquotedblright Dota postfiksa virkne }\boxed{\tt 68+75-/32\uarr +}\text{, pārveido par grafu un izpildi darbības.\textquotedblleft}\\
+\boxed{\includegraphics[height=8.8em, width=24em, alt=Graph No4]{\treefour}}\\
+(6+8)=14=a\\
+(7-5)=2=b\\
+(3^2)=9=c\\
+(a:b)=14:2=7=d\\
+(d+c)=7+9=\underline{\underline{16}}

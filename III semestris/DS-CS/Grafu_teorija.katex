@@ -1,0 +1,150 @@
+\displaystyle
+
+\def\imgone{\includegraphics[height=5.5em, totalheight=5.5em, width=27.2em, alt=Grafu veidi]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_1.svg}}
+\def\imgtwo{\includegraphics[height=6em, totalheight=6em, width=6em, alt=Neorientēts grafs]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_2.svg}}
+\def\imgthree{\includegraphics[height=6em, totalheight=6em, width=6em, alt=Orientēts grafs]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_3.svg}}
+\def\imgfour{\includegraphics[height=6em, totalheight=6em, width=6em, alt=Orientēts grafs]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_4.svg}}
+\def\imgfive{\includegraphics[height=8em, totalheight=8em, width=23em, alt=Orientēts grafs]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_5.svg}}
+\def\imgsix{\includegraphics[height=16.2em, totalheight=16.2em, width=36em, alt=Orientēts grafs]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_6.svg}}
+\def\imgseven{\includegraphics[height=9em, totalheight=9em, width=18.6em, alt=Multigrafs, pseidografs un cilpa]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_7.svg}}
+\def\imgeight{\includegraphics[height=8.5em, totalheight=8.5em, width=11.6em, alt=Ceļu piemērs]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/Grafu_teorija_8.svg}}
+
+\def\*{\cdot}
+\def\p#1{~\*~\text{#1}}
+\def\merv#1{~\mathrm{#1}}
+\def\h3#1{{\Large\textbf{#1}}}
+\def\cortage#1{⟨#1⟩}
+\def\lp#1#2{\operatorname d_{#1}\left(#2\right)}
+\def\lpo#1#2{\operatorname d_{#1}^+\left(#2\right)}
+\def\lpi#1#2{\operatorname d_{#1}^-\left(#2\right)}
+\def\progens#1#2{\operatorname\Gamma_{#1}^-\left(#2\right)}
+\def\postgens#1#2{\operatorname\Gamma_{#1}^+\left(#2\right)}
+
+{\LARGE\textbf{Diskrētās struktūras datorzinātnē}}\\
+{\Large\textbf{Grafu teorija}}\\[1em]
+
+\text{Kopā eksistē divi veidu grafi: orientēti un neorientēti}\\[0.5em]
+
+\boxed{\imgone}\\[0.5em]
+
+\text{Orienētām grafam }G_1\text{ loku kopu }Q_1\text{ veido korteži, bet neorientētam }G_2\text{ -- kopas.}\\
+\text{Loku kopa }Q_1\text{ sastāv tikai no virsotņu kopas }V_1\text{ elementiem, pie tam }\\
+\text{korteža pirmo elemetu sauc par sākuma virsotni, bet otro par beigu virsortni.}\\[1em]
+
+\text{Katrai virsotnei ir lokālā pakāpe -- vesels skaitlis. Neorientētam grafam tā ir}\\
+\text{vienāda ar kopīgo loku skaitu ar šo virsotni. Ja grafs ir orientēts, tad viņam ir}\\
+\text{divu veidu lokālās pakāpes -- izejošās un ieejošās attiecīgi. }(d_G^+,~d_G^-)\\
+
+\boxed{\imgtwo}~
+
+\htmlStyle{display: inline-block;transform: translateY(-2.65em)}{\text{Dotajam grafam: }\lp Ga=3;~~~\lp Gb=2;~~~\lp Gc=2;~~~\lp Gd=3}\\[1em]
+
+\boxed{\imgthree}~
+
+\htmlStyle{display: inline-block;transform: translateY(-2.65em)}{\text{Dotajam grafam: }
+\begin{matrix}
+  \lpo Ga=2; & \lpo Gb=1; & \lpo Gc=0; & \lpo Gd=1\\
+  \lpi Ga=1; & \lpi Gb=1; & \lpi Gc=2; & \lpi Gd=2
+\end{matrix}}\\[1em]
+
+\text{Mēdz eksistēt arī jauktie grafi: tādi, kas sastāv gan no orientētiem, gan neor. lokiem.}\\
+\text{Šādā gadījumā neorientētus lokus ir jāparveido par orientētiem.}\\
+\text{Lokus tipa }q=\cortage{\alpha, \alpha}\text{ tradicionāli sauc par cilpām.}\\
+\text{Ja vienam un tam pašam virsotņu pārim ir vairāki atšķīrīgi loki, tad tas ir multigrafs.}\\
+\text{Ja multigrafam ir arī cilpas, to sauc par pseidografu.}\\
+
+\boxed{\imgseven}\\[1em]
+
+\text{Ceļš ar garumu }n\text{ ir tāda virsotņu } \set{V_i \mid i\in[0;n]}\text{ secība, ka }\\
+\forall j\in[1;n]\exists\cortage{V_{j-1}; V_j}\in Q\\
+\text{Ceļu, kuram sākuma punkts sakrīt ar beigu punkta, sauc par ciklu.}\\
+\text{Ceļu var apzīmēt ar }(V_p, V_q)\text{. Ja starp šiem elementiem }\exists V_i\text{, tad no tā skatapunkta}\\
+V_p\text{ ir tā priekštecis, bet }V_q\text{ ir tā pēctecis. Ir arī funkcijas, kas atgriež to kopu:}\\
+\postgens G{V_i}\text{atgriež pēcteču kopu,}\progens G{V_i}\text{atgriež priekšsteču kopu}\\[1em]
+
+\boxed{\imgeight}~
+\htmlStyle{display: inline-block;transform: translateY(-3.65em)}{
+\begin{matrix*}[l]
+\text{Šajā attēlā var redzēt vairākus ceļus, piemēram }(a, c)\text,\\
+\text{vai arī ciklu no elementiem }\cortage{b,c,d,e}
+\end{matrix*}}\\[1em]
+
+\h3{Grafu attēlošana}\\[1em]
+
+\text{Grafu var atspoguļot dažādos veidos, ne tikai grafiski.}\\
+\textbf{Blakusvirsotņu matrica }\text{-- kvadrātiskā matrica }|V|\times|V|\text{, kas sastāv no "0" un "1"}\\
+\text{pēc likuma, ka ir "1", ja pāris (kortežā vai kopā) }x,y\in Q\\[-2.75em]
+\boxed{
+A = \begin{array}{c|}
+ ~ & a & b & c & d \\\hline
+ a & 0 & 1 & 1 & 0\\
+ b & 0 & 0 & 0 & 1\\
+ c & 0 & 0 & 0 & 0\\
+ d & 1 & 0 & 1 & 0\\
+\end{array}
+} \Lrarr \htmlStyle{display: inline-block;transform: translateY(2.75em)}{\boxed{\imgthree}}
+\\
+\text{Ja grafs ir neorientēts, tad matricai piemīt simetrija pret diagonālo ass.}\\[0.5em]
+
+\textbf{Loku saraksts💀 }\text{-- kopa, kurā ir pierakstīti visi loki.}\\
+\htmlStyle{transform: translateY(-2.5em);display: inline-block;}{\boxed{\set{\cortage{a,b},\cortage{a,c},\cortage{b,d},\cortage{d,a},\cortage{d,c}}}\Lrarr}\boxed{\imgthree}\\
+\htmlStyle{transform: translateY(-2.5em);display: inline-block;}{\boxed{\set{\set{a,b},\set{a,c},\set{b,d},\set{d,a},\set{d,c}}}\Lrarr} \boxed{\imgtwo}
+\\
+\textbf{Sasniedzamības matrica }\text{-- kvadrātiskā matrica }|V|\times|V|\text{, kas sastāv}\\
+\text{no "0" un "1" pēc likuma, ka ir "1", ja no elementa }x\text{ ir ceļš līdz elementam }y\text.\\
+\htmlStyle{display: inline-block;transform: translateY(-2.75em)}{\boxed{
+R = \begin{array}{c|}
+ ~ & a & b & c & d \\\hline
+ a & 1 & 1 & 1 & 1\\
+ b & 1 & 1 & 1 & 1\\
+ c & 0 & 0 & 0 & 0\\
+ d & 1 & 1 & 1 & 1\\
+\end{array}
+} \Lrarr }\boxed{\imgthree}\\[-2.75em]
+\textbf{Incidenču matrica }\text{-- matrica }|V|\times|Q|\text{, kur rindas ir virsotnes, bet kolonnas ir loki.}\\
+\text{Neorientētam grafam ir 1, ja virsotne iekļauta lokā, bet 0, ja ir pretēji.}\\
+\text{Orientētam grafam ir +1, ja loks iziet no virsotnes, -1, ja ieiet virsotnē, 0, ja ir pretēji.}\\[-2.75em]
+\boxed{
+B = \begin{array}{c|}
+ ~ & q_1 & q_2 & q_3 & q_4 & q_5 \\\hline
+ a &  +  &  +  &  -  &  0  &  0  \\
+ b &  -  &  0  &  0  &  +  &  0  \\
+ c &  0  &  -  &  0  &  0  &  -  \\
+ d &  0  &  0  &  +  &  -  &  +  \\
+\end{array}
+}\Lrarr \htmlStyle{display: inline-block;transform: translateY(2.75em)}{\boxed{\imgfour}}\\[1em]
+%\textbf{Lineārs masīvs}\\
+%\textbf{Lineārs saraksts ar norādēm}\\
+%\textbf{Nemainīga saraksta struktūra}\\
+
+\h3{Grafu veidi}\\[1em]
+
+\text{Pilns grafs -- tāds grafs }K_n\text{ kuram ir }n\text{ virsotņu un katra no tām ir savienota ar katru.}\\
+
+\text{Ciklisks grafs -- tāds grafs }C_n\text{, kuram ir }n\text{ virsotņu un veido vienu vienkāršu ciklu.}\\
+
+\text{Ritenis }W_n\text{ sastāv no cikliska grafa }C_n\text{ un vienas virsotnes, ar kuru ir savienoti }C_n\\
+\text{grafa virsotnes.}\\
+
+\boxed{\imgfive}\\
+
+\text{Divdaļīgs grafs jeb bigrafs ir tāds, kuru kopu V var sadalīt citās divās kopās }V_1\text{ un }V_2\text,\\
+\text{lai visi loki savieno virsotnes no abām tām kopas. Ja katrai virsotnei būs loks, tas būs}\\
+\text{pilns bigrafs.}\\
+
+\text{Eksistē arī t.s. izomorfo grafu grupas. Tās grupas grafiem vienmēr ir vienāds virsotņu,}\\
+\text{loku skaits un lokālo pakāpju vērtības. Grafi ir izomorfie, ja var izdarīt pieņēmumu,}\\
+\text{ka katram }v_p\in V_1\text{ eksistē tāds } v_q\in V_2\text{, ka, ja pieņemot, ka } v_p\equiv v_q\text{, tad } Q_1\Lrarr Q_2\text.\\
+
+\boxed{\imgsix}\\[1em]
+
+\h3{Izdevīgāko ceļu meklēšana grafos}\\[1em]
+
+\text{Grafu teoriju var lietot, lai atrast īsāko ceļu starp virsotnēm. Šādā gadījumā lokiem}\\
+\text{parādas jauna īpašība -- svars. Izdevīgākais ceļš ir tas, kuram ir mazāks kopsvars.}\\[.5em]
+
+\textbf{Deikstras algoritms}\\[.5em]
+
+\text{Informāciju, kurai vajadzēja būt izklāsts šajā sadaļā es jebal, jo man tad vajag iedzert}\\
+\text{kaut ko, jo šo murgu skaidrā diez vai normāls cilvēks sapratīs, bet man turklāt tas ir}\\
+\text{jāizskaidro, lai citi saprastu, tāpēc es iesaku pajautāt par šo ChatGPT vai citu LVM.}

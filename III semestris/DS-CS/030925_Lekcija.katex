@@ -8,7 +8,7 @@
 \def\h3#1{{\large\textbf{#1}}\\}
 {\LARGE\textbf{Diskrētās struktūras datorzinātnēs}}\\
 {\Large\textbf{Ievadlekcija}}\\[0.5em]
-\href{https://estudijas.rtu.lv/pluginfile.php/8102835/mod_resource/content/1/DSD_E_pras%C4%ABbas_25_26.pdf}{\textbf{Prasības sekmīga vērtējuma saņemšanai}}\\
+\href{https://estudijas.rtu.lv/pluginfile.php/8102835/mod_resource/content/1/DSD_E_prasības_25_26.pdf}{\textbf{Prasības sekmīga vērtējuma saņemšanai}}\\
 \textbf{Konroldarbus nedrīkst pārrakstīt}\\[0.5em]
 
 \h3{Kas jāzin?}\\
@@ -24,7 +24,8 @@
 \text{kas ir katru šo kopu elementu sakārtotu pāru kopa, t.i. }C=A\times B\text{, kur } \forall c\in C,\\\forall a\in A,~\forall b\in B,~c=\cortage{a, b}\\
 \boxed{A\times B\not=B\times A}\\
 \text{Pieņemsim, ka }A=\set{\#, @, →}\text{ un }B=\set{3,10}\\
-\text{Tad }A\times B=\set{\cortage{\#, 3}, \cortage{\#, 10}, \cortage{@, 3}, \cortage{@, 10}, \cortage{→, 3}, \cortage{→, 10}}\text{, bet }B\times A=\set{\cortage{3, \#}, \cortage{3, @}, \cortage{3, →}, \cortage{10, \#}, \cortage{10, @}, \cortage{10, →}}\text{. }\\\text{Attiecīgi }B\times A=\set{u=(), \forall u^\prime\in A\times B | \forall u=(u^\prime_2, u^\prime_1)}\\[0.5em]
+\text{Tad }A\times B=\set{\cortage{\#, 3}, \cortage{\#, 10}, \cortage{@, 3}, \cortage{@, 10}, \cortage{→, 3}, \cortage{→, 10}}\text{, bet }B\times A=\set{\cortage{3, \#}, \cortage{3, @}, \cortage{3, →}, \cortage{10, \#}, \cortage{10, @}, \cortage{10, →}}\text{. }\\
+\text{Attiecīgi }B\times A=\set{u=(), \forall u^\prime\in A\times B | \forall u=(u^\prime_2, u^\prime_1)}\\[0.5em]
 |A\times B|=|A|\*|B|\\[0.5em]
 \cortage{\cortage{x, y}, z}≡\cortage{x, y, z}\text{ – 3-vietīgais kortežs}\\
 A_1\times A_2\times A_3\times...\times A_n=\set{\cortage{...}, \cortage{...}, ..., \cortage{...}}\text{, kur ir }n\text{-vietīgi korteži}\\[1em]
@@ -32,7 +33,7 @@ A_1\times A_2\times A_3\times...\times A_n=\set{\cortage{...}, \cortage{...}, ..
 \textbf{Dekarta reizinājuma uzdošanas veidi}\\
 ~\*~\text{Uzdodot visu kortežu kopu}\\
 ~\*~\text{Matrica (līdzīgi reizrēķina tabulai)}\\
-~\*~\href{https://neerc.ifmo.ru/wiki/images/6/61/%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5.png}{\text{Orientēts grafs}}\\
+~\*~\href{https://neerc.ifmo.ru/wiki/images/6/61/Соединение.png}{\text{Orientēts grafs}}\\
 ~\*~\text{Grafiks (der tikai skaitļu kopām)}\\[1em]
 
 \h3{Kortežu projekcija}\\
