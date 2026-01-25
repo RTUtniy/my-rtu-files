@@ -14,7 +14,7 @@
 {\LARGE\textbf{Diskrētās struktūras datorzinātnē}}\\
 {\Large\textbf{Praktiskā nodarbība. 24.11.25}}\\[1em]
 
-\boxed{\includegraphics[height=13.2em, totalheight=13.2em, width=20em]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/241125_1.svg}\\[1em]
+\boxed{\includegraphics[height=13.2em, totalheight=13.2em, width=20em]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/241125_1.svg}}\\[1em]
 
 R = \begin{array}{c||c|c|c|c|c|c|}
 ~ & a & b & c & d & e & f\\\hline\hline
@@ -36,7 +36,7 @@ e &  0  &  0  &  -  &  0  &  0  &  +  &  0  &  -\\\hline
 f &  0  &  0  &  0  &  0  &  -  &  0  &  +  &  +\\\hline
 \end{array}\\[1em]
 
-\boxed{\includegraphics[height=13.2em, totalheight=13.2em, width=20em]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/241125_2.svg}\\[1em]
+\boxed{\includegraphics[height=13.2em, totalheight=13.2em, width=20em]{https://raw.githubusercontent.com/RTUtniy/my-rtu-files/refs/heads/main/III\%20semestris/DS-CS/241125_2.svg}}\\[1em]
 
 l(x_1)=0\\
 l(x_2)=l(x_3)=l(x_4)=l(x_5)=l(x_6)=l(x_7)=l(x_8)=\infin\\
