@@ -1,0 +1,101 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\vt#1{⟨#1⟩}
+\def\sigmaal{\mathcal{F}}
+
+\title{Varbūtība}
+\subtitle{27.01.2026 | Ievadlekcija | Oksana Pavļenko}
+
+\h{Ievads kursā}
+
+\p{Eksāmenā un kontroldarbos atļauts lietot tikai formulu lapu.}\\[.5em]
+\p{Būs 4 testi par varbūtību. Tie domāti pašsagatavošanai,}\\
+\pc{bet tie arī veidu atzīmes daļu.}\\[.5em]
+\p{Kontroldarbu var vienu reizi pārrakstīt. Starrpārbaudījumus -- nē.}\\[.5em]
+\p{Ieteicams neprogrammējamais kalkulators bez interneta piekļuves.}\\[.5em]
+\p{Eksāmenā ir jādabū vismaz 15 punktus. Ja starppārbaudījumu vidējā atzīme}\\
+~~~\left(\frac{S_1+S_2}{2}\ge50\%\right)\text{, tad var iegūt automātu.}\\[1em]
+
+\h{Varbūtība}
+
+\hh{Uzdevumu piemēri}
+\text{Novērojot kādu ierīču darbu, konstatēts, ka vidēji viena ierīce}\\
+\text{nostrādā 20 mēnešus bez atteikumiem. Aprēķināt:}\\
+\text{1. ierīces bezatteikuma darba varbūtību 30 mēnešu laikā;}\\
+\text{2. cik ilgi ierīce strādās ar garantijas varbūtību 0.99?}\\[1em]
+
+\hh{Pamatjēdzieni}
+
+\textbf{Notikumi:}\\[.5em]
+\p{Neiespiējami}\\
+\p{Droši}\\
+\p{Gadījuma}\\[.5em]
+\p{Savienojami}\\
+\p{Nesavienojami}\\[.5em]
+\p{Atkarīgi}\\
+\p{Neatkarīgi}\\[1em]
+
+\textbf{Gadījuma lieliumi:}\\[.5em]
+\p{Diskrēti}\\
+\p{Nepārtraukti}\\[1em]
+
+\h{Apzīmējumi}\\[.5em]
+A,B,C,A_1,...\text{ -- notikumi (kopas)}\\
+A\cup B = A + B\text{ -- notikumu summa (kopu apvienojums, atslēgvārds VISMAZ)}\\
+A\cap B = AB\text{ -- notikumu reizinājums (kopu šķēlums, atslēgvārds UN)}\\
+\overline A\text{ -- pretējais notikums (papildkopa)}\\
+\Omega\text{ -- elementāro notikumu telpa (universs)}\\
+\vt{\Omega, \sigmaal, \Rho}\text{ -- varbūtību telpa}\\[1em]
+
+\hh{Varbūtības definīcijas}\\[.5em]
+\textbf{1) Klasiskā varbūtības definīcija}\\
+\text{Pieņemsim, ka vienlīdz iespējamo notikumu skaits ir }n\text.\\
+\text{Notikumam }A\text{ \underline{labvēlīgo gadījumu} skaits ir }m~(m\le n)\text.\\
+\text{Tad notikuma }A\text{ varbūtību }P(A)\text{ definē šādi: } P(A)=\frac mn,0 \le P(A) \le 1\\[.5em]
+
+\textbf{Piemērs:}\\
+\text{Grupā ir 25 studenti, no kuriem 10 ie saņēmuši 9 balles matemātikā.}\\
+\text{Noteikt varbūtību, ka no šis grupas nejauši izvēlētajam studentam ir 9 matemātikā.}\\
+P(A)=\frac mn=\frac{10}{25}=0,4\\[.5em]
+
+\textbf{Piemērs:}\\
+\text{Laboratorijā ir 16 datori. Uz sešiem no tiem instalēta R programmatūra.}\\
+\text{Ja 5 datori ir nejauši izvēlēti pārbaudei, kāda ir varbūtība, ka nevienam no tiem nav R?}\\
+n=C^5_{16}=\frac{16!}{5!(16-5)!}\\
+m=C^5_{10}=\frac{10!}{5!(10-5)!}\\
+P(A)=\frac mn \approx 0,06\\[.5em]
+
+\textbf{2) Varbūtības ģeometriskā definīcija}\\
+S_1\subset S_0\Rarr P(A)=\frac{S_1}{S_0}\\
+\textbf{Piemērs:}\\
+\text{Pieņemsim, ka skaitlis }x\text{ ir nejauši izvēlēts intervālā }(1,2)\text{, bet skaitlis }y\\
+\text{ir nejauši izvēlēts intervālā }(0,2)\text{. Kāda ir varbūtība, ka }x<y\text?\\
+\comt{Var izveidot grafiku }\com{y=x}\comt{, uz tā uzzīmēt laukumus un mahinēt ar tiem.}\\[1em]
+
+\hh{Vienkāršākās darbības ar varbūtībām}\\
+
+\textbf{1) Nesavienojamu notikumu summas varbūtība}\\
+\text{Nesavienojamiem notikumiem }P(A+B)=P(A)+P(B)~~~~~~(A\cap B=\varnothing)\\
+\textbf{2) Pilnas nensavienojamo notikumu sistēmas varbūtība}\\
+\text{Ja }A_1, A_2, ...~A_n\text{ ir pilna nesavienojamu notikumu sistēma, tad}\sum_{i=1}^nP(A_i)=1\\
+\textbf{3) Pretējo notikumu varbūtības}\\
+P(A)+P(\overline A)=1,~~~~~1-P(\overline A)=P(A)\\
+P(A)=1-P(\overline A)=1-P(A_2)-P(A_3)-...-P(A_n)\\
+\textbf{4) Neatkarīgu notikumu reizinājumu varbūtība}\\
+P(AB)=P(A)P(B)\\[1em]
+
+\h{Darbības ar savstarp. atkar. notik. varb.}\\
+\hh{Nosacītā varbūtība}\\
+\textbf{Definīcija: }\text{Ja divi notikumi }A\text{ un }B\text{ ir savstarpēji atkarīgi,}\\
+\text{tad par nosacīto varbūtību }\boxed{P(B/A)~~\text{jeb}~~P(B|A)~~\text{jeb}~~P_A(B)}\\
+\comt{fuck that bitch she didn't let me write the end}\\
+P(AB)=P(A)\cdot P(B/A)\\
+\text{Diviem savienojamiem notikumiem }A\text{ un }B\\
+P(A+B)=P(A)+P(B)-P(AB)

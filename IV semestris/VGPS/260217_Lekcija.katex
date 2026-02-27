@@ -1,0 +1,54 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\hr{\frac{\kern{35.8em}}{}\\}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\vt#1{⟨#1⟩}
+\def\*{\cdot}
+\def\neg{\overline}
+\def\cov{\mathrm{cov}}
+
+\title{Varbūtība}
+\subtitle{17.02.2026 | Lekcija | Oksana Pavļenko}
+
+\h{Sakarības radītāji}
+
+\p{Kovariācija: }\cov(X,Y)=E((X-E(X))(Y-(E(Y)))\\
+\p{Korelācijas koeficients: }\rho_{xy}=\frac{\cov(X,Y)}{\sqrt{D(X)\*D(Y)}};~-1\le\rho_{xy}\le1\\[1em]
+
+\h{Binomiālais sadalījums (n,p)}
+
+E(X)=np\\
+D(X)=npq\\
+\sigma(X)=?\\[1em]
+
+\h{Puasona sadalījums (λ)}
+
+P(m)=\frac{\lambda^m}{m!}e^{-\lambda}\\
+E(X)=D(X)=\lambda\\[1em]
+
+\h{Ģeometriskais sadalījums (p)}
+D(X)=\frac{1-p}{p^2}\\
+\hh{Ieskaitot meklējamo}
+P(m)=q^{m-1}p\\
+E(X)=\frac 1p\\
+\hh{Neieskaitot meklējamo}
+P(m)=q^mp\\
+E(x)=\frac{1-p}p\\[1em]
+
+\h{Paskāla sadalījums jeb negatīvs bin. sadal. (m, p)}
+
+P(k)=C^{m-1}_{m-k}p^mq^k\\[1em]
+
+\h{Hiperģeometriskais sadalījums (n, m, k)}
+
+n\text{ -- populācijas apjoms}\\
+m\text{ -- elementu skaits populācijā ar vēlamo īpašību}\\
+k\text{ -- izlases apjoms}\\
+
+P(X=l)=\frac{C^l_mC^{k-1}_{n-m}}{C^k_n}

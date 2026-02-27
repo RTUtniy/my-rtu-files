@@ -1,0 +1,101 @@
+\displaystyle
+\def\over{}
+\def\hr{\frac{\kern{30em}}{}\\[1.5em]}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+\def\aform#1#2{\frac{#2!}{(#2-#1)!}}
+\def\cform#1#2{\frac{#2!}{#1!(#2-#1)!}}
+\def\uzdevums#1{\href{https://estudijas.rtu.lv/pluginfile.php/8946016/mod_resource/content/0/5-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\desmos#1{\href{#1}{\includegraphics[height=0.8em, totalheight=0.9em, width=0.9em, alt=Desmos logo]{https://www.desmos.com/assets/img/apps/graphing/favicon.ico}~\text{Desmos}}}
+
+\title{Varbūtība}
+\subtitle{25.02.2026 | Praktiskā nodarbība | Aija Pola}
+
+\uzdevums{5.1. uzdevums}\\[1em]
+\textbf{1)}\\[1em]
+
+\comt{uztaisīt blīvuma f-jas grafiku}\\[1em]
+
+\int_{-\infin}^{+\infin} f(x)dx=1\\
+\int_0^1 a(1-x^3)dx=1\\
+a\int_0^1 (1-x^3)dx=a\left(\int_0^1 1dx -\int_0^1x^3dx\right)=a\*(x-\frac{x^4}{4})\bigg|^1_0=\\
+=a(\frac 34-0)\\
+1=a\cfrac 34\\
+a=\frac 43\\[1em]
+
+\textbf{2)}\\[1em]
+
+F(x)=\begin{cases}
+\int_{-\infin}^x 0dx & =0 & x \le 0\\
+\int_{-\infin}^0 0dx + \int_0^x \frac43 (1-x^3) dx & =\frac 43 (x-\frac{x^4}4) & 0<x\le1\\
+\int_{-\infin}^0 0dx + \int_0^1 \frac43 (1-x^3) dx + \int_1^x0dx & =1 & x > 1
+\end{cases}\\[1em]
+
+\textbf{3)}\\[1em]
+
+\boxed{P(x_1<X<x_2)=F(x_2)-F(x_1)}\\[.5em]
+\textstyle
+P(\frac 13<X<\frac 23)=F(\frac 23)-F(\frac 13)=\displaystyle
+\frac 43\left(\frac 23-\frac 14{\textstyle(\frac 23)^4}\right)-\frac 43\left(\frac 13-\frac14{\textstyle(\frac 13)^4}\right)\approx
+0,38\\[1em]
+
+\textbf{4)}\\[1em]
+
+\boxed{P(X<x)=F(x)}\\[.5em]
+
+P(X<0,5)=F(0,5)=\frac 43\left(0,5-\frac 14(0,5)^4\right)\approx0,65\\[1em]
+
+\hr
+
+\uzdevums{5.2. uzdevums}\\[1em]
+
+\textbf{2)}\\[1em]
+
+f(x)=F^\prime(x)\begin{cases}
+0       & x \le 0\\
+0,2+2bx & 0 < x \le 10\\
+0       & x > 10\\
+\end{cases}\\[1em]
+
+\textbf{3)}\\[1em]
+
+E(X)=\int_{-\infin}^{+\infin} x\*f(x)dx=\\
+=\int_{-\infin}^0 x\*0dx+\int_0^{10} x\*(0,2+2bx)dx+\int_{10}^{+\infin}x\*0dx\approx3,3(3)\\[2em]
+
+\hr
+
+\uzdevums{5.3. uzdevums}\\[1em]
+
+\textbf{1)}\\[1em]
+
+f(x):\desmos{https://www.desmos.com/calculator/8aomeveive}\\
+A=3\\[1em]
+\textbf{2)}\\[1em]
+
+E(X)=1,5\\[1em]
+
+\textbf{3)}\\[1em]
+
+D(X)=E(X^2)-E^2(X)\\
+E(X^2)=\int_1^\infin x^2\frac 3{x^4}dx=3\int_1^\infin\frac 1{x^2}dx=3\left(-\frac 1x\bigg|_1^\infin\right)=3\\
+D(X)=3-1,5^2=0,75\\[1em]
+
+\textbf{4)}\\[1em]
+
+\sigma=\sqrt{D(X)}\approx0,866\\[1em]
+
+\textbf{5)}\\[1em]
+
+F(X)=\int f(x)dx=\begin{cases}
+0 & x<1\\
+\frac 1{x^3} & x \ge 1
+\end{cases}\\[1em]
+
+\textbf{6)}

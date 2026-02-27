@@ -1,0 +1,51 @@
+\displaystyle
+\def\over{}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+
+\title{Varbūtība}
+\subtitle{10.02.2026 | Lekcija | Oksana Pavlenko}
+
+\h{Sagaidāmā vērtība}
+
+E(X)=\sum x_ip_i\\
+E(C)=C\\
+E(CX)=CE(X)\\
+E(E(X))=E(X)\\
+E(X\pm Y)=E(X)\pm E(Y)\\
+\text{Ja }X\text{ un }Y\text{ ir neatkarīgi, tad }E(XY)=E(X)E(Y)\\
+E(X^2)>(E(X))^2\\[1em]
+
+\h{Moda}
+
+Mo(A)=\set{x_i|P(x_i)\ge P(\forall x_{\not= i})}\\[1em]
+
+\h{Vidējā absolūtā novirze}
+
+C(X)=E(|X-E(X)|)\\[1em]
+
+\h{Dispersija jeb variācija}
+
+{D(X)=E(X-E(X))^2=\sum(x_i-E(X))^2\*p_i=E(x^2-2XE(X)+(E(X))^2)}=\\
+{=E(x^2-2\underbrace{E(X)E(X)}_{(E(X))^2}+\cancel E(E(X^2)))=E(X^2)-(E(X))^2=\sum x_ip_i-\left(\sum x_ip_i\right)^2}\\
+D(C)=0\\
+D(CX)=C^2D(X)
+\\[1em]
+
+\h{Vidējā kvadratiskā novirze jeb standartnovirze}
+
+\sigma(X)=\sqrt{D(X)}\\[1em]
+
+\h{Momenti}
+
+\p{Sākuma momenti:}
+\mu_k(X)=E(X^k)=\sum x_i^kp_i\\
+\p{Centrālie momenti:}
+m_k(X)=E((X-E(X))^k)=\sum(x_i-E(X))^kp_i\\

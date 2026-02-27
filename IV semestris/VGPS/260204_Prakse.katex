@@ -1,0 +1,85 @@
+\displaystyle
+\def\over{}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+\def\aform#1#2{\frac{#2!}{(#2-#1)!}}
+\def\cform#1#2{\frac{#2!}{#1!(#2-#1)!}}
+\def\uzdevums#1{\href{https://estudijas.rtu.lv/pluginfile.php/8780912/mod_resource/content/0/1-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\uzdevumsII#1{\href{https://estudijas.rtu.lv/pluginfile.php/8859210/mod_resource/content/0/2-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\desmos#1{\href{#1}{\includegraphics[height=0.8em, totalheight=0.9em, width=0.9em, alt=Desmos logo]{https://www.desmos.com/assets/img/apps/graphing/favicon.ico}~\text{Desmos}}}
+
+\title{Varbūtība}
+\subtitle{04.02.2026 | Praktiskā nodarbība | Aija Pola}
+
+\uzdevums{1.6. uzdevums}\\
+
+T_1\text{ -- I procesa sākuma moments}\\
+T_2\text{ -- II ...}\\
+T_1\text{ un }T_2\text{ sadalīti vienmērīgi }[0;24]\\
+\text{Darbības intervāli: }[T_1;T_1+2]\text{ un }[T_2;T_2+3]\\
+\text{Spiests gaidīt, ja} \begin{rcases}
+T_2<T_1+2\\
+T_1<T_2+3
+\end{rcases}T_1-3<T_2<T_1+2\\
+\desmos{https://www.desmos.com/calculator/aje2kfytry}\\
+S_q=24^2=576\\
+A\text{ -- procesi spiesti gaidīt}\\
+S_A=576-(22^2:2+21^2:2)=576-(484:2+441:2)=113.5\\
+P(A)=\frac{S_A}{S_q}=\frac{113.5}{576}\approx19.7\%\\[1em]
+
+\uzdevums{1.7. uzdevums}\\
+
+\overline A=\set{\text{"neviena no 4 pārb. det. neatbilst standartam"}}\\
+\overline B=\set{\text{"vismaz viena no 10 pārb. det. neatbilst standartam"}}\\
+\overline C=\set{\text{"vismaz 9 no 10 pārb. det. atbilst standartam"}}\\
+\overline D=\set{\text{"3 vai mazāk no 5 pārb. det. atbilst standartam"}}\\
+\overline E=\set{\text{"no 10 pārb. det. neatbilst standartam, ka to skaits nav 1"}}\\[1em]
+
+
+\uzdevums{1.8. uzdevums}\\
+
+\p{Nav svarīga secība}
+A=\set{\text{"ne vairāk kā uz 2 no 5 ir progr."}}\\
+|\Omega|=C^5_{20}=\cform5{20}=15504\\
+P(A)=\frac{C^0_8\*C^5_{12}}{|\Omega|}+\frac{C^1_8\*C^4_{12}}{|\Omega|}+\frac{C^2_8\*C^3_{12}}{|\Omega|}\approx70.38\%\\[.5em]
+
+B=\set{\text{"vismaz 1 no 5 ir progr."}}\\
+\overline B=\set{\text{"nevienam nav progr."}}\\
+P(\overline B)=\frac{C^5_{12}}{|\Omega|}\approx5.11\%\\
+P(B)=1-P(\overline B)=94.89\%\\[1em]
+
+\uzdevums{1.9. uzdevums}\\
+
+%1-0.9\*0.8
+P(S_1)=0.9\\
+P(S_2)=0.8\\
+P((S_1\land \overline{S_2})\lor(\overline{S_1}\land S_2))=0.9\*0.2+0.1\*0.8=26\%\\[1em]
+
+\comt{Ja }\com{n\le100}\comt{, tad lieto Bernulli formulu;}\\
+\comt{Ja }\com{n>100, (p<0.1 \land np<10) \lor (p>0.9 \land nq<10)}\comt{ izmanto Puasona}\\[1em]
+
+\uzdevumsII{2.1. uzdevums}\\
+
+P(\set{\text"n\text{ neatkar. mēģ. }m\text{ reizes iestāsies }A\text"})=\\
+=P_n(m)=C^m_n\*p^m\*{\underbrace{(1-p)}_q}^{n-m}\\
+P(\set{\text{"10 neatkar. mēģ. 3 reizes iestāsies }A\text"})=\\
+=P_{10}(3)=C^3_{10}\*0.4^3\*(1-0.4)^{10-3}\approx21.5\%\\
+
+P(\set{\text{"10 neatkar. mēģ. vismaz 3 reizes iestāsies }A\text"})=\\
+=1-(P_{10}(0)+P_{10}(1)+P_{10}(2))=0.833\\[1em]
+
+\uzdevumsII{2.2. uzdevums}\\
+
+P(\set{\text{no 140 kl. 21 saņem spec. piedāv.}})=\\
+=[\com{n=A=140, m=B=21, p=C=0.15}]=9.4\%\\
+\text{Pēc MLLF: }P(A)=9.44\%\\[.5em]
+
+{P(20\le m\le40)=\varphi\left(\frac{40-21}{\sqrt{17.85}}\right)-\varphi\left(\frac{20-21}{\sqrt{17.85}}\right)=\varphi(4.5)-\varphi(-0.24)=}\\
+=0.999997-(1-\varphi(0.24))=...\\

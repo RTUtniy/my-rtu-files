@@ -1,0 +1,73 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\Large\textbf{#1}}\\[1em]}
+\def\hr{\frac{\kern{35.8em}}{}\\}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\vt#1{⟨#1⟩}
+\def\sigmaal{\mathcal{F}}
+\def\*{\cdot}
+\def\uzdevums#1{\href{https://estudijas.rtu.lv/pluginfile.php/8780912/mod_resource/content/0/1-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+
+\title{Varbūtība}
+\subtitle{28.01.2026 | Praktiskā nodarbība | Aija Pola}
+
+\begin{array}{|ccc|}\hline
+A\text{ vai }B & \Lrarr & A+B\\
+A\text{ un }B & \Lrarr & A\*B\\\hline
+\end{array}\\[1em]
+
+\hr[1em]
+
+\text{Relatīvais biežums tiek mērīts procentos: }P(A)\in\left[0\%; 100\%\right]\\
+
+\boxed{P(A)=\frac{|A|}{|\Omega|}=\frac mn}\\[1em]
+
+\hr[1em]
+
+\text{Ja uzmet 3 kauliņus, visu iespējamo rezultātu skaits ir }|\Omega|=\boxed6\*\boxed6\*\boxed6=216\\
+
+A\text{ -- (tikai) viens no kauliņiem uzrādīja 1.}\\
+|A|=(\boxed1\*\boxed5\*\boxed5)+(\boxed5\*\boxed1\*\boxed5)+(\boxed1\*\boxed5\*\boxed5)=3\*25=75\\
+
+B\text{ -- vismaz viens no kauliņiem uzrādīja 1.}\\
+|B|=(\boxed1\*\boxed6\*\boxed6)+(\boxed6\*\boxed1\*\boxed6)+(\boxed1\*\boxed6\*\boxed6)=3\*36=108\\[1em]
+
+\hr[1em]
+
+\text{Lai secīgi paņemt }k\text{ elementu no }n\text{ elementiem, jālieto formula }\boxed{A^k_n=\frac{n!}{(n-k)!}}\text.\\
+
+\text{Lai nesecīgi paņemt }k\text{ elementu no }n\text{ elementiem, jālieto formula }\boxed{C^k_n=\frac{n!}{k!(n-k)!}}\text.\\[1em]
+
+\hr
+
+\uzdevums{1.2. uzdevums}\\
+
+\omega_j\text{ -- auto numurs }\left(\text\textquotedblleft B_1B_2\sim C_1C_2C_3C_4\text"\right)\\[.5em]
+|\Omega|=\overbrace{(25^2)}^{B_1B_2}\*\overbrace{(10^4\underbrace{~~~~~~-~1~~~~~~}_{\text{nevar būt 0000}})}^{C_1C_2C_3C_4}\\[.5em]
+A\text{ -- visi cipari ir dažādi}\\
+|A|=(25^2)\*(10\*9\*8\*7)=25^2\*C^4_{10}\\[1em]
+
+\hr[1em]
+
+\uzdevums{1.3. uzdevums}\\
+
+|\Omega|=\frac{7!}{2!\*2!}=1260\\
+A=\set{\text{\textquotedblleft KASPARS"}}\Rarr|A|=1\\
+P(A)=\frac1{1260}\\
+\text{Var pārbaudīt: }P(A)=\frac{1\*\cancel2\*\cancel2\*1\*1\*1\*1}{7\*6\*5\*\cancel4\*3\*2\*1}=\frac1{1260}\\[1em]
+
+\hr[1em]
+
+\uzdevums{1.4. uzdevums}\\
+
+|\Omega|=C^7_{25}\\
+\begin{matrix*}[l]
+A\text{ -- 7 ir labas} & \Rarr & P(A)=\cfrac{C^7_{20}\*C^0_5}{|\Omega|}\\
+B\text{ -- 6 ir labas un 1 ir slikta} & \Rarr & P(B)=\cfrac{C^6_{20}\*C^1_5}{|\Omega|}\\
+C\text{ -- 4 ir labas un 3 ir sliktas} & \Rarr & P(C)=\cfrac{C^4_{20}\*C^3_5}{|\Omega|}\\
+\end{matrix*}\\[1em]

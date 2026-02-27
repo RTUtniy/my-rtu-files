@@ -1,0 +1,71 @@
+\displaystyle
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\vt#1{⟨#1⟩}
+\def\sigmaal{\mathcal{F}}
+
+\title{Varbūtība}
+\subtitle{03.02.2026 | Lekcija | Oksana Pavļenko}
+
+\h{Notikumi}
+H_1, H_2, ..., H_n\text{ -- pilna notikumu sistēma}\\
+\sum_{i=1}^n P(H_i)=1\\
+A = H_1A+H_2A+...+H_nA\\
+P(A)=\sum_{i=1}^n P(H_iA)\\
+P(H_jA)=P(H_j)P(A/H_j)\\
+P(A)=\sum_{i=1}^n\left( P(H_i) P(A/H_i) \right)\textbf{ -- pilnas varbūtības formula}\\[1em]
+
+\h{Bernulli formula}
+
+\boxed{
+	P(H_j / A) = \frac{P(H_j)P(A/H_j)}{P(A)}
+}\\[.5em]
+
+n\text{ -- mēģinājumu skaits,}\\
+P(A)=p\text{ -- notikuma }A\text{ izpildīšanas varbūtība vienā mēģinājumā,}\\
+m\text{ -- cik reizes notiek }A\text{.}\\
+\textbf{Bernulli formula: }\boxed{P_n(m)=C^m_n\cdot p^m (1-p)^{n-m}}\\[1em]
+
+\h{Moda}
+
+\textbf{Moda}\text{ -- visvarbūtīgākais notikumu skaits}\\
+\boxed{np-q\le M\le np+p}~,~M\in \N\\[1em]
+
+\h{Bernulli formulu tuvinājumi}
+\hh{Muavra--Laplasa lokālā formula (MLLF)}
+
+\text{Ieteicama, ja }n\text{ ir liels skaitlis}\\[.5em]
+
+P(m/n)\approx\frac1{\sqrt{npq}}\varphi\left(\frac{m-np}{\sqrt{npq}}\right)\\
+\varphi(x)=\frac{\exp(-0,5x^2)}{\sqrt{2\pi}};~~~\varphi(x)=\varphi(-x)\\
+\boxed{\left|P(m/n)-\text{MLLF}\right|=\frac{0,5}{\sqrt{npq}}}\\[.5em]
+
+\hh{Muavra--Laplasa integrālā formula (MLIF)}
+
+P_n(m_1\le m\le m_2)\approx\Phi\left(\frac{m_2-np}{\sqrt{npq}}\right)-\Phi\left(\frac{m_1-np}{\sqrt{npq}}\right)\\
+
+\Phi(x)=\frac{1}{\sqrt{2\pi}}\int_{-\infin}^x \exp\left({\frac{-t^2}{2}}\right)dt;~~~\Phi(-x)=1-\Phi(x)\\
+
+\boxed{\left|P(m/n)-\text{MLIF}\right|<\frac{1}{\sqrt{npq}}}\\[.5em]
+
+\textbf{Ar nepārtrauktības korekciju: }\\
+P_n(m_1\le m\le m_2)\approx\Phi\left(\frac{m_2+0,5-np}{\sqrt{npq}}\right)-\Phi\left(\frac{m_1-0,5-np}{\sqrt{npq}}\right)\\
+
+\boxed{\left|P(m/n)-\text{MLIF*}\right|<\frac{0,5}{\sqrt{npq}}}\\[.5em]
+
+\hh{Puasona formula}
+
+\text{Ieteicams, ja }n\text{ ir mazs skaitlis}\\[.5em]
+
+P_n(m)\approx\frac{\lambda^m}{m!}\exp(-\lambda);\\[.5em]
+\begin{array}{c|c}
+\lambda=np\text{, ja} & \lambda=nq\text{, ja}\\
+p<0,1                 & q>0,9\\
+np<10                 & nq<10
+\end{array}\\[.5em]
