@@ -1,0 +1,81 @@
+\displaystyle
+\def\over{}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+\def\uzdevumsVI#1{\href{https://estudijas.rtu.lv/pluginfile.php/8960982/mod_resource/content/0/6-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\uzdevumsVII#1{\href{https://estudijas.rtu.lv/pluginfile.php/8984732/mod_resource/content/0/7-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\desmos#1{\href{#1}{\includegraphics[height=0.8em, totalheight=0.9em, width=0.9em, alt=Desmos logo]{https://www.desmos.com/assets/img/apps/graphing/favicon.ico}~\text{Desmos}}}
+
+\title{Varbūtība}
+\subtitle{11.03.2026 | Praktiskā nodarbība | Aija Pola}
+
+\uzdevumsVI{6.4. uzdevums}\\
+
+\text{1. posms: studenti saņem eksāmena rezultātus un veidojas divas grupas.}\\
+\text{2. posms: nejauši izvēlēts students}\\
+A=\set{\text{"studenta rezultāts nepārsniedz 80 punktus"}}\\
+H_1=\set{\text{"1. gr."}};~P(H_1)=\cfrac{12}{30}=0,4\\
+H_1=\set{\text{"2. gr."}};~P(H_1)=\cfrac{18}{30}=0,6\\
+P(A|H_j)=~?\\
+X_1\text{ -- 1. grupas stud. rez., }X_1\sim N(\mu_1;~\sigma_1^2)\text{ kur }\mu_1=70;~\sigma_1=8\\
+X_2\text{ -- 2. grupas stud. rez., }X_2\sim N(\mu_2;~\sigma_2^2)\text{ kur }\mu_2=78;~\sigma_2=6\\
+P(A|H_1)=P(X_1<80)=\Phi\left(\frac{80-70}8\right)\approx0,8944\\
+P(A|H_2)=P(X_2<80)=\Phi\left(\frac{80-78}6\right)\approx0,6293\\
+P(A)=P(A|H_1)\*P(H_1) + P(A|H_2)\*P(H_2)\approx0,735\\[3em]
+
+
+\title{Statistika}
+\subtitle{04.03.2026 | Praktiskā nodarbība | Aija Pola}
+
+\uzdevumsVII{7.1. uzdevums}\\
+\text{1)}~~~
+\begin{array}{|c|c|c|c|c|c|}\hline
+\boldsymbol{x_i} & 26,8 & 26,9 & 27 & 27,1 & 27,2\\\hline
+\boldsymbol{n_i} & 1 & 3 & 4 & 3 & 1\\\hline
+\end{array}\\[.5em]
+
+\text{2)}\begin{array}{c|}
+4 &      &  &   \bullet  &  &      \\
+3 &      &\bullet && \bullet&      \\
+2 &      &      &    &      &      \\
+1 & \bullet&    &    &      & \bullet\\
+0 &      &      &    &      &      \\\hline
+  & 26,8 & 26,9 & 27 & 27,1 & 27,2
+\end{array}\\[.5em]
+
+\text{3) }\overline x=27;~S^2\approx0,0127~~\Rarr~~S=0,1127\\
+\text{4) }\gamma=95\%~~\Rarr~~\alpha=5\%\\
+\begin{rcases}
+\text{izlases apjoms ir mazs}\\
+\sigma\text{ nav zināma}\\
+X\sim N(\mu,\sigma^2)
+\end{rcases}\Rarr\text{Vajag izmantot Stjūdenta sadalījumu}\\
+\mu\in\overline x\pm t_{\alpha,v}\frac{S}{\sqrt{n}}\text{ kur }t_{\alpha,v}=\mathtt{T.INV.2T(\alpha,v)}\\
+\sigma^2\in\left(\frac{(n-1)S^2}{\chi^2_{{\small\frac\alpha2},v}};\frac{(n-1)S^2}{\chi^2_{1-{\small\frac\alpha2},v}}\right)\\[1em]
+
+% tālāk es ņihuja nesapratu
+
+\uzdevumsVII{7.2. uzdevums}\\
+\text{1) }
+X\text{ -- riepas nobraukums (tūkst. km)}\\
+X\sim N(\mu;~\sigma^2)\\
+\begin{rcases}
+n>30\\
+\sigma\text{ nav zināma}\\
+X\sim N(\mu;~\sigma^2)
+\end{rcases}\Rarr \text{var izmantot Stjūdenta sadalījumu}\\
+\frac{S}{\sqrt n}\approx1,3297\\
+v=60-1=59;~~\alpha=0,05\\
+t_{0,05;59}\approx2,001\\
+\varepsilon=t_{v;n}\*\frac{S}{\sqrt n}\approx2,66\\
+\text{Atbilde: Ar varbūtību 95\% var apgalvot, ka riepas nobraukums būs}\\
+\text{intervālā 45}\pm2,66\text{ km}\\[.5em]
+
+\uzdevumsVII{7.3. uzdevums}\\

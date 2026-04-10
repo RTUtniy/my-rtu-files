@@ -1,0 +1,52 @@
+\displaystyle
+\def\over{}
+\def\hr{\frac{\kern{30em}}{}\\[1.5em]}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+
+\title{Varbūtība}
+\subtitle{03.03.2026 | Lekcija | Oksana Pavļenko}
+
+% \h
+
+{\Large\textbf{Nepārtrauktu gadījuma lielumu}}\\
+{\Large\textbf{svarīgākie sadalījumi}}\\[1em]
+
+\hh{Eksponenciāls sadalījums}
+
+f(x)=\begin{cases}
+0                      & \text{ja }x<0,\\
+\lambda e^{-\lambda x} & \text{ja }x\ge 0 \land \lambda>0
+\end{cases}\\
+
+F(X)=\begin{cases}
+0,                & \text{ja }x < 0;\\
+1-e^{-\lambda x}, & \text{ja }x \ge 0;
+\end{cases}\\[.25em]
+
+E(X)=D(X)=\frac 1{\lambda^2}\\[.25em]
+\sigma(X)=\frac 1\lambda\\[.25em]
+
+\hh{Puasona sadalījums}
+
+E(X)=D(X)=\lambda\\[.25em]
+
+\hh{Normālais sadalījums}
+
+\boxed{X\sim N(\mu,\sigma^2)}\\
+
+f(x)=\frac 1{\sigma\sqrt{2\pi}}e^{\large-\frac{(x-\mu)^2}{2\sigma^2}}\\[.25em]
+\text{Ja }\sigma>0\text{, tad }f(x)\ge0 \\
+\text{Parametri }\mu,~\sigma\text{ ir izskaidrojami:}\\
+E(X)=\mu\\
+D(X)=\sigma^2\\
+\text{Ja }\mu=0,~\sigma=1\text{, to sauc par normēto jeb standartizēto normālo sadalījumu}\\
+\text{un apzīmē }Z\sim N(0,1)\\[.25em]
+P(x_1<X<x_2)=\Phi\left(\frac{x_2-\mu}{\sigma}\right)-\Phi\left(\frac{x_1-\mu}{\sigma}\right)

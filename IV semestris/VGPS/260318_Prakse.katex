@@ -1,0 +1,70 @@
+\displaystyle
+\def\over{}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+\def\uzdevumsVII#1{\href{https://estudijas.rtu.lv/pluginfile.php/8984732/mod_resource/content/0/7-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\uzdevumsIX#1{\href{https://estudijas.rtu.lv/pluginfile.php/9001056/mod_resource/content/0/8-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\desmos#1{\href{#1}{\includegraphics[height=0.8em, totalheight=0.9em, width=0.9em, alt=Desmos logo]{https://www.desmos.com/assets/img/apps/graphing/favicon.ico}~\text{Desmos}}}
+
+\title{Statistika}
+\subtitle{18.03.2026 | Praktiskā nodarbība | Aija Pola}
+
+\uzdevumsVII{7.3. uzdevums}\\
+
+\begin{array}{|c|c|c|c|c|c|}\hline
+ (x_i;x_{i+1}] & (0;22] & (22; 44] & (44;66] & (66;88] & (88;140] \\\hline
+ n_i           &    4   &    12    &    8    &    4    &     2    \\\hline
+\end{array}\\[.5em]
+
+\text{Poligona punkti: }(11,4);~(33, 12);~(55; 8);~(77; 4);~(114;2).\\[.5em]
+
+\text{Kumulata frekv.: }({\textstyle n_i^\prime = \sum_{j=1}^i n_j})\\
+\begin{array}{|c|c|c|c|c|c|}\hline
+ (x_i;x_{i+1}] & (0;22] & (22; 44] & (44; 66] & (66; 88] & (88; 140] \\\hline
+ n_i^\prime    &    4   & 16 & 24 & 28 & 30\\\hline
+\end{array}\\[1em]
+
+\uzdevumsVII{7.4. uzdevums}\\
+
+\text{Pieņemam, ka }X\sim N(\mu,\sigma^2)\\
+1)~\overline x=3,5;~S^2=1,086;~S=1,042\\S_\%=29,77\%\Rarr\text{izkliede ir vidēja.}\\[.5em]
+2)~\gamma=0,98\\
+\begin{rcases}
+n=15~(\text{mazs})\\
+\sigma\text{ nav zināma}\\
+X\sim N(\mu,\sigma^2)
+\end{rcases}\Rarr\text{Vajag izmantot }t\text{-sadalījumu.}\\
+
+\mu\in[\overline x-t_{\alpha,\nu}\*\frac{S}{\sqrt n}; \overline x+\underbrace{t_{\alpha,\nu}\*\frac{S}{\sqrt n}}_{\varepsilon}]\\
+\alpha=1-\gamma=0,02\\
+t_{\alpha,\nu}=t_{0,02;14}=2,6245\\
+\varepsilon=2,6245\*\frac{1,042}{\sqrt{15}}\approx0,7\\
+\mu\in[3,5-0,7;~3,5+0,7]\Rarr2,8\le\mu\le4,2\\[.5em]
+
+3)~\frac{(n-1)s^2}{\chi^2_{0,5\alpha;~~n-1}}\le\sigma^2\le\frac{(n-1)s^2}{\chi^2_{1-0,5\alpha;~~n-1}}\\[.25em]
+(n-1)s^2=14\*1,086=\\
+\chi^2_{0,5\alpha;~~n-1}=\chi^2_{0,01;~~14}=29,141\\
+\chi^2_{1-0,5\alpha;~~n-1}=\chi^2_{0,99;~~14}=4,66\\
+0,5\le\sigma\le3,3\\[1em]
+
+\uzdevumsIX{8.1. uzdevums}\\
+
+\text{Pieņemam, ka }X\sim N(\mu,\sigma^2)\\
+1)\\\begin{rcases}
+n=8~(\text{mazs})\\
+\sigma\text{ nav zināma}\\
+X\sim N(\mu,\sigma^2)
+\end{rcases}\Rarr\text{Vajag izmantot }t\text{-sadalījumu.}\\
+
+\mu\in[\overline x-\Delta; \overline x+\Delta]\\
+\overline x=725;~S=106,1;~\alpha=1-0,9=0,1\\
+\varepsilon=t_{\alpha;\nu}\cdot\frac{S}{\sqrt n}=1,8496\*\frac{106,1}{\sqrt{8}}\approx71\\
+654\le\mu\le796\\
+\text{Atbilde: Intervāls (654;~796) saturēs nezināmo vidējo vērtību }\mu\text{ ar varbūtību 90\%}\\[.5em]

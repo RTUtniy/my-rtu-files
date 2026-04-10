@@ -1,0 +1,47 @@
+\displaystyle
+\def\over{}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+\def\uzdevumsVI#1{\href{https://estudijas.rtu.lv/pluginfile.php/8960982/mod_resource/content/0/6-prakt-VGPS.pdf}{\nearrow\kern{-0.3em}\textbf{ #1}}}
+\def\desmos#1{\href{#1}{\includegraphics[height=0.8em, totalheight=0.9em, width=0.9em, alt=Desmos logo]{https://www.desmos.com/assets/img/apps/graphing/favicon.ico}~\text{Desmos}}}
+
+\title{Varbūtība}
+\subtitle{04.03.2026 | Praktiskā nodarbība | Aija Pola}
+
+\uzdevumsVI{6.1. uzdevums}\\
+
+\lambda=\frac 13\mathrm{\frac{kl.}{min}}\\
+T\text{ -- laiks starp divu klientu ier. brīžiem (intervāls).}\\
+T\sim \exp(\lambda)\\
+\Rarr f(x)=\begin{cases}
+0,                & \text{ja }x\le0\\
+1-e^{-\lambda x}, & \text{ja }x>0
+\end{cases}\\
+P(T<x)=F(x)\\
+P(T=C)=0\\
+P(T<6)\approx0,8647\\
+P(5<T<10)=F(10)-F(5)\approx0,1532\\
+P(\text{"15 minūšu laikā atnāks 2 klienti"})=\\
+=\left[\begin{matrix}
+\tau=15 & m=2\\
+\lambda=\frac13 & \lambda\*\tau=5
+\end{matrix}\right]=\frac{\left(\frac13\right)^2}{2!}\exp\left(-\frac13\right)\\[1em]
+
+\uzdevumsVI{6.2. uzdevums}\\
+
+X\sim N(\mu,\sigma^2)\\
+\mu=450;~\sigma=30\\
+
+P(400<X<450)=\Phi\left(\frac{450-450}{30}\right)-\Phi\left(\frac{400-450}{30}\right)=...=0,4525\\
+P(X>500)=P(500<X<\infin)=\Phi(\infin)-\Phi\left(\frac{500-450}{30}\right)=1-0,9525=0,0475\\
+
+P(\text{"no 8 greip. 6 greip. svars atšķirsies no }\mu\text{ mazāk par 20 g"})=\\
+=C^6_8p^6(1-p)^2=\Bigg[p=P(\left|X-450\right|<20)=P(430<X<470)=\\
+=\Phi\left(\frac{470-450}{30}\right)-\Phi\left(\frac{430-450}{30}\right)\approx0,4972\Bigg]=C^6_8\*0,0475^6\*0,9525^2=...

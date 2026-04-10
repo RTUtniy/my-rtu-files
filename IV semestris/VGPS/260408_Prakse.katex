@@ -1,0 +1,98 @@
+\displaystyle
+\def\over{}
+\def\title#1{{\LARGE\textbf{#1}}\\}
+\def\subtitle#1{{\footnotesize\textbf{#1}}\\[1em]}
+\def\h#1{{\Large\textbf{#1}}\\[1em]}
+\def\hh#1{{\large\textbf{#1}}\\[1em]}
+\def\p#1{~\cdot~\text{#1}\\}
+\def\pc#1{~~~\text{#1}\\}
+\def\com#1{\textcolor{gray}{#1}}
+\def\comt#1{\com{\text{#1}}}
+\def\*{\cdot}
+
+\title{Gadījuma procesi}
+\subtitle{08.04.2026 | Praktiskā nodarbība | Andrejs Matvejevs}
+
+\h{1. uzdevums}
+
+\text{Dots }P(x,y):\\
+\begin{array}{|c|c|c|c|c|}\hline
+~ & Y & 0 & 1 & 2\\\hline
+X & \\\hline
+0 & ~ & 0,1 & 0,04 & 0,02\\\hline
+1 & ~ & 0,08 & 0,2 & 0,06\\\hline
+2 & ~ & 0,06 & 0,14 & 0,3\\\hline
+\end{array}\\[.5em]
+
+\textbf{1) Gadījuma procesu sadalījuma funkcijas ir}\\
+\begin{array}{|c|c|c|c|}\hline
+X & 0 & 1 & 2\\\hline
+P & 0,16 & 0,34 & 0,5\\\hline
+\end{array}\\[.25em]
+\begin{array}{|c|c|c|c|}\hline
+Y & 0 & 1 & 2\\\hline
+P & 0,24 & 0,38 & 0,38\\\hline
+\end{array}\\[.25em]
+\!\left(\text{Abstrakts skaitīšanas skaidrojums: }\boxed{\forall\alpha\lrarr P:P_\alpha=\set{A;\sum_{B\in\beta}P(\alpha=A;~\beta=B)}}\,\right)\\[.5em]
+
+\textbf{2) }\bm{P(X\le1,Y\le1)=~?}\\
+
+P(X\le1,Y\le1)=0,1+0,04+0,08+0,2=0,42\\[.25em]
+
+\left(~
+\begin{array}{|c|c|c|c|c|}\hline
+~ & Y & 0 & 1 & 2\\\hline
+X & \\\hline
+0 & ~ & \bf 0,1 & \bf 0,04 & 0,02\\\hline
+1 & ~ & \bf 0,08 & \bf 0,2 & 0,06\\\hline
+2 & ~ & 0,06 & 0,14 & 0,3\\\hline
+\end{array}~\right)\\[.5em]
+
+\textbf{3) Pārbaudīt vai X un Y ir neatkarīgi}\\[.5em]
+
+P(X=0)\*P(Y=0)\not=P(X=0\land Y=0)\Rarr\text{neatkarīgi}\\[1em]
+
+\h{2. uzdevums}
+
+\text{Divu dimensiju gadījuma lielums uzdots ar savu varbūtību blīvuma f-ju:}\\
+
+f(x,y)=\begin{cases}
+\frac 18(6-x-y) & 0 < x < 2;~2 < y < 4\\
+0 & \text{otherwise}
+\end{cases}\\
+
+\textbf{1) }\bm{P(X<1\cap Y<3)=~?}\\
+P(X<1\cap Y<3)=\int_{0}^1\left(\int_{2}^3 \frac 18(6-x-y)~dy\right)dx=\\
+=\frac 18\int_{0}^1\left(\int_{2}^3 (6-x-y)~dy\right)dx=\\
+=\frac 18\int_{0}^1\left((6y-xy-0,5y^2)\Big|^3_2\right)dx=\\
+=\frac 18\int_{0}^1\left(3,5-x\right)dx=\\
+=\frac 18\left(\frac 72x-\frac{x^2}2\right)\Big|_0^1=\frac 38\\[.5em]
+
+\textbf{2) }\bm{P(X+Y<3)=~?}\\
+P(X+Y<3)=\int_2^3\int_0^{3-y} f(x,y)~dx~dy=\Big[\text{Skaitam }\int_0^{3-y} \frac 18(6-x-y)dx\Big]=\\
+=\frac 18\int_2^3(13,5-6y+0,5y^2)~dy=...=\frac 5{24}\\[.5em]
+
+\textbf{3) }\bm{P(X<1|Y<3)=~?}\\
+P(X<1|Y<3)=\frac{P(X<1\cap Y<3)}{P(Y<3)}=\overbrace{\frac{3:8}{P(Y<3)}}^{\text{seko no 1. jaut.}}=\frac{\frac 38}{\frac 18\int_2^3(6-x-y)dy}=...=\\
+=\frac38:\frac58=\frac35\\[1em]
+
+\h{3. uzdevums}
+
+\text{Divu dimensiju gadījuma lielums uzdots ar savu varbūtību blīvuma f-ju:}\\
+f(x,y)=\begin{cases}
+A(3x^2+2xy+3y^2) & 0<x<1;~-1<y<1\\
+0 & \text{otherwise}
+\end{cases}\\[.5em]
+
+\textbf{1) A~=~?}\\
+1=\int_{-1}^1\int_0^1 A(3x^2+2xy+3y^2) dx~dy=\\
+=A\int_{-1}^1\int_0^1 (3x^2+2xy+3y^2) dx~dy=\Big[\text{Skaitam }\int_0^1 (3x^2+2xy+3y^2) dx\Big]=\\
+=A\int_{-1}^1(1+y+3y^2)dy=...=4A\\
+1=4A\Rarr A=0,25\\[.5em]
+
+\textbf{2) }\bm{f_x(X)=~?}\\
+f_x(X)=\frac 14\int_{-1}^1(3x^2+2xy+3y^2)dy=...=\frac 32x^2+\frac12~(\text{pie }0<x<1)\\
+\Rarr f_x(X)=\begin{cases}
+\frac32x^2+\frac12 & 0<x<1\\
+0 & \text{otherwise}
+\end{cases}
